@@ -14,7 +14,7 @@ const Newsletter  = () => {
                     <p className={Style.p}>Enter your email to get updates and tips from us.</p>
                     <form>
                         <input type="email" placeholder="Enter your email"
-                            className="border border-[#14213D] outline-none px-3 py-2 rounded-md w-2/3 max-md:w-full dark:bg-[#14213D] dark:border-[#E5E5E5] mb-4" />
+                            className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-2/3 max-md:w-full dark:bg-[#14213D] dark:border-[#E5E5E5] mb-4 dark:text-[#E5E5E5]" />
                         <a className={Style.a}>
                         Subscribe
                         <ArrowRight size="20px" className="ml-1 -rotate-45 group-hover:-rotate-0 transition-all duration-300 ease-in-out" />  
