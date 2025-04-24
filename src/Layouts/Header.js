@@ -2,6 +2,16 @@ import React from "react";
 import { ArrowRight, LucideMenu, MoonIcon, SunIcon, X } from "lucide-react";
 import { identify } from "../index";
 
+const menu = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "/about" },
+    { name: "Services", link: "/services" },
+    { name: "Projects", link: "/projects" },
+    { name: "Pricing", link: "/pricing" },
+    { name: "Blog", link: "/blog" },
+    { name: "Contact", link: "/contact" },
+]
+
 const Header = () => {
     const [toggle, setToggle] = React.useState(false);
     const [isOpned, setIsOpened] = React.useState(false);
@@ -41,13 +51,11 @@ const Header = () => {
         return (
             <menu className={StyleResp.menu}>
                 <ul className={StyleResp.ul}>
-                    <a className={StyleResp.link}>Home <ArrowRight size="1em" className="-rotate-45 group-hover:rotate-0 " /></a>
-                    <a className={StyleResp.link}>About <ArrowRight size="1em" className="-rotate-45 group-hover:rotate-0 " /></a>
-                    <a className={StyleResp.link}>Services <ArrowRight size="1em" className="-rotate-45 group-hover:rotate-0 " /></a>
-                    <a className={StyleResp.link}>Projects <ArrowRight size="1em" className="-rotate-45 group-hover:rotate-0 " /></a>
-                    <a className={StyleResp.link}>Pricing <ArrowRight size="1em" className="-rotate-45 group-hover:rotate-0 " /></a>
-                    <a className={StyleResp.link}>Blog <ArrowRight size="1em" className="-rotate-45 group-hover:rotate-0 " /></a>
-                    <a className={StyleResp.link}>Contact <ArrowRight size="1em" className="-rotate-45 group-hover:rotate-0 " /></a>
+                    {
+                        menu.map(n=> (
+                            <a key={n.name} href={n.link} className={StyleResp.link}>{n.name} <ArrowRight size="1em" className="-rotate-45 group-hover:rotate-0 " /></a>
+                        ))
+                    }
                 </ul>
             </menu>
         )        
@@ -56,16 +64,14 @@ const Header = () => {
     return (
         <header className={Style.containre}>
             <section className={Style.section}>
-                <a className={Style.logo}>{ identify }</a>
+                <a className={Style.logo} href="/">{ identify }</a>
 
                 <ul className={Style.ul}>
-                    <a className={Style.link}>Home</a>
-                    <a className={Style.link}>About</a>
-                    <a className={Style.link}>Services</a>
-                    <a className={Style.link}>Projects</a>
-                    <a className={Style.link}>Pricing</a>
-                    <a className={Style.link}>Blog</a>
-                    <a className={Style.link}>Contact</a>
+                    {
+                        menu.map(n=> (
+                            <a key={n.name} className={Style.link} href={n.link}>{n.name}</a>
+                        ))
+                    }
                 </ul>
 
                 <ul className={Style.ul2}>
