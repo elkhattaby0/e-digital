@@ -1,8 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Header from './Layouts/Header';
+import Homelayout from './Layouts/Homepage/Homelayout';
+import Aboutlayout from './Layouts/About/Aboutlayout';
+import Footer from './Layouts/Footer';
+
+export const identify = "E-Digital";
+
+const App = () => {
+  return (
+    <div className='bg-[#FFFFFF] dark:bg-[#14213D] transition-all duration-300 ease-in-out'>
+      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homelayout />} />
+          <Route path="/about" element={<Aboutlayout />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </div>
+  )
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,8 +32,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
