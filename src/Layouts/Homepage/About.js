@@ -8,7 +8,7 @@ const About = () => {
                 <div className={Style.left}>
                     <h1 className={Style.h1} >Who We Are ?</h1>
                     <p className={Style.p} >We are a team of creative developers and designers. We love to build websites and apps that look good and work fast. Our goal is to help your business shine online.</p>
-                    <a className={Style.a}>
+                    <a className={Style.a} href="/about">
                         Read more
                         <ArrowRight size="20px" className="ml-1 -rotate-45 group-hover:-rotate-0 transition-all duration-300 ease-in-out" />  
                     </a>

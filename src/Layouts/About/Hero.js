@@ -6,15 +6,17 @@ const Hero = () => {
             <div
                 className={Style.section}
                 style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1665006962810-d20a0244e576?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+                    backgroundImage: `url('https://img.freepik.com/free-psd/3d-team-work-concept-background_23-2151527874.jpg?t=st=1745580588~exp=1745584188~hmac=4ac0074679f60eaf2d45329b0d7d21a9cbeb8f00381950baf2318cfc167b4740&w=900')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                 }}
             >
-                <div className="absolute inset-0 bg-[#14213D] opacity-[0.3] rounded-xl"></div>
-
                 <h1 className={Style.h1}>About Us</h1>
+                <div className="absolute inset-0 bg-[#14213D] opacity-[0.5] rounded-xl"></div>
+
+                
+                <p></p>
             </div>
         </section>
     );

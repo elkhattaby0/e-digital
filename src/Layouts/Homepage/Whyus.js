@@ -19,11 +19,6 @@ const Whyus = () => {
                             </div>
                         ))
                     }
-                    
-                    {/* <a className={Style.a}>
-                        Read more
-                        <ArrowRight size="20px" className="ml-1 -rotate-45 group-hover:-rotate-0 transition-all duration-300 ease-in-out" />  
-                    </a> */}
                 </div>
                 <div className={Style.right}></div>                
             </div>
@@ -32,7 +27,7 @@ const Whyus = () => {
 }
 
 const Style = {
-    "container": "w-full flex items-center justify-center py-10",
+    "container": "w-full flex items-center justify-center py-14",
     "section": "w-11/12 flex max-md:flex-col items-left justify-center h- [89lvh] gap-10",
 
     "left": "w-1/2 max-md:w-full",
