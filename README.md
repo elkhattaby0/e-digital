@@ -1,0 +1,7 @@
+https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff
+
+black -> #000000
+blue  -> #14213D
+yellow-> #FCA311
+gray  -> #E5E5E5
+white -> #FFFFFF

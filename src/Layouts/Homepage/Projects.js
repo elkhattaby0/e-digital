@@ -1,6 +1,9 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const data = [
     {
@@ -46,6 +49,28 @@ const data = [
 ]
 
 const Projects = () => {
+    const settings = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        centerPadding: "60px",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: { slidesToShow: 2 }
+            },
+            {
+                breakpoint: 640,
+                settings: { slidesToShow: 1 }
+            }
+        ]
+    };
+
     return (
         <section className={Style.container} >
             <div className={Style.section} >
@@ -54,9 +79,9 @@ const Projects = () => {
                     We have worked with many happy clients. Take a look at some of our recent projects.
                 </p>
 
-                <div className="flex flex-wrap gap-8 justify-center">
+                <Slider {...settings} className="w-full">
                 {
-                    data.slice(0,3).map(n=> (
+                    data.map(n=> (
                         <div key={n.id} className={Style.card}>
                             <div className="h-[140px] rounded-xl mb-4"
                                 style={{
@@ -78,10 +103,10 @@ const Projects = () => {
                         </div>
                     ))
                 }
-                </div>
+                </Slider>
 
                 <a className={Style.a}>
-                    View Projects
+                    View more
                     <ArrowRight size="20px" className="ml-1 -rotate-45 group-hover:-rotate-0 transition-all duration-300 ease-in-out" />  
                 </a>           
             </div>
@@ -95,7 +120,7 @@ const Style = {
 
     "h1": "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]",
 
-    "card": " flex flex-col justify-between cursor-pointer border border-[#14213D] size-100 rounded-xl p-4 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group w-[300px]",
+    "card": "flex flex-col justify-between cursor-pointer border border-[#14213D] rounded-xl p-4 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group h-full min-w-[300px] max-w-[300px] mx-4 max-md:mx-2",
     "h3": "font-semibold text-2xl leading-[24px] text-[#14213D] dark:text-[#E5E5E5]",
     "h6": "font-base text-md mt-2 leading-[18px] text-[#14213D] dark:text-[#E5E5E5]",
     "p": "font-base text-sm my-2 text-[#000000] leading-[20px] dark:text-[#E5E5E5]",
