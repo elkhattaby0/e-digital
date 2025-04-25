@@ -1,0 +1,100 @@
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+
+const data = [
+  { name: "Lahoucine", post: "CEO", img: "https://png.pngtree.com/png-clipart/20231020/original/pngtree-avatar-of-a-brunette-man-png-image_13379740.png" },
+  { name: "Sara", post: "Developer", img: "https://png.pngtree.com/png-clipart/20241117/original/pngtree-business-women-avatar-png-image_17163554.png" },
+  { name: "Youssef", post: "Project Manager", img: "https://png.pngtree.com/png-clipart/20250110/original/pngtree-the-vicious-gangster-q-version-avatar-png-image_5471084.png" },
+  { name: "Fatima", post: "UI/UX Designer", img: "https://png.pngtree.com/png-clipart/20240123/original/pngtree-woman-flat-style-avatar-png-image_6961879.png" },
+  { name: "Omar", post: "Backend Developer", img: "https://png.pngtree.com/png-clipart/20240117/original/pngtree-avatar-of-a-software-developer-man-png-image_6943391.png" },
+  { name: "Nora", post: "Marketing Specialist", img: "https://png.pngtree.com/png-clipart/20240119/original/pngtree-happy-business-woman-avatar-png-image_6951103.png" },
+  { name: "Rachid", post: "Frontend Developer", img: "https://png.pngtree.com/png-clipart/20240116/original/pngtree-man-flat-avatar-profile-png-image_6939994.png" },
+  { name: "Imane", post: "Content Creator", img: "https://png.pngtree.com/png-clipart/20231029/original/pngtree-beautiful-muslim-woman-avatar-png-image_13392345.png" },
+  { name: "Anas", post: "DevOps Engineer", img: "https://png.pngtree.com/png-clipart/20240116/original/pngtree-developer-flat-design-avatar-png-image_6939414.png" },
+  { name: "Salma", post: "Support Lead", img: "https://png.pngtree.com/png-clipart/20230929/original/pngtree-businesswoman-avatar-flat-style-png-image_13289380.png" }
+];
+
+const Team = () => {
+    const NextArrow = (props) => {
+        const { onClick } = props;
+        return (
+          <button
+            onClick={onClick}
+            className="absolute z-10 right-[0px] top-0 1/2 text-[#14213D] dark:text-[#E5E5E5] -rotate-45 hover:-rotate-0"
+          >
+            <ArrowRight size="30px" />
+          </button>
+        );
+      };
+      
+      const PrevArrow = (props) => {
+        const { onClick } = props;
+        return (
+          <button
+            onClick={onClick}
+            className="absolute z-10 right-[0px] bottom-0 1/2 text-[#14213D] dark:text-[#E5E5E5] -rotate-45 hover:-rotate-0"
+          >
+            <ArrowLeft size="30px" />
+          </button>
+        );
+      };
+      
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 2 }
+      },
+      {
+        breakpoint: 640,
+        settings: { slidesToShow: 1 }
+      }
+    ]
+  };
+
+  return (
+    <section className={Style.containre}>
+      <div className={Style.section}>
+        <h2 className={Style.h2}>Our Great Team</h2>
+
+        <Slider {...settings}>
+          {data.map((n) => (
+            <div key={n.name} className="flex justify-center items-center gap-5">
+              <div className="border p-4 w-fit text-center rounded-xl cursor-pointer group">
+                <div className="rounded-xl overflow-hidden w-[200px] h-[200px] mx-auto">
+                  <div
+                    className="w-full h-full bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-105"
+                    style={{
+                      backgroundImage: `url(${n.img})`
+                    }}
+                  ></div>
+                </div>
+                <h3 className="font-medium text-xl mt-2 text-[#14213D] dark:text-[#E5E5E5]">{n.name}</h3>
+                <p className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5]">{n.post}</p>
+              </div>
+            </div>
+          ))}
+        </Slider>
+
+      </div>
+    </section>
+  );
+};
+
+const Style = {
+  containre: "w-full flex flex-col items-center justify-center",
+  section: "w-10/12 max-md:w-11/12 py-8",
+  h2: "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]"
+};
+
+export default Team;
