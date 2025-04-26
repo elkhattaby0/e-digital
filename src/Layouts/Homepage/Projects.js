@@ -81,7 +81,7 @@ const Projects = () => {
         <section className={Style.container}>
             <div className={Style.section}>
                 <HeaderTwo>Our Work</HeaderTwo>
-                <Paragraph>
+                <Paragraph isCenter={true}>
                     We have worked with many happy clients. Take a look at some of our recent projects.
                 </Paragraph>
 

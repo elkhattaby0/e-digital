@@ -9,7 +9,7 @@ const Hero = () => {
             <div className={Style.section} >
                 <h1 className={Style.h1} >{ identify }</h1>
                 <h2 className={Style.h2} >We Create Beautiful Websites and Apps</h2>
-                <Paragraph>
+                <Paragraph isCenter={true} >
                     We help you grow your business online with smart design and clean code.
                 </Paragraph>
                 <a className={Style.a} >

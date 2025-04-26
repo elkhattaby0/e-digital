@@ -81,8 +81,8 @@ const Pricing = () => {
         <section className={Style.container}>
             <div className={Style.section}>
                 <HeaderTwo>Our Prices</HeaderTwo>
-                <Paragraph>We offer fair prices for quality work.</Paragraph>
-                <Paragraph>Choose a plan that fits your needs, or ask us for a custom offer.</Paragraph>
+                <Paragraph isCenter={true} >We offer fair prices for quality work.</Paragraph>
+                <Paragraph isCenter={true} >Choose a plan that fits your needs, or ask us for a custom offer.</Paragraph>
 
                 <Slider {...settings} className="w-full mt-6">
                     {data.map((n) => (
