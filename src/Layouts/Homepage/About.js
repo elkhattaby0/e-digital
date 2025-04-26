@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import image from "../../assets/about_section_homepage.jpg"
 
 const About = () => {
     return (
@@ -15,7 +16,7 @@ const About = () => {
                 </div>
                 <div className={Style.right}
                     style={{
-                        backgroundImage: "url('https://img.freepik.com/free-photo/industrial-designer-digital-art_23-2151585288.jpg?t=st=1745660885~exp=1745664485~hmac=f7f8e19af5efef01bc1d5099a8ad776d2ad9d495cd1f1d35eb42ddf827f3ccfb&w=740')",
+                        backgroundImage: `url(${image})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         backgroundRepeat: "no-repeat",
