@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-
+import HeaderTwo from "../../component/HeaderTwo";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -79,7 +79,7 @@ const Projects = () => {
     return (
         <section className={Style.container}>
             <div className={Style.section}>
-                <h2 className={Style.h1}>Our Work</h2>
+                <HeaderTwo>Our Work</HeaderTwo>
                 <p className="font-base text-md text-center text-[#000000] leading-[24px] mb-4 dark:text-[#E5E5E5]">
                     We have worked with many happy clients. Take a look at some of our recent projects.
                 </p>
@@ -122,7 +122,6 @@ const Projects = () => {
 const Style = {
     container: "w-full flex items-center justify-center py-10 my-10",
     section: "w-11/12 flex flex-col items-center justify-center",
-    h1: "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]",
     card: "flex flex-col justify-between h-full min-h-[420px] max-md:min-h-[480px] cursor-pointer border border-[#14213D] rounded-xl p-4 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group",
     h3: "font-semibold text-2xl leading-[24px] text-[#14213D] dark:text-[#E5E5E5]",
     h6: "font-base text-md mt-2 leading-[18px] text-[#14213D] dark:text-[#E5E5E5]",

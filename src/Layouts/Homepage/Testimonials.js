@@ -1,6 +1,6 @@
 import React from "react";
 import { Quote, Star } from "lucide-react";
-
+import HeaderTwo from "../../component/HeaderTwo";
 const data = [
     {
         id: 1,
@@ -30,7 +30,7 @@ const Testimonials = () => {
     return (
         <section className={Style.container} >
             <div className={Style.section} >
-                <h2 className={Style.h1} >Happy Clients</h2>
+                <HeaderTwo>Happy Clients</HeaderTwo>
 
                 <div className="flex max-md:flex-wrap gap-5 justify-center items-center">
                 {
@@ -70,9 +70,7 @@ const Testimonials = () => {
 const Style = {
     "container": "w-full flex items-center justify-center py-10 my-10",
     "section": "w-11/12 flex flex-col items-center justify-center h- [89lvh] gap-10",
-
-    "h1": "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]",
-
+    
     "card": "cursor-pointer border border-[#14213D] size-100 rounded-xl p-6 transition-all duration-300 ease-in-out group dark:border-[#E5E5E5] hover:shadow-md",
 }
 

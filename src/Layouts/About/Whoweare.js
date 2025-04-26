@@ -1,6 +1,6 @@
-import { CheckIcon } from 'lucide-react';
 import React from 'react';
-
+import HeaderTwo from '../../component/HeaderTwo';
+import { CheckIcon } from 'lucide-react';
 
 const info = [
     { 
@@ -35,7 +35,7 @@ const Whoweare = () => {
             {
                 info.map(n=> (
                     <div className={Style.section} key={n.title}> 
-                        <h2 className={Style.h2}>{n.title}</h2>
+                        <HeaderTwo>{n.title}</HeaderTwo>
                         {
                             n.data.map(n=> (
                                 <div key={n} className="flex items-center text-[#14213D] text-xl my-2 dark:text-[#E5E5E5]">
@@ -54,7 +54,6 @@ const Whoweare = () => {
 const Style = {
     "containre": "w-full flex flex-col items-center justify-center ",
     "section": "w-10/12 max-md:w-11/12 py-10",
-    "h2": "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]"
 }
 
 export default Whoweare;

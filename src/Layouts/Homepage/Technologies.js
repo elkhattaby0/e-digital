@@ -4,7 +4,7 @@ import { FaLaravel, FaReact, FaWordpress, FaYoast } from "react-icons/fa";
 import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { FaElementor } from "react-icons/fa6";
 import { SiTypescript } from "react-icons/si";
-
+import HeaderTwo from "../../component/HeaderTwo";
 
 
 const Technologies  = () => {
@@ -21,7 +21,7 @@ const Technologies  = () => {
     return (
         <section className={Style.container} >
             <div className={Style.section} >
-                <h2 className={Style.h1} >Our Tools</h2>
+                <HeaderTwo>Our Tools</HeaderTwo>
                 <p className="font-base text-md text-center text-[#000000] leading-[24px] mb-4 dark:text-[#E5E5E5]">
                     We use the best and latest technologies :
                 </p>
@@ -48,8 +48,6 @@ const Technologies  = () => {
 const Style = {
     "container": "w-full flex items-center justify-center py-10 my-10",
     "section": "w-11/12 flex flex-col items-center justify-center",
-
-    "h1": "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]",
 
     "card": "text-[#14213D] dark:text-[#E5E5E5] text-4xl",
 

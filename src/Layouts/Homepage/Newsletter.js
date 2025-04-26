@@ -1,5 +1,6 @@
 import React from "react";
-import { ArrowRight, CheckIcon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import HeaderTwo from "../../component/HeaderTwo";
 
 const data = [
     "We listen to your ideas", " We deliver on time", "We use the best tools", "We support you after the project is done"
@@ -10,7 +11,7 @@ const Newsletter  = () => {
         <section className={Style.container} >
             <div className={Style.section} >
                 <div className={Style.left}>
-                    <h2 className={Style.h1} >Get Our News</h2>
+                    <HeaderTwo>Get Our News</HeaderTwo>
                     <p className={Style.p}>Enter your email to get updates and tips from us.</p>
                     <form>
                         <input type="email" placeholder="Enter your email"
@@ -35,7 +36,6 @@ const Style = {
     "left": "w-2/3 max-md:w-full",
     "right": "w-1/3 max-md:w-full rounded",
 
-    "h1": "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]",
     "p": "font-base text-md text-[#000000] leading-[24px] mb-4 dark:text-[#E5E5E5]",
     "a": "flex items-center bg-[#FFFFFF] border-[#14213D] text-[#14213D] rounded-full px-4 py-2 dark:bg-[#14213D] dark:text-[#E5E5E5] dark:border-[#E5E5E5] outline-none cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#14213D] hover:text-[#FFFFFF] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] border-[1px] dark:hover:border-[#E5E5E5] w-fit group"
 }

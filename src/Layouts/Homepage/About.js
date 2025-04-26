@@ -1,13 +1,14 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import image from "../../assets/about_section_homepage.jpg"
+import HeaderTwo from "../../component/HeaderTwo";
 
 const About = () => {
     return (
         <section className={Style.container} >
             <div className={Style.section} >
                 <div className={Style.left}>
-                    <h2 className={Style.h1} >Who We Are ?</h2>
+                    <HeaderTwo>Who We Are ?</HeaderTwo>
                     <p className={Style.p} >We are a team of creative developers and designers. We love to build websites and apps that look good and work fast. Our goal is to help your business shine online.</p>
                     <a className={Style.a} href="/about">
                         Read more
@@ -20,7 +21,6 @@ const About = () => {
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         backgroundRepeat: "no-repeat",
-                        // height: "100%",
                     }}
                 ></div>                
             </div>
@@ -35,7 +35,6 @@ const Style = {
     "left": "w-1/2 max-md:w-full",
     "right": "w-1/2 max-md:w-full h-[480px] max-md:h-[280px] rounded-md",
 
-    "h1": "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]",
     "p": "font-base text-md text-[#000000] leading-[24px] mb-4 dark:text-[#E5E5E5]",
     "a": "flex items-center bg-[#FFFFFF] border-[#14213D] text-[#14213D] rounded-full px-4 py-2 dark:bg-[#14213D] dark:text-[#E5E5E5] dark:border-[#E5E5E5] outline-none cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#14213D] hover:text-[#FFFFFF] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] border-[1px] dark:hover:border-[#E5E5E5] w-fit group"
 }

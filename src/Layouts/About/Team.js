@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import HeaderTwo from "../../component/HeaderTwo";
 
 const data = [
   { name: "Lahoucine", post: "CEO", img: "https://png.pngtree.com/png-clipart/20231020/original/pngtree-avatar-of-a-brunette-man-png-image_13379740.png" },
@@ -41,7 +42,7 @@ const Team = () => {
   return (
     <section className={Style.containre}>
       <div className={Style.section}>
-        <h2 className={Style.h2}>Our Great Team</h2>
+        <HeaderTwo>Our Great Team</HeaderTwo>
 
         <Slider {...settings}>
           {data.map((n) => (
@@ -70,7 +71,6 @@ const Team = () => {
 const Style = {
   containre: "w-full flex flex-col items-center justify-center",
   section: "w-10/12 max-md:w-11/12 py-10",
-  h2: "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]"
 };
 
 export default Team;

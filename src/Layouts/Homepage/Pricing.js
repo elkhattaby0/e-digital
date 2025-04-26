@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight, Check } from "lucide-react";
-
+import HeaderTwo from "../../component/HeaderTwo";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -78,7 +78,7 @@ const Pricing = () => {
     return (
         <section className={Style.container}>
             <div className={Style.section}>
-                <h2 className={Style.h1}>Our Prices</h2>
+                <HeaderTwo>Our Prices</HeaderTwo>
                 <p className={Style.para}>We offer fair prices for quality work.</p>
                 <p className={Style.para}>Choose a plan that fits your needs, or ask us for a custom offer.</p>
 
@@ -112,7 +112,6 @@ const Style = {
     container: "w-full flex items-center justify-center py-10 my-10",
     section: "w-11/12 flex flex-col items-center justify-center",
 
-    h1: "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]",
     para: "font-base text-md text-center text-[#000000] leading-[24px] dark:text-[#E5E5E5]",
 
     card: "flex flex-col justify-between h-full min-h-[420px] cursor-pointer border border-[#14213D] rounded-xl p-6 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group",
