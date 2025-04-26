@@ -46,7 +46,7 @@ const data = [
         "img": "",
         "link": "/"
     }
-]
+];
 
 const Projects = () => {
     const settings = {
@@ -54,78 +54,80 @@ const Projects = () => {
         arrows: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
-        slidesToShow: 1,
+        slidesToShow: 3,
+        slidesToScroll: 1,
         centerMode: true,
-        variableWidth: true,
-        centerPadding: "60px",
+        variableWidth: false,
         responsive: [
             {
                 breakpoint: 1024,
-                settings: { slidesToShow: 2 }
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true
+                }
             },
             {
                 breakpoint: 640,
-                settings: { slidesToShow: 1 }
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true
+                }
             }
         ]
     };
 
     return (
-        <section className={Style.container} >
-            <div className={Style.section} >
-                <h1 className={Style.h1} >Our Work</h1>
+        <section className={Style.container}>
+            <div className={Style.section}>
+                <h1 className={Style.h1}>Our Work</h1>
                 <p className="font-base text-md text-center text-[#000000] leading-[24px] mb-4 dark:text-[#E5E5E5]">
                     We have worked with many happy clients. Take a look at some of our recent projects.
                 </p>
 
                 <Slider {...settings} className="w-full">
-                {
-                    data.map(n=> (
-                        <div key={n.id} className={Style.card}>
-                            <div className="h-[140px] rounded-xl mb-4"
-                                style={{
-                                    backgroundImage: `url(${n.img})`,
-                                    backgroundSize: "cover",
-                                    backgroundPosition: "center",
-                                    backgroundRepeat: "no-repeat",
-                                    backgroundColor: "#E5E5E5",
-
-                                }}
-                            ></div>
-                            <h3 className={Style.h3}>{n.title}</h3>
-                            <h6 className={Style.h6}>{n.type}</h6>
-                            <p className={Style.p}>{n.description}</p>
-                            <a className={Style.a}>
-                                Read more
-                                <ArrowRight size="20px" className="ml-1 -rotate-45 group-hover:-rotate-0 transition-all duration-300 ease-in-out" />  
-                            </a>  
+                    {data.map((n) => (
+                        <div key={n.id} className="px-2 h-full">
+                            <div className={Style.card}>
+                                <div
+                                    className="h-[140px] rounded-xl mb-4"
+                                    style={{
+                                        backgroundImage: `url(${n.img})`,
+                                        backgroundSize: "cover",
+                                        backgroundPosition: "center",
+                                        backgroundRepeat: "no-repeat",
+                                        backgroundColor: "#E5E5E5",
+                                    }}
+                                ></div>
+                                <h3 className={Style.h3}>{n.title}</h3>
+                                <h6 className={Style.h6}>{n.type}</h6>
+                                <p className={Style.p}>{n.description}</p>
+                                <a className={Style.a}>
+                                    Read more
+                                    <ArrowRight size="20px" className="ml-1 -rotate-45 group-hover:-rotate-0 transition-all duration-300 ease-in-out" />
+                                </a>
+                            </div>
                         </div>
-                    ))
-                }
+                    ))}
                 </Slider>
 
                 <a className={Style.a}>
                     View more
-                    <ArrowRight size="20px" className="ml-1 -rotate-45 group-hover:-rotate-0 transition-all duration-300 ease-in-out" />  
-                </a>           
+                    <ArrowRight size="20px" className="ml-1 -rotate-45 group-hover:-rotate-0 transition-all duration-300 ease-in-out" />
+                </a>
             </div>
         </section>
-    )
-}
+    );
+};
 
 const Style = {
-    "container": "w-full flex items-center justify-center py-10",
-    "section": "w-11/12 flex flex-col items-center justify-center",
-
-    "h1": "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]",
-
-    "card": "flex flex-col justify-between cursor-pointer border border-[#14213D] rounded-xl p-4 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group h-full min-w-[300px] max-w-[300px] mx-4 max-md:mx-2",
-    "h3": "font-semibold text-2xl leading-[24px] text-[#14213D] dark:text-[#E5E5E5]",
-    "h6": "font-base text-md mt-2 leading-[18px] text-[#14213D] dark:text-[#E5E5E5]",
-    "p": "font-base text-sm my-2 text-[#000000] leading-[20px] dark:text-[#E5E5E5]",
-
-    "a": "flex items-center bg-[#FFFFFF] border-[#14213D] text-[#14213D] rounded-full mt-4 px-4 py-2 dark:bg-[#14213D] dark:text-[#E5E5E5] dark:border-[#E5E5E5] outline-none cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#14213D] hover:text-[#FFFFFF] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] border-[1px] dark:hover:border-[#E5E5E5] w-fit group"
-}
+    container: "w-full flex items-center justify-center py-10",
+    section: "w-11/12 flex flex-col items-center justify-center",
+    h1: "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]",
+    card: "flex flex-col justify-between h-full min-h-[420px] cursor-pointer border border-[#14213D] rounded-xl p-4 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group",
+    h3: "font-semibold text-2xl leading-[24px] text-[#14213D] dark:text-[#E5E5E5]",
+    h6: "font-base text-md mt-2 leading-[18px] text-[#14213D] dark:text-[#E5E5E5]",
+    p: "font-base text-sm my-2 text-[#000000] leading-[20px] dark:text-[#E5E5E5]",
+    a: "flex items-center bg-[#FFFFFF] border-[#14213D] text-[#14213D] rounded-full mt-4 px-4 py-2 dark:bg-[#14213D] dark:text-[#E5E5E5] dark:border-[#E5E5E5] outline-none cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#14213D] hover:text-[#FFFFFF] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] border-[1px] dark:hover:border-[#E5E5E5] w-fit group",
+};
 
 export default Projects;
