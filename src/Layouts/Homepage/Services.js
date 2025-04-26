@@ -1,6 +1,7 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
 import HeaderTwo from "../../component/HeaderTwo";
+import ButtonArrow from "../../component/ButtonArrow";
+import Paragraph from "../../component/Paragraph";
 
 const data = [
     {
@@ -51,16 +52,14 @@ const Services = () => {
                     data.map(n=> (
                         <div key={n.id} className={Style.card}>
                             <h3 className={Style.h3}>{n.title}</h3>
-                            <p className={Style.p}>{n.text}</p>
+                            <Paragraph>{n.text}</Paragraph>
                         </div>
                     ))
                 }
                 </div>
-
-                <a className={Style.a}>
+                <ButtonArrow>
                     View more
-                    <ArrowRight size="20px" className="ml-1 -rotate-45 group-hover:-rotate-0 transition-all duration-300 ease-in-out" />  
-                </a>           
+                </ButtonArrow>     
             </div>
         </section>
     )
@@ -72,9 +71,6 @@ const Style = {
 
     "card": "cursor-pointer border border-[#14213D] size-100 rounded-xl p-6 hover:shadow-md hover:bg-[#14213D] dark:border-[#E5E5E5] dark:hover:bg-[#E5E5E5] transition-all duration-300 ease-in-out group",
     "h3": "font-semibold text-3xl text-[#14213D] group-hover:text-[#FFFFFF] dark:text-[#E5E5E5] dark:group-hover:text-[#14213D]",
-    "p": "font-base text-md text-[#000000] leading-[24px] group-hover:text-[#E5E5E5] dark:text-[#E5E5E5] dark:group-hover:text-[#14213D]",
-
-    "a": "flex items-center bg-[#FFFFFF] border-[#14213D] text-[#14213D] rounded-full px-4 py-2 dark:bg-[#14213D] dark:text-[#E5E5E5] dark:border-[#E5E5E5] outline-none cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#14213D] hover:text-[#FFFFFF] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] border-[1px] dark:hover:border-[#E5E5E5] w-fit group"
 }
 
 export default Services;

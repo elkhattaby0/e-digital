@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import HeaderTwo from "../../component/HeaderTwo";
+import Paragraph from "../../component/Paragraph";
 
 const Contact = () => {
     return (
@@ -8,7 +9,7 @@ const Contact = () => {
             <div className={Style.section} >
                 <div className="w-1/2 max-md:w-full">
                     <HeaderTwo>Let’s Work Together</HeaderTwo>
-                    <p className={Style.p}>Have a question or project ? Send us a message. We reply fast.</p>
+                    <Paragraph>Have a question or project ? Send us a message. We reply fast.</Paragraph>
                 </div>
                 <div className="w-1/2 max-md:w-full">
                     <form>
@@ -48,8 +49,6 @@ const Style = {
     "container": "w-full flex items-center justify-center py-10 my-10",
     "section": "w-11/12 flex max-md:flex-col  justify-center",
     
-    "p": "font-base text-md text-[#000000] leading-[24px] mb-4 dark:text-[#E5E5E5]",
-
     "a": "flex items-center justify-between bg-[#FFFFFF] border-[#14213D] text-[#14213D] rounded-full mt-2 px-4 py-2 dark:bg-[#14213D] dark:text-[#E5E5E5] dark:border-[#E5E5E5] outline-none cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#14213D] hover:text-[#FFFFFF] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] border-[1px] dark:hover:border-[#E5E5E5] w-1/3 max-md:w-1/2 group"
 }
 

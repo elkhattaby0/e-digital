@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderTwo from '../../component/HeaderTwo';
-import { CheckIcon } from 'lucide-react';
+import ListCheck from '../../component/ListCheck';
 
 const info = [
     { 
@@ -36,14 +36,16 @@ const Whoweare = () => {
                 info.map(n=> (
                     <div className={Style.section} key={n.title}> 
                         <HeaderTwo>{n.title}</HeaderTwo>
-                        {
-                            n.data.map(n=> (
-                                <div key={n} className="flex items-center text-[#14213D] text-xl my-2 dark:text-[#E5E5E5]">
-                                    <CheckIcon size="1em" className="mr-3" />
-                                    <p>{n}.</p>
-                                </div>
-                            ))
-                        }
+                        <ul>
+                            {
+                                n.data.map(n=> (
+                                    <ListCheck key={n}>
+                                        { n }
+                                    </ListCheck>
+                                ))
+                            }
+                        </ul>
+                        
                     </div>
                 ))
             }

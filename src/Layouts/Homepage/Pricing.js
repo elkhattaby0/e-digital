@@ -1,9 +1,11 @@
 import React from "react";
-import { ArrowRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import HeaderTwo from "../../component/HeaderTwo";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ButtonArrow from "../../component/ButtonArrow";
+import Paragraph from "../../component/Paragraph";
 
 const data = [
     {
@@ -79,8 +81,8 @@ const Pricing = () => {
         <section className={Style.container}>
             <div className={Style.section}>
                 <HeaderTwo>Our Prices</HeaderTwo>
-                <p className={Style.para}>We offer fair prices for quality work.</p>
-                <p className={Style.para}>Choose a plan that fits your needs, or ask us for a custom offer.</p>
+                <Paragraph>We offer fair prices for quality work.</Paragraph>
+                <Paragraph>Choose a plan that fits your needs, or ask us for a custom offer.</Paragraph>
 
                 <Slider {...settings} className="w-full mt-6">
                     {data.map((n) => (
@@ -95,10 +97,9 @@ const Pricing = () => {
                                         {benefit}
                                     </p>
                                 ))}
-                                <a className={Style.a}>
+                                <ButtonArrow>
                                     Get started
-                                    <ArrowRight size="20px" className="ml-1 -rotate-45 group-hover:-rotate-0 transition-all duration-300 ease-in-out" />
-                                </a>
+                                </ButtonArrow>
                             </div>
                         </div>
                     ))}
@@ -112,12 +113,8 @@ const Style = {
     container: "w-full flex items-center justify-center py-10 my-10",
     section: "w-11/12 flex flex-col items-center justify-center",
 
-    para: "font-base text-md text-center text-[#000000] leading-[24px] dark:text-[#E5E5E5]",
-
     card: "flex flex-col justify-between h-full min-h-[420px] cursor-pointer border border-[#14213D] rounded-xl p-6 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group",
     h3: "font-bold text-4xl leading-[24px] text-[#14213D] dark:text-[#E5E5E5]",
-
-    a: "flex items-center bg-[#FFFFFF] border-[#14213D] text-[#14213D] rounded-full mt-4 px-4 py-2 dark:bg-[#14213D] dark:text-[#E5E5E5] dark:border-[#E5E5E5] outline-none cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#14213D] hover:text-[#FFFFFF] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] border-[1px] dark:hover:border-[#E5E5E5] w-fit group"
 };
 
 export default Pricing;

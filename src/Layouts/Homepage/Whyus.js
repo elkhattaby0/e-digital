@@ -1,7 +1,7 @@
 import React from "react";
-import { CheckIcon } from "lucide-react";
 import AnimatedNumbers from "react-animated-numbers";
 import HeaderTwo from "../../component/HeaderTwo";
+import ListCheck from "../../component/ListCheck";
 
 const data = [
     "We listen to your ideas",
@@ -23,12 +23,13 @@ const Whyus = () => {
             <div className={Style.section}>
                 <div className={Style.left}>
                     <HeaderTwo>Why Work With Us ?</HeaderTwo>
+                    <ul>
                     {data.map((item) => (
-                        <div key={item} className="flex items-center text-[#14213D] text-xl my-2 dark:text-[#E5E5E5]">
-                            <CheckIcon size="1em" className="mr-3" />
-                            <h3>{item}.</h3>
-                        </div>
+                        <ListCheck key={item} >
+                            { item }
+                        </ListCheck>
                     ))}
+                    </ul>
                 </div>
 
                 <div className={Style.right}>
@@ -72,8 +73,6 @@ const Style = {
     section: "w-11/12 flex max-md:flex-col items-left justify-center h-auto gap-10",
     left: "w-1/2 max-md:w-full",
     right: "w-1/2 max-md:w-full flex flex-wrap justify-center gap-6 max-md:gap-3",
-    p: "font-base text-md text-[#000000] leading-[24px] mb-4 dark:text-[#E5E5E5]",
-    a: "flex items-center bg-[#FFFFFF] border-[#14213D] text-[#14213D] rounded-full px-4 py-2 dark:bg-[#14213D] dark:text-[#E5E5E5] dark:border-[#E5E5E5] outline-none cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#14213D] hover:text-[#FFFFFF] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] border-[1px] dark:hover:border-[#E5E5E5] w-fit group"
 };
 
 export default Whyus;
