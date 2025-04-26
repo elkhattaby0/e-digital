@@ -6,6 +6,18 @@ yellow-> #FCA311
 gray  -> #E5E5E5
 white -> #FFFFFF
 
+about page
+-- hero section
+--- h1
+
+-- who are && Our Mission && What Makes Us Different section
+--- h2
+--- p
+
+-- Our Great Team section
+--- h2
+--- h3
+--- p
 
 home page
 -- hero setion

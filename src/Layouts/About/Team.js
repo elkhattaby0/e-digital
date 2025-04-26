@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const data = [
   { name: "Lahoucine", post: "CEO", img: "https://png.pngtree.com/png-clipart/20231020/original/pngtree-avatar-of-a-brunette-man-png-image_13379740.png" },
@@ -18,29 +17,6 @@ const data = [
 ];
 
 const Team = () => {
-    const NextArrow = (props) => {
-        const { onClick } = props;
-        return (
-          <button
-            onClick={onClick}
-            className="absolute z-10 right-[0px] top-0 1/2 text-[#14213D] dark:text-[#E5E5E5] -rotate-45 hover:-rotate-0"
-          >
-            <ArrowRight size="30px" />
-          </button>
-        );
-      };
-      
-      const PrevArrow = (props) => {
-        const { onClick } = props;
-        return (
-          <button
-            onClick={onClick}
-            className="absolute z-10 right-[0px] bottom-0 1/2 text-[#14213D] dark:text-[#E5E5E5] -rotate-45 hover:-rotate-0"
-          >
-            <ArrowLeft size="30px" />
-          </button>
-        );
-      };
       
   const settings = {
     dots: false,
@@ -49,8 +25,6 @@ const Team = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
     centerMode: true,
     responsive: [
       {

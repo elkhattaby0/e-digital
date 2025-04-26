@@ -40,7 +40,7 @@ const Whoweare = () => {
                             n.data.map(n=> (
                                 <div key={n} className="flex items-center text-[#14213D] text-xl my-2 dark:text-[#E5E5E5]">
                                     <CheckIcon size="1em" className="mr-3" />
-                                    <h3>{n}.</h3>
+                                    <p>{n}.</p>
                                 </div>
                             ))
                         }
