@@ -9,7 +9,6 @@ import Testimonials from './Testimonials';
 import Technologies from './Technologies';
 import Pricing from './Pricing';
 import Contact from './Contact';
-import Newsletter from './Newsletter';
 
 
 const Homelayout = () => {
@@ -25,7 +24,6 @@ const Homelayout = () => {
             <Pricing />
 
             <Contact />
-            <Newsletter />
         </main>
     )
 }

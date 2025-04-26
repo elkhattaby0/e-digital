@@ -52,8 +52,8 @@ const Whoweare = () => {
 }
 
 const Style = {
-    "containre": "w-full flex flex-col items-center justify-center",
-    "section": "w-10/12 max-md:w-11/12 py-8",
+    "containre": "w-full flex flex-col items-center justify-center ",
+    "section": "w-10/12 max-md:w-11/12 py-10",
     "h2": "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]"
 }
 

@@ -8,6 +8,7 @@ import Header from './Layouts/Header';
 import Homelayout from './Layouts/Homepage/Homelayout';
 import Aboutlayout from './Layouts/About/Aboutlayout';
 import Footer from './Layouts/Footer';
+import Newsletter from './Layouts/Homepage/Newsletter';
 
 export const identify = "E-Digital";
 
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/about" element={<Aboutlayout />} />
         </Routes>
       </BrowserRouter>
+      <Newsletter />
       <Footer />
     </div>
   )

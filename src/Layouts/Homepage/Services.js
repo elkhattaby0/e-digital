@@ -66,7 +66,7 @@ const Services = () => {
 }
 
 const Style = {
-    "container": "w-full flex items-center justify-center py-10",
+    "container": "w-full flex items-center justify-center py-10 my-10",
     "section": "w-11/12 flex flex-col items-center justify-center h- [89lvh] gap-10",
 
     "h1": "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]",

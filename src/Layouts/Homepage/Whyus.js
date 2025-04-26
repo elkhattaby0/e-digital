@@ -27,7 +27,7 @@ const Whyus = () => {
 }
 
 const Style = {
-    "container": "w-full flex items-center justify-center py-14",
+    "container": "w-full flex items-center justify-center py-10 my-10",
     "section": "w-11/12 flex max-md:flex-col items-left justify-center h- [89lvh] gap-10",
 
     "left": "w-1/2 max-md:w-full",
