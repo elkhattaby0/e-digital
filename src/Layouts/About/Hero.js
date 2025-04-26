@@ -14,9 +14,6 @@ const Hero = () => {
             >
                 <h1 className={Style.h1}>About Us</h1>
                 <div className="absolute inset-0 bg-[#14213D] opacity-[0.5] rounded-xl"></div>
-
-                
-                <p></p>
             </div>
         </section>
     );
