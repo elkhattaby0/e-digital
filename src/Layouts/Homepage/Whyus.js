@@ -38,7 +38,7 @@ const Whyus = () => {
                             style={{ backgroundImage: `url(${fact.img})` }}
                         >
                             <div className="absolute inset-0 bg-[#14213D] opacity-[0.7]"></div> 
-                            <div className="relative z-10 flex flex-col items-center justify-center">
+                            <div className="relative z-1 flex flex-col items-center justify-center">
                                 <div className="flex w-full items-center justify-center text-[#E5E5E5]">
                                     <span className="mr-1 font-normal text-2xl">{fact.lf}</span>
                                     <h3 className="font-semibold text-5xl">
