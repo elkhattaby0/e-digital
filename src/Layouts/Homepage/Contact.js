@@ -6,7 +6,7 @@ const Contact = () => {
         <section className={Style.container} >
             <div className={Style.section} >
                 <div className="w-1/2 max-md:w-full">
-                    <h1 className={Style.h1} >Let’s Work Together</h1>
+                    <h2 className={Style.h1} >Let’s Work Together</h2>
                     <p className={Style.p}>Have a question or project ? Send us a message. We reply fast.</p>
                 </div>
                 <div className="w-1/2 max-md:w-full">

@@ -30,7 +30,7 @@ const Testimonials = () => {
     return (
         <section className={Style.container} >
             <div className={Style.section} >
-                <h1 className={Style.h1} >Happy Clients</h1>
+                <h2 className={Style.h1} >Happy Clients</h2>
 
                 <div className="flex max-md:flex-wrap gap-5 justify-center items-center">
                 {

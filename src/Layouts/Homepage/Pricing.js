@@ -78,7 +78,7 @@ const Pricing = () => {
     return (
         <section className={Style.container}>
             <div className={Style.section}>
-                <h1 className={Style.h1}>Our Prices</h1>
+                <h2 className={Style.h1}>Our Prices</h2>
                 <p className={Style.para}>We offer fair prices for quality work.</p>
                 <p className={Style.para}>Choose a plan that fits your needs, or ask us for a custom offer.</p>
 

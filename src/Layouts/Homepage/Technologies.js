@@ -21,7 +21,7 @@ const Technologies  = () => {
     return (
         <section className={Style.container} >
             <div className={Style.section} >
-                <h1 className={Style.h1} >Our Tools</h1>
+                <h2 className={Style.h1} >Our Tools</h2>
                 <p className="font-base text-md text-center text-[#000000] leading-[24px] mb-4 dark:text-[#E5E5E5]">
                     We use the best and latest technologies :
                 </p>

@@ -21,7 +21,7 @@ const Whyus = () => {
         <section className={Style.container}>
             <div className={Style.section}>
                 <div className={Style.left}>
-                    <h1 className={Style.h1}>Why Work With Us?</h1>
+                    <h2 className={Style.h1}>Why Work With Us?</h2>
                     {data.map((item) => (
                         <div key={item} className="flex items-center text-[#14213D] text-xl my-2 dark:text-[#E5E5E5]">
                             <CheckIcon size="1em" className="mr-3" />

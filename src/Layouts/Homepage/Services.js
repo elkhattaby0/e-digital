@@ -43,7 +43,7 @@ const Services = () => {
     return (
         <section className={Style.container} >
             <div className={Style.section} >
-                <h1 className={Style.h1} >What We Do ?</h1>
+                <h2 className={Style.h1} >What We Do ?</h2>
 
                 <div className="flex flex-wrap gap-10 justify-center">
                 {

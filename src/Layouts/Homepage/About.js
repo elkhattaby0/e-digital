@@ -7,7 +7,7 @@ const About = () => {
         <section className={Style.container} >
             <div className={Style.section} >
                 <div className={Style.left}>
-                    <h1 className={Style.h1} >Who We Are ?</h1>
+                    <h2 className={Style.h1} >Who We Are ?</h2>
                     <p className={Style.p} >We are a team of creative developers and designers. We love to build websites and apps that look good and work fast. Our goal is to help your business shine online.</p>
                     <a className={Style.a} href="/about">
                         Read more

@@ -5,3 +5,68 @@ blue  -> #14213D
 yellow-> #FCA311
 gray  -> #E5E5E5
 white -> #FFFFFF
+
+
+home page
+-- hero setion
+--- h1
+--- h2
+--- p 
+--- a
+
+-- about section
+--- h2
+--- p
+--- a
+
+-- services section
+--- h2
+--- h3
+--- p 
+--- a
+
+-- projects sections
+--- h2
+--- p
+---- h3
+---- h6
+---- p
+---- a
+--- a
+
+-- whyus section
+--- h2
+--- h3
+---- h3
+---- p
+
+-- testimonials section 
+--- h2
+--- p
+--- p
+--- p
+
+-- technologies section
+--- h2
+--- p
+--- a
+
+-- pricing section
+--- h2
+--- p
+--- p
+---- h2 
+---- p
+---- h3
+---- p
+---- a
+--- a
+
+-- contat section
+--- h2
+--- p
+
+-- newsletter section
+--- h2
+--- p
+--- a

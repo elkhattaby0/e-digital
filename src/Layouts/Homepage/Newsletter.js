@@ -10,7 +10,7 @@ const Newsletter  = () => {
         <section className={Style.container} >
             <div className={Style.section} >
                 <div className={Style.left}>
-                    <h1 className={Style.h1} >Get Our News</h1>
+                    <h2 className={Style.h1} >Get Our News</h2>
                     <p className={Style.p}>Enter your email to get updates and tips from us.</p>
                     <form>
                         <input type="email" placeholder="Enter your email"
