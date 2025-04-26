@@ -14,17 +14,17 @@ const Contact = () => {
                         <div className="w-full block gap-2 my-2">
                             <p className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Name</p>
                             <input type="text" placeholder="ex : Jhon Doe"
-                            className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-9/12 max-md:w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]" />
+                            className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]" />
                         </div>
                         <div className="w-full block gap-2 my-2">
                             <p className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Email</p>
                             <input type="email" placeholder="ex : jhon@example.com"
-                            className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-9/12 max-md:w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]" />
+                            className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]" />
                         </div>
                         <div className="w-full block gap-2 my-2">
                             <p className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Message</p>
                             <textarea rows="5" placeholder="ex : Hello..."
-                                className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-9/12 max-md:w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]"
+                                className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]"
                             ></textarea>
                         </div>
                         <a className={Style.a}>
