@@ -64,9 +64,12 @@ const Header = () => {
     return (
         <header className={Style.containre}>
             <section className={Style.section}>
-                {/* <a className={Style.logo} href="/">{ identify }</a> */}
                 <a className={Style.logo} href="/">
-                    <img src={Logo} alt="logo" className="w-10 h-10 bg-[#14213D] rounded-br-3xl rounded-md" />
+                    <img 
+                        src={Logo} 
+                        alt={ identify } 
+                        className="w-10 h-10 bg-[#14213D] rounded-br-3xl rounded-md" 
+                    />
                 </a>
 
                 <ul className={Style.ul}>
