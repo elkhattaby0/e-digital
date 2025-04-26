@@ -13,7 +13,15 @@ const About = () => {
                         <ArrowRight size="20px" className="ml-1 -rotate-45 group-hover:-rotate-0 transition-all duration-300 ease-in-out" />  
                     </a>
                 </div>
-                <div className={Style.right}></div>                
+                <div className={Style.right}
+                    style={{
+                        backgroundImage: "url('https://img.freepik.com/free-photo/industrial-designer-digital-art_23-2151585288.jpg?t=st=1745660885~exp=1745664485~hmac=f7f8e19af5efef01bc1d5099a8ad776d2ad9d495cd1f1d35eb42ddf827f3ccfb&w=740')",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                        // height: "100%",
+                    }}
+                ></div>                
             </div>
         </section>
     )
@@ -24,7 +32,7 @@ const Style = {
     "section": "w-11/12 flex max-md:flex-col items-left justify-center h- [89lvh] gap-10",
 
     "left": "w-1/2 max-md:w-full",
-    "right": "w-1/2 max-md:w-full border rounded",
+    "right": "w-1/2 max-md:w-full h-[480px] max-md:h-[280px] rounded-md",
 
     "h1": "text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]",
     "p": "font-base text-md text-[#000000] leading-[24px] mb-4 dark:text-[#E5E5E5]",
