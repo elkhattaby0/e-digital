@@ -29,7 +29,7 @@ home page
 --- h2
 --- p
 ---- h3
----- h6
+---- h4
 ---- p
 ---- a
 --- a
@@ -37,7 +37,7 @@ home page
 -- whyus section
 --- h2
 --- h3
----- h3
+---- h4
 ---- p
 
 -- testimonials section 
@@ -55,9 +55,9 @@ home page
 --- h2
 --- p
 --- p
----- h2 
+---- h3 
 ---- p
----- h3
+---- h4
 ---- p
 ---- a
 --- a

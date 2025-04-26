@@ -86,9 +86,9 @@ const Pricing = () => {
                     {data.map((n) => (
                         <div key={n.id} className="px-2 h-full">
                             <div className={Style.card}>
-                                <h2 className={Style.h3}>{n.type}</h2>
+                                <h3 className={Style.h3}>{n.type}</h3>
                                 <p className="font-base text-sm my-2 text-[#000000] leading-[20px] dark:text-[#E5E5E5]">{n.description}</p>
-                                <h3 className="font-semibold text-3xl text-[#14213D] my-4 dark:text-[#E5E5E5]">{n.price}</h3>
+                                <h4 className="font-semibold text-3xl text-[#14213D] my-4 dark:text-[#E5E5E5]">{n.price}</h4>
                                 {n.benefits.map((benefit, index) => (
                                     <p key={index} className="font-base text-sm flex text-[#14213D] items-center my-1 dark:text-[#E5E5E5]">
                                         <Check size="1em" className="mr-2" />

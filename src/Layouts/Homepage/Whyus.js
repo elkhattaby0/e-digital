@@ -41,7 +41,7 @@ const Whyus = () => {
                             <div className="relative z-1 flex flex-col items-center justify-center">
                                 <div className="flex w-full items-center justify-center text-[#E5E5E5]">
                                     <span className="mr-1 font-normal text-2xl">{fact.lf}</span>
-                                    <h3 className="font-semibold text-5xl">
+                                    <h4 className="font-semibold text-5xl">
                                         <AnimatedNumbers
                                             animateToNumber={fact.nbr}
                                             configs={(_, index) => ({
@@ -50,7 +50,7 @@ const Whyus = () => {
                                                 tension: 140 * (index + 1),
                                             })}
                                         />
-                                    </h3>
+                                    </h4>
                                     <span className="ml-1 font-normal text-2xl">{fact.rt}</span>
                                 </div>
                                 <p className="capitalize text-sm text-center mt-2">

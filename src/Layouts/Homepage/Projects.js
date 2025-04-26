@@ -99,7 +99,7 @@ const Projects = () => {
                                     }}
                                 ></div>
                                 <h3 className={Style.h3}>{n.title}</h3>
-                                <h6 className={Style.h6}>{n.type}</h6>
+                                <h4 className={Style.h6}>{n.type}</h4>
                                 <p className={Style.p}>{n.description}</p>
                                 <a className={Style.a}>
                                     Read more
