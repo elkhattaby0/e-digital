@@ -12,7 +12,7 @@ const Hero = () => {
                 <Paragraph isCenter={true} >
                     We help you grow your business online with smart design and clean code.
                 </Paragraph>
-                <a className={Style.a} >
+                <a href="/contact" className={Style.a} >
                     Get a Free Quote
                     <TrendingUp size="20px" className="ml-1" />
                 </a>
