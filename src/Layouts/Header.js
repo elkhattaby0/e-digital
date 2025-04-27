@@ -49,7 +49,7 @@ const Header = () => {
         }
 
         return (
-            <menu className={StyleResp.menu}>
+            <nav className={StyleResp.menu}>
                 <ul className={StyleResp.ul}>
                     {
                         menu.map(n=> (
@@ -57,7 +57,7 @@ const Header = () => {
                         ))
                     }
                 </ul>
-            </menu>
+            </nav>
         )        
     }
 
@@ -71,17 +71,17 @@ const Header = () => {
                         className="w-10 h-10 bg-[#14213D] rounded-br-3xl rounded-md" 
                     />
                 </a>
-
-                <ul className={Style.ul}>
-                    {
-                        menu.map(n=> (
-                            <a key={n.name} className={Style.link} href={n.link}>{n.name}</a>
-                        ))
-                    }
-                </ul>
-
+                <nav>
+                    <ul className={Style.ul}>
+                        {
+                            menu.map(n=> (
+                                <a key={n.name} className={Style.link} href={n.link}>{n.name}</a>
+                            ))
+                        }
+                    </ul>
+                </nav>
                 <ul className={Style.ul2}>
-                    <button className={Style.mode} onClick={handleToggle}>
+                    <button aria-label="Toggle dark mode" className={Style.mode} onClick={handleToggle}>
                         {
                             !toggle ?
                             <MoonIcon size="20px" color="#14213D" /> :
@@ -90,7 +90,7 @@ const Header = () => {
                         }
                     </button>
                     <a className={Style.btn}>Get a Quote</a>
-                    <button className={Style.menu} onClick={haddleRes}>
+                    <button aria-label="Toggle navigation menu" className={Style.menu} onClick={haddleRes}>
                         {
                             isOpned ? 
                             <X size="20px" /> :
