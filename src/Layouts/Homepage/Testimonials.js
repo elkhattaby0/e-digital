@@ -38,7 +38,7 @@ const Testimonials = () => {
                         <div key={n.id} className={Style.card}>
                             <div className="text-[#14213D] dark:text-[#E5E5E5]">
                                 <Quote size="40px"/>
-                                <p className="font-base text-xl">{n.msg}</p>
+                                <blockquote className="font-base text-xl">{n.msg}</blockquote>
                             </div>
 
                             <div className="flex items-center mt-4">
@@ -55,7 +55,7 @@ const Testimonials = () => {
                             </div>
                             
                             <div className="flex items-center text-[#14213D] dark:text-[#E5E5E5]">
-                                <p className="font-bold mr-1">{n.name}</p> - 
+                                <cite className="font-bold mr-1">{n.name}</cite> - 
                                 <p className="font-base text-sm ml-1">{n.post}</p>
                             </div>
                         </div>

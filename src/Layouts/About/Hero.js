@@ -23,7 +23,7 @@ const Hero = () => {
 const Style = {
     "container": "w-full flex items-center justify-center",
     "section": "w-11/12 p-6 rounded-xl h-[50lvh] max-md:h-[25lvh] border my-6 flex items-center justify-center dark:border-[#14213D] relative overflow-hidden",
-    "h1": "font-bold text-5xl text-[#E5E5E5] z-5" 
+    "h1": "font-bold text-5xl text-[#E5E5E5] z-5 text-shadow-xl" 
 };
 
 export default Hero;

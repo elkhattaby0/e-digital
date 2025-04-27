@@ -14,30 +14,30 @@ const Contact = () => {
                 <div className="w-1/2 max-md:w-full">
                     <form>
                         <div className="w-full block gap-2 my-2">
-                            <p className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Name</p>
-                            <input type="text" placeholder="ex : Jhon Doe"
+                            <label className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Name</label>
+                            <input type="text" placeholder="ex : Jhon Doe" required 
                             className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]" />
                         </div>
                         <div className="w-full block gap-2 my-2">
-                            <p className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Object</p>
-                            <input type="text" placeholder="ex : i want to work with you"
+                            <label className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Object</label>
+                            <input type="text" placeholder="ex : i want to work with you" required
                             className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]" />
                         </div>
                         <div className="w-full block gap-2 my-2">
-                            <p className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Email</p>
-                            <input type="email" placeholder="ex : jhon@example.com"
+                            <label className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Email</label>
+                            <input type="email" placeholder="ex : jhon@example.com" required
                             className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]" />
                         </div>
                         <div className="w-full block gap-2 my-2">
-                            <p className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Message</p>
-                            <textarea rows="5" placeholder="ex : Hello..."
+                            <label className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Message</label>
+                            <textarea rows="5" placeholder="ex : Hello..." required
                                 className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]"
                             ></textarea>
                         </div>
-                        <a className={Style.a}>
+                        <button type="submit" className={Style.a}>
                             Send
                             <ArrowRight size="20px" className="ml-1 -rotate-45 group-hover:-rotate-0 transition-all duration-300 ease-in-out" />  
-                        </a>          
+                        </button>          
                     </form>
                 </div>
             </div>

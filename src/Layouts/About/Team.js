@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HeaderTwo from "../../component/HeaderTwo";
+import HeaderThree from "../../component/HeaderThree";
 
 const data = [
   { name: "Lahoucine", post: "CEO", img: "https://png.pngtree.com/png-clipart/20231020/original/pngtree-avatar-of-a-brunette-man-png-image_13379740.png" },
@@ -47,18 +48,19 @@ const Team = () => {
         <Slider {...settings}>
           {data.map((n) => (
             <div key={n.name} className="flex justify-center items-center gap-5">
-              <div className="border p-4 w-fit text-center rounded-xl cursor-pointer group">
+              <figure className="border p-4 w-fit text-center rounded-xl cursor-pointer group">
                 <div className="rounded-xl overflow-hidden w-[200px] h-[200px] mx-auto">
-                  <div
-                    className="w-full h-full bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-105"
-                    style={{
-                      backgroundImage: `url(${n.img})`
-                    }}
-                  ></div>
+                <img
+                  src={n.img}
+                  alt={n.name} loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                />
                 </div>
-                <h3 className="font-medium text-xl mt-2 text-[#14213D] dark:text-[#E5E5E5]">{n.name}</h3>
-                <p className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5]">{n.post}</p>
-              </div>
+                <figcaption>
+                  <HeaderThree>{n.name}</HeaderThree>
+                  <p className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5]">{n.post}</p>
+                </figcaption> 
+              </figure>
             </div>
           ))}
         </Slider>
