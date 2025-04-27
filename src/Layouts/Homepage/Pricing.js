@@ -128,7 +128,7 @@ const Pricing = () => {
 const Style = {
     container: "w-full flex items-center justify-center py-10 my-10",
     section: "w-11/12 flex flex-col items-center justify-center",
-    card: "flex flex-col justify-between h-full min-h-[420px] cursor-pointer border border-[#14213D] rounded-xl p-6 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group",
+    card: "flex flex-col justify-between h-full min-h-[420px] max-md:min-h-[480px] cursor-pointer border border-[#14213D] rounded-xl p-6 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group",
 };
 
 export default Pricing;
