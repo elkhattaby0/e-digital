@@ -7,8 +7,8 @@ const Footer = () => {
                 <p className={Style.p}>© 2025 Lahoucine El Khattaby. All rights reserved.</p>
 
                 <div className="flex items-center justify-center gap-5">
-                    <a className={Style.a}>Terms & conditions</a>
-                    <a className={Style.a}>Privicy policy</a>
+                    <a href="/terms-conditions" className={Style.a}>Terms & conditions</a>
+                    <a href="/privacy-policy" className={Style.a}>Privicy policy</a>
                 </div>
             </section>
         </footer>

@@ -53,7 +53,7 @@ const Header = () => {
                 <ul className={StyleResp.ul}>
                     {
                         menu.map(n=> (
-                            <a key={n.name} href={n.link} className={StyleResp.link}>{n.name} <ArrowRight size="1em" className="-rotate-45 group-hover:rotate-0 " /></a>
+                            <li><a key={n.name} href={n.link} className={StyleResp.link}>{n.name} <ArrowRight size="1em" className="-rotate-45 group-hover:rotate-0 " /></a></li>
                         ))
                     }
                 </ul>
@@ -75,7 +75,7 @@ const Header = () => {
                     <ul className={Style.ul}>
                         {
                             menu.map(n=> (
-                                <a key={n.name} className={Style.link} href={n.link}>{n.name}</a>
+                                <li><a key={n.name} className={Style.link} href={n.link}>{n.name}</a></li>
                             ))
                         }
                     </ul>
@@ -89,7 +89,7 @@ const Header = () => {
 
                         }
                     </button>
-                    <a className={Style.btn}>Get a Quote</a>
+                    <a href="/contact" className={Style.btn} >Get a Quote</a>
                     <button aria-label="Toggle navigation menu" className={Style.menu} onClick={haddleRes}>
                         {
                             isOpned ? 
