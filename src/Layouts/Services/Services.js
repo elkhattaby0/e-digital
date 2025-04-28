@@ -63,7 +63,7 @@ const Services = () => (
             </div>
             <div className="p-4">
               <HeaderThree className="mb-2">{item.title}</HeaderThree>
-              <div className="space-y-1">
+              <div className="mt-2">
                 {item.description.map((line, idx) => (
                   <Paragraph key={idx} className="leading-relaxed">
                     {line}

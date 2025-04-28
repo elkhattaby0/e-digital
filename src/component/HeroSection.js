@@ -1,22 +1,20 @@
 import React from 'react';
 
-const Hero = () => (
+const HeroSection = ({ img, text }) => (
   <section className={Style.container}>
     <div
       className={Style.section}
       style={{
-        backgroundImage: `url('https://img.freepik.com/free-vector/security-robots-cartoon-characters-pc-chatbot_107791-8463.jpg?t=st=1745791699~exp=1745795299~hmac=2345a6659f8c4089d164c1df6a3e63a5955554caaa1d31b4ba625dab895d3956&w=1380')`,
+        backgroundImage: `url('${ img }')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
       }}
     >
-      {/* Overlay */}
       <div className={Style.overlay}></div>
 
-      {/* Content */}
       <div className={Style.content}>
-        <h1 className={Style.h1}>Our Services</h1>
+        <h1 className={Style.h1}>{ text }</h1>
       </div>
     </div>
   </section>
@@ -30,4 +28,4 @@ const Style = {
   h1: "font-bold text-5xl text-[#E5E5E5] text-center",
 };
 
-export default Hero;
+export default HeroSection;

@@ -88,7 +88,7 @@ const Projects = () => {
 
                 <Slider {...settings} className="w-full">
                     {data.map((n) => (
-                        <div key={n.id} className="px-2 h-full">
+                        <div key={n.id} className="px-2 h-full group">
                             <div className={Style.card}>
                                 <div
                                     className="h-[140px] rounded-xl mb-4"
