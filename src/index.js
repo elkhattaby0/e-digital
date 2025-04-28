@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Layouts/Header';
 import Homelayout from './Layouts/Homepage/Homelayout';
 import Aboutlayout from './Layouts/About/Aboutlayout';
+import Serviceslayout from './Layouts/Services/Serviceslayout';
 import Footer from './Layouts/Footer';
 import Newsletter from './Layouts/Homepage/Newsletter';
 
@@ -20,6 +21,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Homelayout />} />
           <Route path="/about" element={<Aboutlayout />} />
+          <Route path="/services" element={<Serviceslayout />} />
         </Routes>
       </BrowserRouter>
       <Newsletter />
