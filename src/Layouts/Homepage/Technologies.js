@@ -37,7 +37,7 @@ const Technologies  = () => {
                 }
                 </div>
                 <br />
-                <ButtonArrow>
+                <ButtonArrow link="tools">
                     View more
                 </ButtonArrow>         
             </div>
