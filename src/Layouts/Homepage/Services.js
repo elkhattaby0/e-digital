@@ -58,7 +58,7 @@ const Services = () => {
                     ))
                 }
                 </div>
-                <ButtonArrow>
+                <ButtonArrow link="services">
                     View more
                 </ButtonArrow>     
             </div>
