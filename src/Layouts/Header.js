@@ -41,6 +41,19 @@ const Header = () => {
         setIsOpened(!isOpned);
     };
 
+    const Announce = () => {
+        return (
+          <div
+            role="alert"
+            className="bg-[#FCA311] p-1 px-2 w-full flex items-center justify-center"
+          >
+            <p className="text-center leading-relaxed max-md:leading-[18px] text-[#14213D] text-sm">
+              This website is still under development. Some features may not work as expected.
+            </p>
+          </div>
+        );
+    };
+
     const ResponsiveMenu = () => {
         const StyleResp = {
             "menu": `${isOpned ? "block" : "hidden"} bg-[#FFFFFF] dark:bg-[#14213D] w-full h-[100vh] fixed top-[73px] left-0 z-10 flex items-center justify-center transition-all duration-300 ease-in-out `,
@@ -63,6 +76,7 @@ const Header = () => {
 
     return (
         <header className={Style.containre}>
+            <Announce />
             <section className={Style.section}>
                 <a className={Style.logo} href="/">
                     <img 
@@ -106,7 +120,7 @@ const Header = () => {
 }
 
 const Style = {
-    "containre": "w-full flex items-center justify-center border-b-[0.1px] border-[#E5E5E5] sticky top-0 bg-[#FFFFFF] dark:bg-[#14213D] transition-all duration-300 ease-in-out z-10",
+    "containre": "w-full flex flex-col items-center justify-center border-b-[0.1px] border-[#E5E5E5] sticky top-0 bg-[#FFFFFF] dark:bg-[#14213D] transition-all duration-300 ease-in-out z-10",
     "section": "w-11/12 py-5 flex items-center justify-between",
     
     "logo": "outline-none cursor-pointer font-bold text-xl text-[#14213D] dark:text-[#E5E5E5]",
