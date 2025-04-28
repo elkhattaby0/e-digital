@@ -45,9 +45,11 @@ const Header = () => {
         return (
           <div
             role="alert"
-            className="bg-[#FCA311] p-1 px-2 w-full flex items-center justify-center"
+            className="bg-[#FCA311] overflow-hidden w-full py-1"   // hide overflow
           >
-            <p className="text-center leading-relaxed max-md:leading-[18px] text-[#14213D] text-sm">
+            <p
+              className="inline-block whitespace-nowrap animate-marquee text-[#14213D] text-sm leading-relaxed px-2"
+            >
               This website is still under development. Some features may not work as expected.
             </p>
           </div>

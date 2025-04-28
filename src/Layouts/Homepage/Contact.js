@@ -14,22 +14,22 @@ const Contact = () => {
                 <div className="w-1/2 max-md:w-full">
                     <form>
                         <div className="w-full block gap-2 my-2">
-                            <label className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Name</label>
+                            <label htmlFor="name" className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Name</label>
                             <input type="text" placeholder="ex : Jhon Doe" required 
                             className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]" />
                         </div>
                         <div className="w-full block gap-2 my-2">
-                            <label className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Object</label>
+                            <label htmlFor="object" className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Object</label>
                             <input type="text" placeholder="ex : i want to work with you" required
                             className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]" />
                         </div>
                         <div className="w-full block gap-2 my-2">
-                            <label className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Email</label>
+                            <label htmlFor="email" className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Email</label>
                             <input type="email" placeholder="ex : jhon@example.com" required
                             className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]" />
                         </div>
                         <div className="w-full block gap-2 my-2">
-                            <label className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Message</label>
+                            <label htmlFor="message" className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Message</label>
                             <textarea rows="5" placeholder="ex : Hello..." required
                                 className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]"
                             ></textarea>
