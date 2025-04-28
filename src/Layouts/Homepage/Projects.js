@@ -117,7 +117,7 @@ const Projects = () => {
                     ))}
                 </Slider>
                 <br />
-                <ButtonArrow>
+                <ButtonArrow link="projects">
                     View more
                 </ButtonArrow>
             </div>
