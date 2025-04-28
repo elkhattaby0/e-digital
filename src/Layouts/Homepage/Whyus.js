@@ -3,6 +3,12 @@ import AnimatedNumbers from "react-animated-numbers";
 import HeaderTwo from "../../component/HeaderTwo";
 import ListCheck from "../../component/ListCheck";
 
+import img1 from "../../assets/why_1.jpg"
+import img2 from "../../assets/why_2.avif"
+import img3 from "../../assets/why_3.avif"
+import img4 from "../../assets/why_4.jpg"
+
+
 const data = [
     "We listen to your ideas",
     "We deliver on time",
@@ -11,10 +17,10 @@ const data = [
 ];
 
 const facts = [
-    { name: "projects delivered", nbr: 100, lf: "+", rt: "", img: "https://img.freepik.com/free-psd/interface-with-hands-sales-background_23-2151706751.jpg?t=st=1745674666~exp=1745678266~hmac=b48ba8159bef55a97a7aaaf480888dbb9b915ac335422f31cb52e6d552f0154c&w=900" },
-    { name: "happy clients", nbr: 50, lf: "+", rt: "", img: "https://img.freepik.com/free-psd/3d-rendering-graphic-design-element_23-2149412220.jpg?t=st=1745674835~exp=1745678435~hmac=9c833f35d4165426f2069100239bd064125b675ae0bfe212e75d8d71568adf8a&w=740" },
-    { name: "satisfaction rate", nbr: 95, lf: "", rt: "%", img: "https://img.freepik.com/free-psd/3d-rendering-positive-vibe-icon_23-2151392791.jpg?t=st=1745674949~exp=1745678549~hmac=c926efa417c35390db7ab5307f0e9de2217979a55a715e3a2f2b40049ff3a67c&w=740" },
-    { name: "years of experience", nbr: 4, lf: "", rt: "+", img: "https://img.freepik.com/free-psd/3d-transparent-hourglass_23-2148938928.jpg?t=st=1745675023~exp=1745678623~hmac=98bd0e95b7863d2afb6693b467eb37c3f3f573785e8e3828ba5a88bc4067ba82&w=740" },
+    { name: "projects delivered", nbr: 100, lf: "+", rt: "", img: img1 },
+    { name: "happy clients", nbr: 50, lf: "+", rt: "", img: img2 },
+    { name: "satisfaction rate", nbr: 95, lf: "", rt: "%", img: img3 },
+    { name: "years of experience", nbr: 4, lf: "", rt: "+", img: img4 },
 ];
 
 const Whyus = () => {

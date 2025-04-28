@@ -5,17 +5,19 @@ import "slick-carousel/slick/slick-theme.css";
 import HeaderTwo from "../../component/HeaderTwo";
 import HeaderThree from "../../component/HeaderThree";
 
+import avatar from "../../assets/avatar.png";
+
 const data = [
-  { name: "Lahoucine", post: "CEO", img: "https://png.pngtree.com/png-clipart/20231020/original/pngtree-avatar-of-a-brunette-man-png-image_13379740.png" },
-  { name: "Sara", post: "Developer", img: "https://png.pngtree.com/png-clipart/20241117/original/pngtree-business-women-avatar-png-image_17163554.png" },
-  { name: "Youssef", post: "Project Manager", img: "https://png.pngtree.com/png-clipart/20250110/original/pngtree-the-vicious-gangster-q-version-avatar-png-image_5471084.png" },
-  { name: "Fatima", post: "UI/UX Designer", img: "https://png.pngtree.com/png-clipart/20240123/original/pngtree-woman-flat-style-avatar-png-image_6961879.png" },
-  { name: "Omar", post: "Backend Developer", img: "https://png.pngtree.com/png-clipart/20240117/original/pngtree-avatar-of-a-software-developer-man-png-image_6943391.png" },
-  { name: "Nora", post: "Marketing Specialist", img: "https://png.pngtree.com/png-clipart/20240119/original/pngtree-happy-business-woman-avatar-png-image_6951103.png" },
-  { name: "Rachid", post: "Frontend Developer", img: "https://png.pngtree.com/png-clipart/20240116/original/pngtree-man-flat-avatar-profile-png-image_6939994.png" },
-  { name: "Imane", post: "Content Creator", img: "https://png.pngtree.com/png-clipart/20231029/original/pngtree-beautiful-muslim-woman-avatar-png-image_13392345.png" },
-  { name: "Anas", post: "DevOps Engineer", img: "https://png.pngtree.com/png-clipart/20240116/original/pngtree-developer-flat-design-avatar-png-image_6939414.png" },
-  { name: "Salma", post: "Support Lead", img: "https://png.pngtree.com/png-clipart/20230929/original/pngtree-businesswoman-avatar-flat-style-png-image_13289380.png" }
+  { name: "Lahoucine", post: "CEO", img: avatar },
+  { name: "Sara", post: "Developer", img: avatar },
+  { name: "Youssef", post: "Project Manager", img: avatar },
+  { name: "Fatima", post: "UI/UX Designer", img: avatar },
+  { name: "Omar", post: "Backend Developer", img: avatar },
+  { name: "Nora", post: "Marketing Specialist", img: avatar },
+  { name: "Rachid", post: "Frontend Developer", img: avatar },
+  { name: "Imane", post: "Content Creator", img: avatar },
+  { name: "Anas", post: "DevOps Engineer", img: avatar },
+  { name: "Salma", post: "Support Lead", img: avatar }
 ];
 
 const Team = () => {
@@ -52,6 +54,10 @@ const Team = () => {
                 <div className="rounded-xl overflow-hidden w-[200px] h-[200px] mx-auto">
                 <img
                   src={n.img}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = avatar;
+                  }}
                   alt={n.name} loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                 />

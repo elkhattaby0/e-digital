@@ -7,13 +7,19 @@ import ButtonArrow from "../../component/ButtonArrow";
 import Paragraph from "../../component/Paragraph";
 import HeaderThree from "../../component/HeaderThree";
 
+import img1 from "../../assets/project_1.avif";
+import img2 from "../../assets/project_2.avif";
+import img3 from "../../assets/project_3.avif";
+import img4 from "../../assets/project_4.jpg";
+import img5 from "../../assets/project_5.jpg";
+
 const data = [
     {
         "id": 1,
         "title": "SmartBiz Website",
         "type": "Business Website",
         "description": "We created a modern website for a small business. It works on phones and computers, and it helps the company get more clients.",
-        "img": "https://plus.unsplash.com/premium_vector-1682309081920-d2725d3e620c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "img": img1,
         "link": "/"
     },
     {
@@ -21,7 +27,7 @@ const data = [
         "title": "FoodieApp – Mobile App",
         "type": "Food Delivery App (Android & iOS)",
         "description": "This app lets people order food online. It has a simple design and is easy to use.",
-        "img": "https://images.unsplash.com/photo-1657639515782-cf8ff2d7f9ce?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "img": img2,
         "link": "/"
     },
     {
@@ -29,7 +35,7 @@ const data = [
         "title": "ShopEasy – Online Store",
         "type": "E-commerce Website",
         "description": "We built an online store for clothes and shoes. It has a shopping cart, payment system, and admin dashboard.",
-        "img": "https://images.unsplash.com/photo-1642052503083-9b9f61e75710?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "img": img3,
         "link": "/"
     },
     {
@@ -37,7 +43,7 @@ const data = [
         "title": "Portfolio for Sarah Design",
         "type": "Personal Portfolio",
         "description": "We designed a clean and elegant website for a graphic designer to show her work and get clients.",
-        "img": "",
+        "img": img4,
         "link": "/"
     },
     {
@@ -45,7 +51,7 @@ const data = [
         "title": "QuickFix – Repair Services",
         "type": "Services Booking Website",
         "description": "This website lets users book repair services (electricity, plumbing, etc.). It has a booking form and service list.",
-        "img": "",
+        "img": img5,
         "link": "/"
     }
 ];
