@@ -8,7 +8,7 @@ const menu = [
     { name: "Services", link: "/services" },
     { name: "Projects", link: "/projects" },
     { name: "Pricing", link: "/pricing" },
-    { name: "Blog", link: "/blog" },
+    // { name: "Blog", link: "/blog" },
     { name: "Contact", link: "/contact" },
 ]
 
