@@ -54,6 +54,9 @@ const data = [
 const Services = () => (
   <section className={Style.container}>
     <div className={Style.section}>
+      <Paragraph isCenter={ true }>
+        We help businesses grow with smart websites, apps, and marketing.
+      </Paragraph>
       <div className="flex flex-wrap justify-center gap-8">
         {data.map(item => (
           <div
