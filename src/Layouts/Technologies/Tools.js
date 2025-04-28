@@ -66,7 +66,7 @@ const Tools = () => (
       Here are the tools and platforms we work with :
       </Paragraph>
 
-      <div className="flex flex-wrap justify-evenly gap-8">
+      <div className="flex flex-wrap justify-evenly gap-4">
         {data.map(item => (
           <div
             key={item.title}
