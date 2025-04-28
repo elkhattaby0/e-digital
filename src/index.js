@@ -12,6 +12,7 @@ import Footer from './Layouts/Footer';
 import Newsletter from './Layouts/Homepage/Newsletter';
 import Projectslayout from './Layouts/Projects/Projectslayout';
 import Technologieslayout from './Layouts/Technologies/Technologieslayout';
+import Pricinglayout from './Layouts/Pricing/Pricinglayout';
 
 export const identify = "E-Digital";
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/services" element={<Serviceslayout />} />
           <Route path="/projects" element={<Projectslayout />} />
           <Route path="/tools" element={<Technologieslayout />} />
+          <Route path="/pricing" element={<Pricinglayout />} />
         </Routes>
       </BrowserRouter>
       <Newsletter />
