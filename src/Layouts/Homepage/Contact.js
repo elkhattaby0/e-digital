@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ArrowRight, LucideMail, LucideMapPin, LucidePhone } from "lucide-react";
+import { BsWhatsapp } from "react-icons/bs";
 import HeaderTwo from "../../component/HeaderTwo";
 import Paragraph from "../../component/Paragraph";
 import HeaderThree from "../../component/HeaderThree";
@@ -19,7 +20,8 @@ const Contact = () => {
 
     const contactinfo = [
         { "name": "Phone", "value": "+212 650 999 953", "href": "tel:+212650999953", "icon": <LucidePhone size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> },
-        { "name": "Email", "value": "contact@edigital.com", "href": "mailto:contact@edigital.com", "icon": <LucideMail size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> },
+        { "name": "Whatsapp", "value": "+212 650 999 953", "href": "https://wa.me/212650999953", "icon": <BsWhatsapp size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> },
+        { "name": "Email", "value": "eelkhattaby@gmail.com", "href": "mailto:contact@edigital.com", "icon": <LucideMail size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> },
         { "name": "Address", "value": "86000 Agadir, Morocco", "href": "Agadir, Morocco", "icon": <LucideMapPin size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> }
     ];
 
