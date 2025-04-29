@@ -105,7 +105,7 @@ const Header = () => {
 
                         }
                     </button>
-                    <a href="/contact" className={Style.btn} >Get a Quote</a>
+                    <a href="/contact" className={Style.btn} >Let's Talk</a>
                     <button aria-label="Toggle navigation menu" className={Style.menu} onClick={haddleRes}>
                         {
                             isOpned ? 
