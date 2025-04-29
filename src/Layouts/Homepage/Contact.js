@@ -2,8 +2,33 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 import HeaderTwo from "../../component/HeaderTwo";
 import Paragraph from "../../component/Paragraph";
+import emailjs from 'emailjs-com';
+
+emailjs.init('4UGpHdCAb_fLz0-ub');  // ← your Public Key
+
 
 const Contact = () => {
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs
+          .sendForm(
+            'service_862cvdc',     // ← your Service ID
+            'template_67a3k3o',    // ← your Template ID
+            e.target              // the form element
+            // no need to pass the key here since we called init()
+          )
+          .then(
+            () => {
+              alert('✅ Message sent!');
+              e.target.reset();
+            },
+            (err) => {
+              alert('❌ Failed to send: ' + err.text);
+            }
+          );
+      };
+
     return (
         <section className={Style.container} >
             <div className={Style.section} >
@@ -12,25 +37,33 @@ const Contact = () => {
                     <Paragraph>Have a question or project ? Send us a message. We reply fast.</Paragraph>
                 </div>
                 <div className="w-1/2 max-md:w-full">
-                    <form>
+                    <form onSubmit={sendEmail}>
                         <div className="w-full block gap-2 my-2">
                             <label htmlFor="name" className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Name</label>
                             <input type="text" placeholder="ex : Jhon Doe" required 
+                            id="name"
+                            name="name" 
                             className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]" />
                         </div>
                         <div className="w-full block gap-2 my-2">
                             <label htmlFor="object" className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Object</label>
                             <input type="text" placeholder="ex : i want to work with you" required
+                            id="subject"
+                            name="subject"
                             className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]" />
                         </div>
                         <div className="w-full block gap-2 my-2">
                             <label htmlFor="email" className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Email</label>
                             <input type="email" placeholder="ex : jhon@example.com" required
+                            id="email"
+                            name="email"
                             className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]" />
                         </div>
                         <div className="w-full block gap-2 my-2">
                             <label htmlFor="message" className="font-base text-sm text-[#14213D] dark:text-[#E5E5E5] mb-1">Message</label>
                             <textarea rows="5" placeholder="ex : Hello..." required
+                                id="message"
+                                name="message"
                                 className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-full dark:bg-[#14213D] dark:border-[#E5E5E5] dark:text-[#E5E5E5]"
                             ></textarea>
                         </div>

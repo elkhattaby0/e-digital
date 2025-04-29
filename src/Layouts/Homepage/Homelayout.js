@@ -9,11 +9,19 @@ import Testimonials from './Testimonials';
 import Technologies from './Technologies';
 import Pricing from './Pricing';
 import Contact from './Contact';
-
+import { Helmet } from "react-helmet";
+import { titleIdentify } from "../../index"
 
 const Homelayout = () => {
     return (
         <main>
+            <Helmet>
+                <title>{ titleIdentify } - Home</title>
+                <meta 
+                    name="description" 
+                    content="We build modern websites, mobile apps, and custom digital solutions to help your business grow online. High quality and creative results guaranteed." 
+                />
+            </Helmet>
             <Hero />
             <About />
             <Services />
@@ -22,7 +30,6 @@ const Homelayout = () => {
             <Testimonials />
             <Technologies />
             <Pricing />
-
             <Contact />
         </main>
     )

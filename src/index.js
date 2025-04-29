@@ -13,8 +13,10 @@ import Newsletter from './Layouts/Homepage/Newsletter';
 import Projectslayout from './Layouts/Projects/Projectslayout';
 import Technologieslayout from './Layouts/Technologies/Technologieslayout';
 import Pricinglayout from './Layouts/Pricing/Pricinglayout';
+import Contactlayout from './Layouts/Contact/Contactlayout';
 
 export const identify = "E-Digital";
+export const titleIdentify = "edigital";
 
 const App = () => {
   return (
@@ -28,6 +30,7 @@ const App = () => {
           <Route path="/projects" element={<Projectslayout />} />
           <Route path="/tools" element={<Technologieslayout />} />
           <Route path="/pricing" element={<Pricinglayout />} />
+          <Route path="/contact" element={<Contactlayout />} />
         </Routes>
       </BrowserRouter>
       <Newsletter />
