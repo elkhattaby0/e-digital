@@ -16,7 +16,7 @@ const Homelayout = () => {
     return (
         <main>
             <Helmet>
-                <title>{ titleIdentify } - Home</title>
+                <title>{ titleIdentify }</title>
                 <meta 
                     name="description" 
                     content="We build modern websites, mobile apps, and custom digital solutions to help your business grow online. High quality and creative results guaranteed." 

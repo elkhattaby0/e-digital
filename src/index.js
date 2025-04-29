@@ -14,9 +14,10 @@ import Projectslayout from './Layouts/Projects/Projectslayout';
 import Technologieslayout from './Layouts/Technologies/Technologieslayout';
 import Pricinglayout from './Layouts/Pricing/Pricinglayout';
 import Contactlayout from './Layouts/Contact/Contactlayout';
-
+import Errorlayout from './Layouts/Errorlayout';
 export const identify = "E-Digital";
 export const titleIdentify = "edigital";
+
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/tools" element={<Technologieslayout />} />
           <Route path="/pricing" element={<Pricinglayout />} />
           <Route path="/contact" element={<Contactlayout />} />
+          <Route path="*" element={<Errorlayout />} />
         </Routes>
       </BrowserRouter>
       <Newsletter />
