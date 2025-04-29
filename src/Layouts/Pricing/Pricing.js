@@ -20,7 +20,7 @@ const data = [
             "Delivery : 3 days"
         ],
         price: "$100",
-        link: "/"
+        link: "contact"
     },
     {
         id: 2,
@@ -33,7 +33,7 @@ const data = [
             "Delivery : 5 days"
         ],
         price: "$300",
-        link: "/"
+        link: "contact"
     },
     {
         id: 3,
@@ -46,7 +46,7 @@ const data = [
             "Delivery : 7–10 days"
         ],
         price: "Custom",
-        link: "/contact"
+        link: "contact"
     }
 ];
 
