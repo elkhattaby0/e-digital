@@ -14,7 +14,7 @@ const About = () => {
                         We are a team of creative developers and designers. We love to build websites and apps that look good and work fast. Our goal is to help your business shine online.
                     </Paragraph>
                     <ButtonArrow link="about">
-                        Read more
+                        Learn more about us
                     </ButtonArrow>
                 </div>
                 <div className={Style.right}
