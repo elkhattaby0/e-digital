@@ -1,48 +1,44 @@
 import React from "react";
 import HeaderTwo from "../../component/HeaderTwo";
 import ButtonArrow from "../../component/ButtonArrow";
-import Paragraph from "../../component/Paragraph";
 import HeaderThree from "../../component/HeaderThree";
+import { Globe2, Palette, SearchCheckIcon, SmartphoneIcon, Wrench } from "lucide-react";
 
-const data = [
-    {
-        "id": 1,
-        "img": "",
-        "title": "Website Development",
-        "text": "Fast, mobile-friendly websites",
-        "link": "/"
-    },
-    {
-        "id": 2,
-        "img": "",
-        "title": "Mobile Apps",
-        "text": "Android and iOS apps",
-        "link": "/"
-    },
-    {
-        "id": 3,
-        "img": "",
-        "title": "UI/UX Design",
-        "text": "Clean and modern designs",
-        "link": "/"
-    },
-    {
-        "id": 4,
-        "img": "",
-        "title": "SEO & Marketing",
-        "text": "Help your website rank on Google",
-        "link": "/"
-    },
-    {
-        "id": 5,
-        "img": "",
-        "title": "WordPress Solutions",
-        "text": "Easy to use and powerful websites",
-        "link": "/"
-    }
-]
+
 
 const Services = () => {
+    const data = [
+        {
+            "id": 1,
+            "img": <Globe2 className={Style.img} />,
+            "title": "Website Development",
+            "text": "Modern, responsive, dynamic websites"
+        },
+        {
+            "id": 2,
+            "img": <SmartphoneIcon className={Style.img} />,
+            "title": "Mobile App Development",
+            "text": "Cross-platform mobile applications"
+        },
+        {
+            "id": 3,
+            "img": <Palette className={Style.img} />,
+            "title": "Graphic & Web Design",
+            "text": "Creative branding and UI design"
+        },
+        {
+            "id": 4,
+            "img": <SearchCheckIcon className={Style.img} />,
+            "title": "SEO & Referencing",
+            "text": "Optimized content and performance"
+        },
+        {
+            "id": 5,
+            "img": <Wrench className={Style.img} />,
+            "title": "Maintenance & Support",
+            "text": "Updates, security, and backups"
+        }
+    ]
     return (
         <section className={Style.container} >
             <div className={Style.section} >
@@ -52,8 +48,9 @@ const Services = () => {
                 {
                     data.map(n=> (
                         <div key={n.id} className={Style.card}>
+                            {n.img}
                             <HeaderThree>{n.title}</HeaderThree>
-                            <Paragraph>{n.text}</Paragraph>
+                            <p className={Style.para}>{n.text}</p>
                         </div>
                     ))
                 }
@@ -70,7 +67,9 @@ const Style = {
     "container": "w-full flex items-center justify-center py-10 my-10",
     "section": "w-11/12 flex flex-col items-center justify-center h- [89lvh] gap-10",
 
-    "card": "cursor-pointer border border-[#14213D] size-100 rounded-xl p-6 hover:shadow-md dark:border-[#E5E5E5] transform transition-transform duration-300 hover:scale-110 group",
+    "card": "cursor-pointer border border-[#14213D] size-100 rounded-xl p-6 hover:shadow-md dark:border-[#E5E5E5] transform transition-transform duration-300 hover:scale-75 group",
+    "img": "mb-2 size-[45px] text-[#14213D] dark:text-[#E5E5E5]",
+    "para": "font-base text-[#000000] leading-relaxed dark:text-[#E5E5E5]"
 }
 
 export default Services;
