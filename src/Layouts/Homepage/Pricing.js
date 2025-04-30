@@ -46,7 +46,7 @@ const data = [
             "Delivery : 7–10 days"
         ],
         price: "Custom",
-        link: "contact"
+        link: "/contact"
     }
 ];
 
@@ -56,10 +56,9 @@ const Pricing = () => {
         arrows: false,
         infinite: true,
         speed: 500,
+        centerMode: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        centerMode: true,
-        variableWidth: false,
         responsive: [
             {
                 breakpoint: 1024,
@@ -69,7 +68,7 @@ const Pricing = () => {
                 }
             },
             {
-                breakpoint: 640,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     centerMode: true
@@ -93,7 +92,7 @@ const Pricing = () => {
 
                 <Slider {...settings} className="w-full mt-6">
                     {data.map((n) => (
-                        <article key={n.id} className="px-2">
+                        <div key={n.id} className="px-3 flex justify-center">
                             <div className={Style.card}>
                                 <HeaderThree>{n.type}</HeaderThree>
 
@@ -106,9 +105,9 @@ const Pricing = () => {
                                 </strong>
 
                                 <ul className="list-none my-4 max-md:my-2">
-                                    {n.benefits.map((n) => (
-                                        <ListCheck key={n}>
-                                            { n }
+                                    {n.benefits.map((item) => (
+                                        <ListCheck key={item}>
+                                            {item}
                                         </ListCheck>
                                     ))}
                                 </ul>
@@ -117,7 +116,7 @@ const Pricing = () => {
                                     Get started
                                 </ButtonArrow>
                             </div>
-                        </article>
+                        </div>
                     ))}
                 </Slider>
             </div>
@@ -128,7 +127,7 @@ const Pricing = () => {
 const Style = {
     container: "w-full flex items-center justify-center py-10 my-10",
     section: "w-11/12 flex flex-col items-center justify-center",
-    card: "flex flex-col justify-between  h-full min-h-[420px] max-md:min-h-[530px] cursor-pointer border border-[#14213D] rounded-xl p-6 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group",
+    card: "w-[320px] flex flex-col justify-between h-full min-h-[420px] cursor-pointer border border-[#14213D] rounded-xl p-6 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group",
 };
 
 export default Pricing;
