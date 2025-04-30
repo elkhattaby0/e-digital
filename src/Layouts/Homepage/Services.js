@@ -67,7 +67,7 @@ const Style = {
     "container": "w-full flex items-center justify-center py-10 my-10",
     "section": "w-11/12 flex flex-col items-center justify-center h- [89lvh] gap-10",
 
-    "card": "cursor-pointer border border-[#14213D] size-100 rounded-xl p-6 hover:shadow-md dark:border-[#E5E5E5] transform transition-transform duration-300 hover:scale-75 group",
+    "card": "cursor-pointer border border-[#14213D] size-100 rounded-xl p-6 hover:shadow-md dark:border-[#E5E5E5] transform transition-transform duration-300 hover:scale-100 group",
     "img": "mb-2 size-[45px] text-[#14213D] dark:text-[#E5E5E5]",
     "para": "font-base text-[#000000] leading-relaxed dark:text-[#E5E5E5]"
 }
