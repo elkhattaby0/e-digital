@@ -96,7 +96,7 @@ const Projects = () => {
                     {data.map((n) => (
                         <div key={n.id} className="px-2 h-full group">
                             <div className={Style.card}>
-                                <div
+                                {/* <div
                                     className="h-[140px] rounded-xl mb-4"
                                     style={{
                                         backgroundImage: `url(${n.img})`,
@@ -105,7 +105,8 @@ const Projects = () => {
                                         backgroundRepeat: "no-repeat",
                                         backgroundColor: "#E5E5E5",
                                     }}
-                                ></div>
+                                ></div> */}
+                                <img src={n.img} alt={`edigital - ${n.title}`} className="h-[140px] rounded-xl mb-4 object-cover bg-center" />
                                 <HeaderThree>{n.title}</HeaderThree>
                                 <h4 className={Style.h6}>{n.type}</h4>
                                 <p className={Style.p}>{n.description}</p>

@@ -78,7 +78,7 @@ const Header = () => {
 
     return (
         <header className={Style.containre}>
-            <Announce />
+            {/* <Announce /> */}
             <section className={Style.section}>
                 <a className={Style.logo} href="/">
                     <img 
@@ -122,7 +122,7 @@ const Header = () => {
 }
 
 const Style = {
-    "containre": "w-full flex flex-col items-center justify-center border-b-[0.1px] border-[#E5E5E5] sticky top-0 bg-[#FFFFFF] dark:bg-[#14213D] transition-all duration-300 ease-in-out z-[99]",
+    "containre": "w-full flex flex-col items-center justify-center border-b-[0.1px] border-[#E5E5E5] sticky top-0 bg-[#FFFFFF] dark:bg-[#14213D] transition-all duration-300 ease-in-out z-[99]  bo rder-red-500 h-[80px]",
     "section": "w-11/12 py-5 flex items-center justify-between",
     
     "logo": "outline-none cursor-pointer font-bold text-xl text-[#14213D] dark:text-[#E5E5E5]",

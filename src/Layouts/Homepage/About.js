@@ -18,14 +18,15 @@ const About = () => {
                         Learn more about us
                     </ButtonArrow>
                 </div>
-                <div className={Style.right}
+                <img src={image} alt="edigital" className={Style.right} />  
+                {/* <div className={Style.right}
                     style={{
                         backgroundImage: `url(${image})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         backgroundRepeat: "no-repeat",
                     }}
-                ></div>                
+                ></div>                 */}
             </div>
         </section>
     )
@@ -36,7 +37,7 @@ const Style = {
     "section": "w-11/12 flex max-md:flex-col items-left justify-center h- [89lvh] gap-10",
 
     "left": "w-1/2 max-md:w-full",
-    "right": "w-1/2 max-md:w-full h-[480px] max-md:h-[280px] rounded-md",
+    "right": "w-1/2 max-md:w-full h-[480px] max-md:h-[280px] rounded-md object-cover bg-center",
 }
 
 export default About;

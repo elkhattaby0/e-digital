@@ -67,7 +67,7 @@ const Services = () => (
             <div className="h-48 overflow-hidden">
               <img
                 src={item.img}
-                alt={item.title}
+                alt={`edigital - ${item.title}`}
                 className="w-full h-full object-cover transition-transform transform hover:scale-105 group-hover:scale-105"
               />
             </div>
