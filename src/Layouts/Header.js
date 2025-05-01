@@ -2,14 +2,17 @@ import React from "react";
 import { ArrowRight, LucideMenu, MoonIcon, SunIcon, X } from "lucide-react";
 import { identify } from "../index";
 import Logo from "../logo.svg";
+
 const menu = [
     { name: "Home", link: "/" },
-    { name: "About", link: "/about" },
+    { name: "How We Work", link: "/approach" },
     { name: "Services", link: "/services" },
-    { name: "Projects", link: "/projects" },
-    { name: "Pricing", link: "/pricing" },
+    { name: "Portfolio", link: "/projects" },
+    // { name: "Pricing", link: "/pricing" },
     // { name: "Blog", link: "/blog" },
-    { name: "Contact", link: "/contact" },
+    { name: "Contacts", link: "/contact" },
+    { name: "About Us", link: "/about" },
+
 ]
 
 const Header = () => {
@@ -128,7 +131,7 @@ const Style = {
     "logo": "outline-none cursor-pointer font-bold text-xl text-[#14213D] dark:text-[#E5E5E5]",
 
     "ul": "flex items-center justify-center",
-    "link": "px-3 py-1 rounded-full text-md outline-none cursor-pointer transition-all duration-300 ease-in-out text-[#14213D] hover:bg-[#14213D] hover:text-[#FFFFFF] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] max-md:hidden",
+    "link": "px-3 py-1 rounded-full text-md outline-none cursor-pointer transition-all duration-300 ease-in-out text-[#14213D] hover:bg-[#14213D] hover:text-[#FFFFFF] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] max-md:hidden ",
 
     "ul2": "flex items-center justify-center gap-2",
     "mode": "border border-[#E5E5E5] hover:bg-[#E5E5E5] rounded-full p-1 outline-none cursor-pointer transition-all duration-300 ease-in-out dark:bg-[#14213D] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",

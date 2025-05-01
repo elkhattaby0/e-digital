@@ -15,6 +15,7 @@ import Technologieslayout from './Layouts/Technologies/Technologieslayout';
 import Pricinglayout from './Layouts/Pricing/Pricinglayout';
 import Contactlayout from './Layouts/Contact/Contactlayout';
 import Errorlayout from './Layouts/Errorlayout';
+import Approachlayout from './Layouts/Approach/Approachlayout';
 export const identify = "E-Digital";
 export const titleIdentify = "edigital";
 
@@ -27,6 +28,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Homelayout />} />
           <Route path="/about" element={<Aboutlayout />} />
+          <Route path="/approach" element={<Approachlayout />} />
           <Route path="/services" element={<Serviceslayout />} />
           <Route path="/projects" element={<Projectslayout />} />
           <Route path="/tools" element={<Technologieslayout />} />

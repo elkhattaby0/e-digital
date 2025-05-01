@@ -29,7 +29,7 @@ const Homelayout = () => {
             <Whyus />
             <Testimonials />
             <Technologies />
-            <Pricing />
+            {/* <Pricing /> */}
             <Contact />
         </main>
     )
