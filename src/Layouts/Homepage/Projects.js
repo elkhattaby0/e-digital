@@ -80,6 +80,13 @@ const Projects = () => {
                     slidesToShow: 1,
                     centerMode: true,
                 }
+            },
+            {
+                breakpoint: 425,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false
+                }
             }
         ]
     };
@@ -94,7 +101,7 @@ const Projects = () => {
 
                 <Slider {...settings} className="w-full">
                     {data.map((n) => (
-                        <div key={n.id} className="px-2"> {/* slide wrapper is mandatory */}
+                        <div key={n.id} className="px-2">
                             <div className={Style.card}>
                                 <img
                                     src={n.img}

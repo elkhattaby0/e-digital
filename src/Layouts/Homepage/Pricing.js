@@ -73,6 +73,13 @@ const Pricing = () => {
                     slidesToShow: 1,
                     centerMode: true
                 }
+            },
+            {
+                breakpoint: 425,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false
+                }
             }
         ]
     };
@@ -90,20 +97,17 @@ const Pricing = () => {
                     Choose a plan that fits your needs, or ask us for a custom offer.
                 </Paragraph>
 
-                <Slider {...settings} className="w-full mt-6">
+                <Slider {...settings} className="w-full">
                     {data.map((n) => (
-                        <div key={n.id} className="px-3 flex justify-center">
+                        <div key={n.id} className="px-2">
                             <div className={Style.card}>
                                 <HeaderThree>{n.type}</HeaderThree>
-
                                 <p className="font-base text-sm my-2 text-[#000000] leading-[20px] dark:text-[#E5E5E5]">
                                     {n.description}
                                 </p>
-
                                 <strong className="font-semibold text-5xl text-[#14213D] my-4 max-md:my-2 dark:text-[#E5E5E5]">
                                     {n.price}
                                 </strong>
-
                                 <ul className="list-none my-4 max-md:my-2">
                                     {n.benefits.map((item) => (
                                         <ListCheck key={item}>
@@ -127,7 +131,7 @@ const Pricing = () => {
 const Style = {
     container: "w-full flex items-center justify-center py-10 my-10",
     section: "w-11/12 flex flex-col items-center justify-center",
-    card: "w-[320px] flex flex-col justify-between h-full min-h-[420px] cursor-pointer border border-[#14213D] rounded-xl p-6 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group",
+    card: "flex flex-col justify-between h-[380px] w-[320px] max-[320px]:w-[290px] overflow-hidden cursor-pointer border border-[#14213D] rounded-xl p-4 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group",
 };
 
 export default Pricing;
