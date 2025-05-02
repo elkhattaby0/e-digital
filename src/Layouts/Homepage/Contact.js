@@ -90,7 +90,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="w-1/2 max-md:w-full mt-3">
-                    <HeaderThree>Send us a message</HeaderThree>
+                    <HeaderThree>Or Send Us a Message</HeaderThree>
                     {isSubmitted ? (
                         <p>Your message has been sent. Thank you!</p>
                     ) : (

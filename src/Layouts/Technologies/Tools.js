@@ -1,58 +1,76 @@
 import React from 'react';
-import HeaderThree from "../../component/HeaderThree";
+import HeaderTwo from "../../component/HeaderTwo";
 import Paragraph from "../../component/Paragraph";
-import ListCheck from "../../component/ListCheck"
 
+import { FaReact } from 'react-icons/fa';
+import { RiNextjsFill } from 'react-icons/ri';
+import { SiRedux } from 'react-icons/si';
+import { SiTypescript } from 'react-icons/si';
+import { FaNodeJs } from 'react-icons/fa';
+import { SiExpress } from 'react-icons/si';
+import { FaLaravel } from 'react-icons/fa';
+import { DiMysql } from 'react-icons/di';
+import { RiSupabaseFill } from 'react-icons/ri';
+import { SiCanva } from 'react-icons/si';
+import { RiTailwindCssFill } from 'react-icons/ri';
+import { FaBootstrap } from 'react-icons/fa';
+import { FaWordpressSimple } from 'react-icons/fa';
+import { FaElementor } from 'react-icons/fa';
+import { FaChartLine } from 'react-icons/fa';
+import { SiJquery } from 'react-icons/si';
+import { FaGitAlt } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { RiVercelFill } from 'react-icons/ri';
 
 const data = [
   {
     title: "Frontend",
     tech: [
-      { name: "React js", description: "Fast and interactive user interfaces" },
-      { name: "Next js", description: "Server-rendered React apps for better performance" },
-      { name: "Redux Toolkit", description: "Simple and clear app state management" },
-      { name: "TypeScript", description: "Safer JavaScript with static types" }
+      { name: "ReactJs", img: <FaReact /> },
+      { name: "NextJs", img: <RiNextjsFill /> },
+      { name: "Redux Toolkit", img: <SiRedux /> },
+      { name: "TypeScript", img: <SiTypescript /> }
     ]
   },
   {
     title: "Backend",
     tech: [
-      { name: "Nodejs & Express", description: "Scalable web APIs with JavaScript" },
-      { name: "Laravel (PHP)", description: "Secure and powerful PHP framework" },
-      { name: "MySQL", description: "Reliable relational database management" },
-      { name: "Supabase", description: "Backend-as-a-Service with auth and real-time data" }
+      { name: "NodeJs", img: <FaNodeJs /> },
+      { name: "ExpressJs", img: <SiExpress /> },
+      { name: "Laravel (PHP)", img: <FaLaravel /> },
+      { name: "MySQL", img: <DiMysql /> },
+      { name: "Supabase", img: <RiSupabaseFill /> }
     ]
   },
   {
     title: "Mobile",
     tech: [
-      { name: "React Native", description: "Build native Android & iOS apps" }
+      { name: "React Native", img: <FaReact /> }
     ]
   },
   {
     title: "Design & UI",
     tech: [
-      { name: "Figma & Canva", description: "Collaborative interface design tool" },
-      { name: "Adobe XD", description: "Wireframes and visual mockups" },
-      { name: "Tailwind CSS", description: "Utility-first approach to styling" },
-      { name: "Bootstrap", description: "Ready-made components for fast layouts" }
+      { name: "Canva", img: <SiCanva /> },
+      { name: "TailwindCss", img: <RiTailwindCssFill /> },
+      { name: "Bootstrap", img: <FaBootstrap /> }
     ]
   },
   {
     title: "CMS & WordPress",
     tech: [
-      { name: "WordPress", description: "Easy content management system" },
-      { name: "Elementor", description: "Drag-and-drop page builder for custom layouts" },
-      { name: "Headless Laravel", description: "Flexible API-driven backends" }
+      { name: "WordPress", img: <FaWordpressSimple /> },
+      { name: "Elementor", img: <FaElementor /> }
     ]
   },
   {
     title: "Other Tools",
     tech: [
-      { name: "Chart.js", description: "Interactive charts and graphs" },
-      { name: "jQuery", description: "Simplify JavaScript tasks for older browsers" },
-      { name: "Git & GitHub", description: "Version control and collaboration platform" },
-      { name: "Vercel & InfinityFree", description: "Deploy frontend and backend applications easily" }
+      { name: "ChartJs", img: <FaChartLine /> },
+      { name: "jQuery", img: <SiJquery /> },
+      { name: "Git", img: <FaGitAlt /> },
+      { name: "GitHub", img: <FaGithub /> },
+      { name: "Vercel", img: <RiVercelFill /> }
     ]
   }
 ];
@@ -69,19 +87,22 @@ const Tools = () => (
         {data.map(item => (
           <div
             key={item.title}
-            className="w-[390px] max-md:w-full border border-[#E5E5E5] rounded-xl overflow-hidden transition-shadow duration-300 cursor-pointer group"
+            className="w-full [390px] max-md:w-full bo rder border-[#E5E5E5] rounded-xl overflow-hidden transition-shadow duration-300 cursor-pointer group"
           >
             <div className="p-6">
-              <HeaderThree className="mb-2">{item.title}</HeaderThree>
-              <ul className="mt-4">
+              <HeaderTwo className="mb-2">{item.title}</HeaderTwo>
+
+              <ul className="mt-4 py-6 border-t border-[#E5E5E5] flex flex-wrap gap-10">
                 {
                   item.tech.map(n=> (
-                    <ListCheck key={n.name}>
-                      <strong>{n.name}</strong> : {n.description}
-                    </ListCheck>
+                    <li className="dark:text-[#E5E5E5] flex flex-col gap-3 items-center justify-center w-fit">
+                      <span className="text-[40px] font-base">{n.img}</span>
+                      <p>{n.name}</p>
+                    </li>
                   ))
                 }
               </ul>
+              
             </div>
           </div>
         ))}

@@ -27,10 +27,11 @@ const Homelayout = () => {
             <Services />
             <Projects />
             <Whyus />
-            <Testimonials />
             <Technologies />
+            <Testimonials />
+            
             {/* <Pricing /> */}
-            <Contact />
+            {/* <Contact /> */}
         </main>
     )
 }

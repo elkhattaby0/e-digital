@@ -15,7 +15,11 @@ const Contactlayout = () => {
                     content="Get in touch with us for professional web development, mobile apps, and digital solutions. We're ready to bring your ideas to life." 
                 />
             </Helmet>
-            <HeroSection img={Image} text={"Contact Us"} />
+            <HeroSection 
+                img={Image} 
+                text={"Contact Us"} 
+                para={"We work with clients of all sizes and sectors, from new startup ventures to well-established businesses."}    
+            />
             <Contact />
         </main>
     )
