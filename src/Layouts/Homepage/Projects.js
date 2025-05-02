@@ -65,6 +65,8 @@ const Projects = () => {
         slidesToScroll: 1,
         centerMode: true,
         variableWidth: false,
+        autoplay: true,         
+        autoplaySpeed: 2000,
         rows: 1,
         responsive: [
             {
@@ -129,7 +131,7 @@ const Projects = () => {
 const Style = {
     container: "w-full flex items-center justify-center py-10 my-10",
     section: "w-11/12 flex flex-col items-center justify-center",
-    card: "flex flex-col justify-between h-[380px] w-[320px] max-[320px]:w-[290px] overflow-hidden cursor-pointer border border-[#14213D] rounded-xl p-4 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group",
+    card: "flex flex-col justify-between h-[380px] w-full overflow-hidden cursor-pointer border border-[#14213D] rounded-xl p-4 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group",
     h6: "font-base text-md mt-2 leading-[18px] text-[#14213D] dark:text-[#E5E5E5]",
     p: "font-base text-sm my-2 text-[#000000] leading-[20px] dark:text-[#E5E5E5]",
 };

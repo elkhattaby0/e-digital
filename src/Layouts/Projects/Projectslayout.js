@@ -15,7 +15,11 @@ const Projectslayout = () => {
                     content="Explore our latest web, mobile, and digital projects. See how we turn ideas into high-quality digital solutions." 
                 />
             </Helmet>
-            <HeroSection img={Image} text="Our Projects" />
+            <HeroSection 
+                img={Image} 
+                text="We Make Things Happen" 
+                para="We love to build products that help our clients grow."
+            />
             <Projects />
         </main>
     )

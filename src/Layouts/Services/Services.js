@@ -58,7 +58,6 @@ const Services = () => (
   <section className={Style.container}>
     <div className={Style.section}>
       <Paragraph isCenter={ true }>
-        We help businesses grow with smart websites, apps, and marketing.
         Here is what we can do for you :
       </Paragraph>
       <div className="flex flex-wrap justify-center gap-8">

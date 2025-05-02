@@ -16,7 +16,11 @@ const Technologieslayout = () => {
                     content="Discover the modern technologies and powerful tools we use to build high-performance websites, mobile apps, and digital products." 
                 />
             </Helmet>
-            <HeroSection img={Image} text="Our Tools" />
+            <HeroSection 
+                img={Image} 
+                text="Our Tools" 
+                para="We use the best and latest technologies to build your website, app, or online project."
+            />
             <Tools />
         </main>
     )

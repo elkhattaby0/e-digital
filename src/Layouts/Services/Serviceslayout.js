@@ -16,7 +16,11 @@ const Serviceslayout = () => {
                     content="Discover our professional services in web development, mobile apps, UI/UX design, SEO, and more. Tailored digital solutions for your business." 
                 />
             </Helmet>
-            <HeroSection img={Image} text="Our Services" />
+            <HeroSection 
+                img={Image} 
+                text="Our Services" 
+                para="We help businesses grow with smart websites, apps, and marketing."    
+            />
             <Services />
         </main>
     )

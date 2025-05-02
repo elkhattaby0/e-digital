@@ -56,7 +56,6 @@ const Projects = () => (
   <section className={Style.container}>
     <div className={Style.section}>
       <Paragraph isCenter={ true }>
-        We love to build products that help our clients grow.
         Here are some of our recent works :
       </Paragraph>
       <div className="flex flex-wrap justify-center gap-8">
@@ -64,7 +63,7 @@ const Projects = () => (
         data.map(item => (
           <div
             key={item.id}
-            className="w-full sm:w-[300px] lg:w-[350px] border border-[#E5E5E5] rounded-xl overflow-hidden transition-shadow duration-300 cursor-pointer group"
+            className={Style.card}
           >
             <div className="h-48 overflow-hidden">
               <img
@@ -80,7 +79,6 @@ const Projects = () => (
               <Paragraph className="leading-relaxed">
                 {item.description}
               </Paragraph>
-              <ButtonArrow>View more</ButtonArrow>
             </div>
           </div>
         ))}
@@ -92,7 +90,8 @@ const Projects = () => (
 const Style = {
   container: "w-full flex justify-center py-8",
   section: "w-11/12 max-w-7xl",
-  h4: "font-base text-md mt-2 leading-[18px] text-[#14213D] dark:text-[#E5E5E5]"
+  h4: "font-base text-md mt-2 leading-[18px] text-[#14213D] dark:text-[#E5E5E5]",
+  card: "flex flex-col justify-between h-[380px] w-[390px] max-md:w-full overflow-hidden cursor-pointer border border-[#14213D] rounded-xl p-4 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group"
 };
 
 export default Projects;

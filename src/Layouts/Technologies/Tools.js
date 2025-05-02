@@ -62,8 +62,7 @@ const Tools = () => (
   <section className={Style.container}>
     <div className={Style.section}>
       <Paragraph isCenter={ true }>
-      We use the best and latest technologies to build your website, app, or online project. 
-      Here are the tools and platforms we work with :
+        Here are the tools and platforms we work with :
       </Paragraph>
 
       <div className="flex flex-wrap justify-evenly gap-4">

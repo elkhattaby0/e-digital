@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderTwo from "../../component/HeaderTwo";
+import HeaderThree from "../../component/HeaderThree";
 import Paragraph from "../../component/Paragraph";
 import ButtonArrow from "../../component/ButtonArrow";
 
@@ -52,7 +52,7 @@ const Timeline = () => {
   return (
     <section className={Style.container}>
       <div className={Style.section}>
-        <div className="flex flex-wrap justify-between gap-6 my-4">
+        <div className="flex flex-wrap justify-between gap-6 my-8">
           {data.map((n) => (
             <div
               key={n.step}
@@ -63,9 +63,9 @@ const Timeline = () => {
               <div className="flex flex-col text-[#14213D] dark:text-[#E5E5E5] bor der w-1/3 max-md:w-full gap-1">
                 <span className="font-bold text-6xl w-full">{n.step}.</span>
                 <div className="h-full w-full">
-                  <HeaderTwo>{n.title}</HeaderTwo>
+                  <HeaderThree>{n.title}</HeaderThree>
                   <Paragraph>{n.description}</Paragraph>
-                  {n.step === 1 && <ButtonArrow>Get a Quote</ButtonArrow>}
+                  {n.step === 1 && <ButtonArrow link="contact">Get a Quote</ButtonArrow>}
                 </div>
               </div>
               {n.step !== 7 && n.step % 2 !== 0 && (
