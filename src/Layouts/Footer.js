@@ -1,14 +1,25 @@
 import React from "react";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+
 
 const Footer = () => {
     return (
         <footer className={Style.containre} >
             <section className={Style.section}>
+                <div className="text-[#14213D] dark:text-[#E5E5E5] text-[16px] flex gap-4 outline-none cursor-pointer max-md:mb-2">
+                    <a><FaFacebookF /></a>
+                    <a><FaInstagram /></a>
+                    <a><FaXTwitter /></a>
+                    <a><FaLinkedin /></a>
+                </div>
+
                 <p className={Style.p}>© 2025 Lahoucine El Khattaby. All rights reserved.</p>
 
-                <div className="flex items-center justify-center gap-5">
-                    <a href="/terms-conditions" className={Style.a}>Terms & conditions</a>
-                    <a href="/privacy-policy" className={Style.a}>Privicy policy</a>
+                <div className="flex items-center justify-center gap-5">        
+                    <a href="/terms-conditions" className={Style.a}>Terms & Conditions</a>
                 </div>
             </section>
         </footer>

@@ -44,21 +44,6 @@ const Header = () => {
         setIsOpened(!isOpned);
     };
 
-    const Announce = () => {
-        return (
-          <div
-            role="alert"
-            className="bg-[#FCA311] overflow-hidden w-full py-1"   // hide overflow
-          >
-            <p
-              className="inline-block whitespace-nowrap animate-marquee text-[#14213D] text-sm leading-relaxed px-2"
-            >
-              This website is still under development. Some features may not work as expected.
-            </p>
-          </div>
-        );
-    };
-
     const ResponsiveMenu = () => {
         const StyleResp = {
             "menu": `${isOpned ? "block" : "hidden"} bg-[#FFFFFF] dark:bg-[#14213D] w-full h-[100vh] fixed top-[73px] left-0 z-10 flex items-center justify-center transition-all duration-300 ease-in-out `,
@@ -81,7 +66,6 @@ const Header = () => {
 
     return (
         <header className={Style.containre}>
-            {/* <Announce /> */}
             <section className={Style.section}>
                 <a className={Style.logo} href="/">
                     <img 
