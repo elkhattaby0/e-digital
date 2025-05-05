@@ -71,7 +71,7 @@ const Style = {
     "container": "w-full flex items-center justify-center py-10 my-10",
     "section": "w-11/12 flex flex-col items-center justify-center h- [89lvh] gap-10",
     
-    "card": "cursor-pointer border border-[#14213D] size-100 rounded-xl p-6 transition-all duration-300 ease-in-out group dark:border-[#E5E5E5] hover:shadow-md",
+    "card": "cursor-pointer border border-[#14213D] size-100 rounded-xl p-6 transition-all duration-300 ease-in-out group border-[#E5E5E5] dark:border-[#666666] hover:shadow-md",
 }
 
 export default Testimonials;

@@ -6,3 +6,7 @@ yellow-> #FCA311
 gray  -> #E5E5E5
 white -> #FFFFFF
 
+borderdark #666666
+
+
+

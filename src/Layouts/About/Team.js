@@ -50,7 +50,7 @@ const Team = () => {
         <Slider {...settings}>
           {data.map((n) => (
             <div key={n.name} className="flex justify-center items-center gap-5">
-              <figure className="border p-4 w-fit text-center rounded-xl cursor-pointer group">
+              <figure className="border border-[#E5E5E5] dark:border-[#666666] p-4 w-fit text-center rounded-xl cursor-pointer group">
                 <div className="rounded-xl overflow-hidden w-[200px] h-[200px] mx-auto">
                 <img
                   src={n.img}

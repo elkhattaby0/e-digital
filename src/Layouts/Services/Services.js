@@ -64,7 +64,7 @@ const Services = () => (
         {data.map(item => (
           <div
             key={item.title}
-            className="w-full sm:w-[300px] lg:w-[390px] border border-[#E5E5E5] rounded-xl overflow-hidden transition-shadow duration-300 cursor-pointer group"
+            className="w-full sm:w-[300px] lg:w-[390px] border border-[#E5E5E5] dark:border-[#666666] rounded-xl overflow-hidden transition-shadow duration-300 cursor-pointer group"
           >
             <div className="h-48 overflow-hidden">
               <img

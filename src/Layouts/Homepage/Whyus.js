@@ -42,7 +42,7 @@ const Whyus = () => {
                     {facts.map((fact) => (
                         <div
                             key={fact.name}
-                            className="relative flex flex-col items-center justify-center border w-[250px] h-[250px] max-md:w-[160px] max-md:h-[160px] p-4 rounded-xl overflow-hidden bg-cover bg-center text-[#E5E5E5]"
+                            className="relative flex flex-col items-center justify-center border w-[250px] h-[250px] max-md:w-[160px] max-md:h-[160px] p-4 rounded-xl overflow-hidden bg-cover bg-center text-[#E5E5E5] border-[#E5E5E5] dark:border-[#666666]"
                             style={{ backgroundImage: `url(${fact.img})` }}
                         >
                             <div className="absolute inset-0 bg-[#14213D] opacity-[0.7]"></div> 

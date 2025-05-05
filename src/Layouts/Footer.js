@@ -27,7 +27,7 @@ const Footer = () => {
 }
 
 const Style = {
-    "containre": "w-full flex items-center justify-center border-t-[0.1px] border-[#E5E5E5] ",
+    "containre": "w-full flex items-center justify-center border-t-[0.1px] border-[#E5E5E5] dark:border-[#666]",
     "section": "w-11/12 py-5 flex flex-wrap items-center justify-between",
 
     "p": "text-[#14213D] dark:text-[#E5E5E5]",

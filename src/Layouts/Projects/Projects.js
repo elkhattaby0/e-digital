@@ -7,7 +7,6 @@ import img2 from "../../assets/project_2.avif";
 import img3 from "../../assets/project_3.avif";
 import img4 from "../../assets/project_4.jpg";
 import img5 from "../../assets/project_5.jpg";
-import ButtonArrow from '../../component/ButtonArrow';
 
 const data = [
   {
@@ -91,7 +90,7 @@ const Style = {
   container: "w-full flex justify-center py-8",
   section: "w-11/12 max-w-7xl",
   h4: "font-base text-md mt-2 leading-[18px] text-[#14213D] dark:text-[#E5E5E5]",
-  card: "flex flex-col justify-between h-[380px] w-[390px] max-md:w-full overflow-hidden cursor-pointer border border-[#14213D] rounded-xl p-4 hover:shadow-md dark:border-[#E5E5E5] transition-all duration-300 ease-in-out group"
+  card: "flex flex-col justify-between h-[380px] w-[390px] max-md:w-full overflow-hidden cursor-pointer border border-[#E5E5E5] rounded-xl p-4 hover:shadow-md dark:border-[#666666] transition-all duration-300 ease-in-out group"
 };
 
 export default Projects;
