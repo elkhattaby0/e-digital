@@ -3,12 +3,18 @@ import image from "../../assets/about_section_homepage.jpg"
 import HeaderTwo from "../../component/HeaderTwo";
 import ButtonArrow from "../../component/ButtonArrow";
 import Paragraph from "../../component/Paragraph";
+import { motion } from "framer-motion";
 
 const About = () => {
     return (
         <section className={Style.container} >
             <div className={Style.section} >
-                <div className={Style.left}>
+                <motion.div className={Style.left}
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
                     <HeaderTwo>Who We Are ?</HeaderTwo>
                     <Paragraph>
                         We are a team of creative developers and designers. We love to build websites and apps that look good and work fast. Our goal is to help your business shine online.
@@ -17,8 +23,13 @@ const About = () => {
                     <ButtonArrow link="about">
                         Learn more about us
                     </ButtonArrow>
-                </div>
-                <img src={image} alt="edigital" className={Style.right} /> 
+                </motion.div>
+                <motion.img src={image} alt="edigital" className={Style.right} 
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                /> 
             </div>
         </section>
     )

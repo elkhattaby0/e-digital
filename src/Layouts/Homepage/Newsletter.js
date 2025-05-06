@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import HeaderTwo from "../../component/HeaderTwo";
 import Paragraph from "../../component/Paragraph";
@@ -6,7 +7,12 @@ import Paragraph from "../../component/Paragraph";
 
 const Newsletter  = () => {
     return (
-        <section className={Style.container} >
+        <motion.section className={Style.container} 
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+        >
             <div className={Style.section} >
                 <div className={Style.left}>
                     <HeaderTwo>Get Our News</HeaderTwo>
@@ -25,7 +31,7 @@ const Newsletter  = () => {
                 </div>
                 <div className={Style.right}></div>                
             </div>
-        </section>
+        </motion.section>
     )
 }
 

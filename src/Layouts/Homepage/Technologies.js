@@ -6,7 +6,7 @@ import { SiTypescript } from "react-icons/si";
 import HeaderTwo from "../../component/HeaderTwo";
 import ButtonArrow from "../../component/ButtonArrow";
 import Paragraph from "../../component/Paragraph";
-
+import { motion } from "framer-motion";
 
 const Technologies  = () => {
     const data = [
@@ -21,25 +21,50 @@ const Technologies  = () => {
     ]
     return (
         <section className={Style.container} >
-            <div className={Style.section} >
-                <HeaderTwo>Our Tools</HeaderTwo>
-                <Paragraph>
-                    We use the best and latest technologies :
-                </Paragraph>
-
+            <div className={Style.section}>
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
+                    <HeaderTwo>Our Tools</HeaderTwo>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
+                    <Paragraph>
+                        We use the best and latest technologies :
+                    </Paragraph>
+                </motion.div>
                 <div className="flex flex-wrap gap-8 justify-center">
                 {
                     data.map(n=> (
-                        <div key={n.name} className={Style.card}>
+                        <motion.div key={n.name} className={Style.card}
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
+                            viewport={{ once: true }}
+                        >
                             {n.icon}
-                        </div>
+                        </motion.div>
                     ))
                 }
                 </div>
                 <br />
-                <ButtonArrow link="tools">
-                    View more
-                </ButtonArrow>         
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
+                    <ButtonArrow link="tools">
+                        View more
+                    </ButtonArrow>
+                </motion.div>         
             </div>
         </section>
     )

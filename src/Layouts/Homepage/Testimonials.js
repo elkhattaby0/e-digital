@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import { Quote, Star } from "lucide-react";
 import HeaderTwo from "../../component/HeaderTwo";
 const data = [
@@ -30,12 +32,23 @@ const Testimonials = () => {
     return (
         <section className={Style.container} >
             <div className={Style.section} >
-                <HeaderTwo>Happy Clients</HeaderTwo>
-
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.3 }}
+                    viewport={{ once: true }}
+                >
+                    <HeaderTwo>Happy Clients</HeaderTwo>
+                </motion.div>
                 <div className="flex max-md:flex-wrap gap-5 justify-center items-center">
                 {
                     data.map(n=> (
-                        <div key={n.id} className={Style.card}>
+                        <motion.div key={n.id} className={Style.card}
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.3 }}
+                            viewport={{ once: true }}
+                        >   
                             <div className="text-[#14213D] dark:text-[#E5E5E5]">
                                 <Quote size="40px"/>
                                 <blockquote className="font-base text-xl">{n.msg}</blockquote>
@@ -58,7 +71,7 @@ const Testimonials = () => {
                                 <cite className="font-bold mr-1">{n.name}</cite> - 
                                 <p className="font-base text-sm ml-1">{n.post}</p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))
                 }
                 </div>

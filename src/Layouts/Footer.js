@@ -3,11 +3,17 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 
 const Footer = () => {
     return (
-        <footer className={Style.containre} >
+        <motion.footer className={Style.containre} 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+        >
             <section className={Style.section}>
                 <div className="text-[#14213D] dark:text-[#E5E5E5] text-[16px] flex gap-4 outline-none cursor-pointer max-md:mb-2">
                     <a><FaFacebookF /></a>
@@ -16,13 +22,14 @@ const Footer = () => {
                     <a><FaLinkedin /></a>
                 </div>
 
-                <p className={Style.p}>© 2025 Lahoucine El Khattaby. All rights reserved.</p>
+                <p className={Style.p}>© 2025 Lahoucine El Khattaby, All rights reserved.</p>
 
                 <div className="flex items-center justify-center gap-5">        
+                    <a href="/sitemap.xml" className={Style.a}>Sitemap</a>
                     <a href="/terms-conditions" className={Style.a}>Terms & Conditions</a>
                 </div>
             </section>
-        </footer>
+        </motion.footer>
     )
 }
 

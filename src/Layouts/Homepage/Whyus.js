@@ -8,6 +8,7 @@ import img2 from "../../assets/why_2.avif"
 import img3 from "../../assets/why_3.avif"
 import img4 from "../../assets/why_4.jpg"
 
+import { motion } from "framer-motion";
 
 const data = [
     "We listen to your ideas",
@@ -27,7 +28,12 @@ const Whyus = () => {
     return (
         <section className={Style.container}>
             <div className={Style.section}>
-                <div className={Style.left}>
+                <motion.div className={Style.left}
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
                     <HeaderTwo>Why Work With Us ?</HeaderTwo>
                     <ul>
                     {data.map((item) => (
@@ -36,14 +42,18 @@ const Whyus = () => {
                         </ListCheck>
                     ))}
                     </ul>
-                </div>
+                </motion.div>
 
                 <div className={Style.right}>
                     {facts.map((fact) => (
-                        <div
+                        <motion.div
                             key={fact.name}
                             className="relative flex flex-col items-center justify-center border w-[250px] h-[250px] max-md:w-[160px] max-md:h-[160px] p-4 rounded-xl overflow-hidden bg-cover bg-center text-[#E5E5E5] border-[#E5E5E5] dark:border-[#666666]"
                             style={{ backgroundImage: `url(${fact.img})` }}
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
+                            viewport={{ once: true }}
                         >
                             <div className="absolute inset-0 bg-[#14213D] opacity-[0.7]"></div> 
                             <div className="relative z-1 flex flex-col items-center justify-center">
@@ -65,7 +75,7 @@ const Whyus = () => {
                                     {fact.name}
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 

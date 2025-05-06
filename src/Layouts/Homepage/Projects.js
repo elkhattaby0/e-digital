@@ -12,6 +12,7 @@ import img2 from "../../assets/project_2.avif";
 import img3 from "../../assets/project_3.avif";
 import img4 from "../../assets/project_4.jpg";
 import img5 from "../../assets/project_5.jpg";
+import { motion } from "framer-motion";
 
 const data = [
     {
@@ -96,11 +97,24 @@ const Projects = () => {
     return (
         <section className={Style.container}>
             <div className={Style.section}>
-                <HeaderTwo>Our Work</HeaderTwo>
-                <Paragraph isCenter={true}>
-                    We have worked with many happy clients. Take a look at some of our recent projects.
-                </Paragraph>
-
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
+                    <HeaderTwo>Our Work</HeaderTwo>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
+                    <Paragraph isCenter={true}>
+                        We have worked with many happy clients. Take a look at some of our recent projects.
+                    </Paragraph>
+                </motion.div>
                 <Slider {...settings} className="w-full">
                     {data.map((n) => (
                         <div key={n.id} className="px-2">
@@ -118,11 +132,16 @@ const Projects = () => {
                     ))}
                 </Slider>
 
-                <div className="mt-8">
+                <motion.div className="mt-8"
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
                     <ButtonArrow link="projects">
                         View more
                     </ButtonArrow>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

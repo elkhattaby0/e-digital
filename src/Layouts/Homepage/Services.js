@@ -3,7 +3,7 @@ import HeaderTwo from "../../component/HeaderTwo";
 import ButtonArrow from "../../component/ButtonArrow";
 import HeaderThree from "../../component/HeaderThree";
 import { Globe2, Palette, SearchCheckIcon, SmartphoneIcon, Wrench } from "lucide-react";
-
+import { motion } from "framer-motion";
 
 
 const Services = () => {
@@ -42,22 +42,40 @@ const Services = () => {
     return (
         <section className={Style.container} >
             <div className={Style.section} >
-                <HeaderTwo>What We Do ?</HeaderTwo>
-
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
+                    <HeaderTwo>What We Do ?</HeaderTwo>
+                </motion.div>
                 <div className="flex flex-wrap gap-10 max-md:gap-5 justify-center">
                 {
                     data.map(n=> (
-                        <div key={n.id} className={Style.card}>
+                        <motion.div key={n.id} className={Style.card}
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
+                            viewport={{ once: true }}
+                        >
                             {n.img}
                             <HeaderThree>{n.title}</HeaderThree>
                             <p className={Style.para}>{n.text}</p>
-                        </div>
+                        </motion.div>
                     ))
                 }
                 </div>
-                <ButtonArrow link="services">
-                    View more
-                </ButtonArrow>     
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
+                    <ButtonArrow link="services">
+                        View more
+                    </ButtonArrow> 
+                </motion.div>                    
             </div>
         </section>
     )
