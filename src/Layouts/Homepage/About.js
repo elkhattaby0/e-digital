@@ -18,15 +18,7 @@ const About = () => {
                         Learn more about us
                     </ButtonArrow>
                 </div>
-                <img src={image} alt="edigital" className={Style.right} />  
-                {/* <div className={Style.right}
-                    style={{
-                        backgroundImage: `url(${image})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        backgroundRepeat: "no-repeat",
-                    }}
-                ></div>                 */}
+                <img src={image} alt="edigital" className={Style.right} /> 
             </div>
         </section>
     )

@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRight, LucideMenu, MoonIcon, SunIcon, X } from "lucide-react";
 import { identify } from "../index";
 import Logo from "../logo.svg";
+import { motion } from "framer-motion";
 
 const menu = [
     { name: "Home", link: "/" },
@@ -65,7 +66,11 @@ const Header = () => {
     }
 
     return (
-        <header className={Style.containre}>
+        <motion.header className={Style.containre}
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+        >
             <section className={Style.section}>
                 <a className={Style.logo} href="/">
                     <img 
@@ -104,7 +109,7 @@ const Header = () => {
                 </ul>                
             </section>
             <ResponsiveMenu />
-        </header>
+        </motion.header>
     )
 }
 
