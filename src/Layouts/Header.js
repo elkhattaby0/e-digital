@@ -6,11 +6,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const menu = [
     { name: "Home", link: "/" },
+    { name: "About Us", link: "/about" },
     { name: "How We Work", link: "/approach" },
     { name: "Services", link: "/services" },
     { name: "Portfolio", link: "/projects" },
-    { name: "Contacts", link: "/contact" },
-    { name: "About Us", link: "/about" },
+    { name: "Contact", link: "/contact" },
+    
 ];
 
 const Header = () => {
@@ -46,7 +47,7 @@ const Header = () => {
         const StyleResp = {
             menu: `bg-[#FFFFFF] dark:bg-[#14213D] w-full h-[100vh] fixed top-[73px] left-0 z-10 flex items-center justify-center transition-all duration-300 ease-in-out`,
             ul: "flex flex-col w-11/12 ",
-            link: "flex items-center justify-between font-lg text-3xl my-2 text-[#14213D] cursor-pointer outline-none group dark:text-[#E5E5E5] transition-all duration-300 ease-in-out ",
+            link: "flex items-center justify-between font-lg text-3xl my-2 text-[#14213D] cursor-pointer outline-none group dark:text-[#E5E5E5] transition-all duration-300 ease-in-out",
         };
 
         const menuVariants = {
@@ -68,7 +69,7 @@ const Header = () => {
                         <li key={n.name}>
                             <a href={n.link} className={StyleResp.link}>
                                 {n.name}
-                                <ArrowRight size="1em" className="-rotate-45 group-hover:rotate-0" />
+                                    <ArrowRight size="1em" className="-rotate-45 group-hover:rotate-0 group-hover:text-[#FCA311]" />
                             </a>
                         </li>
                     ))}
@@ -106,17 +107,17 @@ const Header = () => {
                 <ul className={Style.ul2}>
                     <button aria-label="Toggle dark mode" className={Style.mode} onClick={handleToggle}>
                         {!toggle ? (
-                            <MoonIcon size="20px" color="#14213D" />
+                            <MoonIcon size="22px" color="#14213D" />
                         ) : (
-                            <SunIcon size="20px" />
+                            <SunIcon size="22px" />
                         )}
+                    </button>
+                    <button aria-label="Toggle navigation menu" className={Style.menu} onClick={haddleRes}>
+                        {isOpned ? <X size="22px" /> : <LucideMenu size="22px" />}
                     </button>
                     <a href="/contact" className={Style.btn}>
                         Let's Talk
-                    </a>
-                    <button aria-label="Toggle navigation menu" className={Style.menu} onClick={haddleRes}>
-                        {isOpned ? <X size="20px" /> : <LucideMenu size="20px" />}
-                    </button>
+                    </a>                    
                 </ul>
             </section>
 
@@ -137,7 +138,7 @@ const Style = {
     link: "px-3 py-1 rounded-full text-md outline-none cursor-pointer transition-all duration-300 ease-in-out text-[#14213D] hover:bg-[#14213D] hover:text-[#FFFFFF] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] max-md:hidden ",
     ul2: "flex items-center justify-center gap-2",
     mode: "border border-[#E5E5E5] hover:bg-[#E5E5E5] rounded-full p-1 outline-none cursor-pointer transition-all duration-300 ease-in-out dark:bg-[#14213D] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
-    btn: "px-4 py-1 rounded-full text-md outline-none cursor-pointer transition-all duration-300 ease-in-out bg-[#14213D] text-[#FFFFFF] hover:bg-[#000000] dark:border dark:border-[#E5E5E5] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
+    btn: "px-4 py-1 rounded-full text-md outline-none cursor-pointer transition-all duration-300 ease-in-out bg-[#14213D] text-[#FFFFFF] hover:text-[#14213D] hover:bg-[#FFFFFF] border dark:border-[#E5E5E5] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
     menu: "hidden max-md:flex border border-[#E5E5E5] hover:bg-[#E5E5E5] rounded-full p-1 outline-none cursor-pointer transition-all duration-300 ease-in-out dark:bg-[#14213D] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
 };
 
