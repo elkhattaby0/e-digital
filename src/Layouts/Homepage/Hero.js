@@ -76,7 +76,7 @@ const Hero = () => {
 
 const Style = {
     "container": "w-full flex items-center justify-center max-md:mt-6",
-    "section": "w-11/12 flex max-md:flex-col items-center justify-center h-[calc(100lvh-80px)] max-md:h-full",
+    "section": "w-11/12 flex max-md:flex-col items-center justify-center h-[calc(100lvh-80px)]",
     "left": "w-2/3 max-md:w-full bor der max-md:hidden",
     "mobile": "hidden max-md:flex flex-col justify-center items-center w-full",
     "right": "w-1/3 max-md:w-full bo rder",
