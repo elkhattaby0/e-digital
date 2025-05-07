@@ -19,19 +19,13 @@ const Errorlayout = () => {
             <meta name="robots" content="noindex" />
         </Helmet>
         <div
-          className="w-11/12 flex max-md:flex-col items-center gap-8 my-4 max-md:my-8"
+          className="w-11/12 flex items-center gap-8 h-[calc(100lvh-80px)]"
         >
-          <div className="w-1/2  max-md:w-full">
-            <h1 className="font-bold text-5xl mb-4 text-[#14213D] dark:text-[#E5E5E5]">Page Not Found</h1>
+          <div className="flex flex-col items-center justify-center w-full">
+            <h1 className="font-bold text-9xl mb-4 text-[#FCA311]">404</h1>
+            <h2 className="font-bold text-4xl mb-4 text-[#FCA311]">Page Not Found</h2>
             <Paragraph>Sorry, the page you're looking for doesn't exist.</Paragraph>
-            <ButtonArrow>Go back to the homepage</ButtonArrow>
-          </div>
-          <div className="w-1/2 max-md:w-full">
-            <img
-              src={Image}
-              alt="edigital error"
-              className="dark:bg-[#E5E5E5] rounded-3xl"
-            />
+            <ButtonArrow>Go home</ButtonArrow>
           </div>
         </div>
       </section>
