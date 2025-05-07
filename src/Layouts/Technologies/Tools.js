@@ -2,6 +2,9 @@ import React from 'react';
 import HeaderTwo from "../../component/HeaderTwo";
 import Paragraph from "../../component/Paragraph";
 
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
 import { FaReact } from 'react-icons/fa';
 import { RiNextjsFill } from 'react-icons/ri';
 import { SiRedux } from 'react-icons/si';
@@ -11,66 +14,107 @@ import { SiExpress } from 'react-icons/si';
 import { FaLaravel } from 'react-icons/fa';
 import { DiMysql } from 'react-icons/di';
 import { RiSupabaseFill } from 'react-icons/ri';
-import { SiCanva } from 'react-icons/si';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { FaBootstrap } from 'react-icons/fa';
 import { FaWordpressSimple } from 'react-icons/fa';
 import { FaElementor } from 'react-icons/fa';
-import { FaChartLine } from 'react-icons/fa';
 import { SiJquery } from 'react-icons/si';
 import { FaGitAlt } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
-import { RiVercelFill } from 'react-icons/ri';
+import { FaPython } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
+import { SiSqlite } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
+import { VscVscode } from "react-icons/vsc";
+import { SiPostman } from "react-icons/si";
+import { SiSonarqube } from "react-icons/si";
+import { FaJira } from "react-icons/fa";
+import { SiRabbitmq } from "react-icons/si";
+import { FaExpeditedssl } from "react-icons/fa";
+import { BsDiagram3Fill } from "react-icons/bs";
+import { SiGoogleanalytics } from 'react-icons/si';
+import { SiC } from 'react-icons/si';
+import { SiMicrogenetics } from 'react-icons/si';
+import { FaGlobe } from 'react-icons/fa';
+import { FaServer } from 'react-icons/fa';
+import { DiScrum } from "react-icons/di";
+
 
 const data = [
   {
     title: "Frontend",
     tech: [
+      { name: "HTML", img: <FaHtml5 /> },
+      { name: "CSS", img: <FaCss3Alt /> },
+      { name: "JavaScript", img: <SiJavascript  /> },
+      { name: "TypeScript", img: <SiTypescript /> },
+
+      { name: "Bootstrap", img: <FaBootstrap /> },
+      { name: "TailwindCss", img: <RiTailwindCssFill /> },
+      { name: "jQuery", img: <SiJquery /> },
       { name: "ReactJs", img: <FaReact /> },
       { name: "NextJs", img: <RiNextjsFill /> },
+      { name: "React Native", img: <FaReact /> },
       { name: "Redux Toolkit", img: <SiRedux /> },
-      { name: "TypeScript", img: <SiTypescript /> }
+
+      { name: "WordPress", img: <FaWordpressSimple /> },
+      { name: "Elementor", img: <FaElementor /> },
+
+      { name: "SEO", img: <SiGoogleanalytics /> }
     ]
   },
   {
     title: "Backend",
     tech: [
+      { name: "Laravel (PHP)", img: <FaLaravel /> },
+      { name: "Python", img: <FaPython /> },
       { name: "NodeJs", img: <FaNodeJs /> },
       { name: "ExpressJs", img: <SiExpress /> },
-      { name: "Laravel (PHP)", img: <FaLaravel /> },
-      { name: "MySQL", img: <DiMysql /> },
+      { name: "C", img: <SiC /> },
+      
+      { name: "Firebase", img: <IoLogoFirebase /> },
       { name: "Supabase", img: <RiSupabaseFill /> }
     ]
   },
   {
-    title: "Mobile",
+    title: "Databases",
     tech: [
-      { name: "React Native", img: <FaReact /> }
+      { name: "MySQL", img: <DiMysql /> },
+      { name: "SQLite", img: <SiSqlite /> },
+      { name: "MongoDB", img: <DiMongodb /> },
     ]
   },
   {
-    title: "Design & UI",
+    title: "Development Tools",
     tech: [
-      { name: "Canva", img: <SiCanva /> },
-      { name: "TailwindCss", img: <RiTailwindCssFill /> },
-      { name: "Bootstrap", img: <FaBootstrap /> }
+      { name: "VSCode", img: <VscVscode /> },
+      { name: "Postman", img: <SiPostman /> },
+      { name: "SonarQube", img: <SiSonarqube /> },
     ]
   },
   {
-    title: "CMS & WordPress",
+    title: "DevOps & Infrastructure",
     tech: [
-      { name: "WordPress", img: <FaWordpressSimple /> },
-      { name: "Elementor", img: <FaElementor /> }
+      { name: "Hosting", img: <FaServer /> },
+      { name: "Domain", img: <FaGlobe /> },
+      { name: "SSL", img: <FaExpeditedssl /> },
+      { name: "RabbitMQ", img: <SiRabbitmq /> },
+      { name: "Microservices", img: <SiMicrogenetics /> },
     ]
   },
   {
-    title: "Other Tools",
+    title: "Version Control",
     tech: [
-      { name: "ChartJs", img: <FaChartLine /> },
-      { name: "jQuery", img: <SiJquery /> },
       { name: "Git", img: <FaGitAlt /> },
       { name: "GitHub", img: <FaGithub /> },
-      { name: "Vercel", img: <RiVercelFill /> }
+    ]
+  },
+  {
+    title: "Project Management & Methodologies",
+    tech: [
+      { name: "Agile", img: <DiScrum  /> },
+      { name: "Jira", img: <FaJira /> },
+      { name: "UML", img: <BsDiagram3Fill /> },
     ]
   }
 ];
@@ -95,7 +139,7 @@ const Tools = () => (
               <ul className="mt-4 py-6 border-t border-[#E5E5E5] flex flex-wrap gap-10">
                 {
                   item.tech.map(n=> (
-                    <li className="dark:text-[#E5E5E5] flex flex-col gap-3 items-center justify-center w-fit">
+                    <li className="text-[#14213D] dark:text-[#E5E5E5] flex flex-col gap-3 items-center justify-center w-fit">
                       <span className="text-[40px] font-base">{n.img}</span>
                       <p>{n.name}</p>
                     </li>

@@ -4,7 +4,7 @@ import ListCheck from '../../component/ListCheck';
 
 const info = [
     { 
-        "title": "Who We Are ?",
+        "title": "Who We Are",
         "data": [
             "We are a digital agency that builds websites, mobile apps, and designs",
             "Our team is small but full of talent",

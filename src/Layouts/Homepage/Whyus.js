@@ -34,7 +34,7 @@ const Whyus = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     viewport={{ once: true }}
                 >
-                    <HeaderTwo>Why Work With Us ?</HeaderTwo>
+                    <HeaderTwo>Why Work With Us</HeaderTwo>
                     <ul>
                     {data.map((item) => (
                         <ListCheck key={item} >

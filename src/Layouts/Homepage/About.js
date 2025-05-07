@@ -15,7 +15,7 @@ const About = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     viewport={{ once: true }}
                 >
-                    <HeaderTwo>Who We Are ?</HeaderTwo>
+                    <HeaderTwo>Who We Are</HeaderTwo>
                     <Paragraph>
                         We are a team of creative developers and designers. We love to build websites and apps that look good and work fast. Our goal is to help your business shine online.
                     </Paragraph>

@@ -48,7 +48,7 @@ const Services = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     viewport={{ once: true }}
                 >
-                    <HeaderTwo>What We Do ?</HeaderTwo>
+                    <HeaderTwo>What We Do</HeaderTwo>
                 </motion.div>
                 <div className="flex flex-wrap gap-10 max-md:gap-5 justify-center">
                 {
