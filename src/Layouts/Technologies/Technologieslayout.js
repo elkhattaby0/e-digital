@@ -3,19 +3,16 @@ import HeroSection from '../../component/HeroSection';
 
 import Image from "../../assets/hero_4.avif";
 import Tools from './Tools';
-import { Helmet } from "react-helmet";
-import { titleIdentify } from "../../index"
+import HeadHelmet from '../../component/HeadHelmet';
 
 const Technologieslayout = () => {
     return (
         <main>
-            <Helmet>
-                <title>{ titleIdentify } - Tools</title>
-                <meta 
-                    name="description" 
-                    content="Discover the modern technologies and powerful tools we use to build high-performance websites, mobile apps, and digital products." 
-                />
-            </Helmet>
+            <HeadHelmet
+                title="Best Digital Solutions & Resources"
+                description="Discover the modern technologies and powerful tools we use to build high-performance websites, mobile apps, and digital products."
+                keywords="eDigital tools, digital agency tools, web development tools, SEO tools, UI UX resources, marketing automation, design tools, productivity tools, web agency software"
+            />
             <HeroSection 
                 img={Image} 
                 text="Our Tools" 

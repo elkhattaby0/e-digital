@@ -2,19 +2,16 @@ import React from "react";
 import HeroSection from "../../component/HeroSection";
 import Image from "../../assets/hero_3.jpg"
 import Projects from "./Projects";
-import { Helmet } from "react-helmet";
-import { titleIdentify } from "../../index"
+import HeadHelmet from "../../component/HeadHelmet";
 
 const Projectslayout = () => {
     return (
         <main>
-            <Helmet>
-                <title>{ titleIdentify } - Projects</title>
-                <meta 
-                    name="description" 
-                    content="Explore our latest web, mobile, and digital projects. See how we turn ideas into high-quality digital solutions." 
-                />
-            </Helmet>
+            <HeadHelmet 
+                title="Our Latest Web & App Development Projects"
+                description="Explore eDigital’s portfolio of successful projects in web design, mobile app development, branding, and digital marketing across diverse industries."
+                keywords="eDigital Projects, Web Design Portfolio, App Development Work, Branding Projects, Digital Marketing Case Studies, UI UX Design, Creative Solutions"
+            />
             <HeroSection 
                 img={Image} 
                 text="We Make Things Happen" 
