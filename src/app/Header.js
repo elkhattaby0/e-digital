@@ -2,6 +2,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, LucideMenu, MoonIcon, SunIcon, X } from "lucide-react";
 import { identify } from "./layout";
 import Logo from "../../public/assets/logo.svg";
@@ -69,10 +70,10 @@ const Header = () => {
                 <ul className={StyleResp.ul}>
                     {menu.map((n) => (
                         <li key={n.name}>
-                            <a href={n.link} className={StyleResp.link}>
+                            <Link href={n.link} className={StyleResp.link}>
                                 {n.name}
                                     <ArrowRight size="1em" className="-rotate-45 group-hover:rotate-0 group-hover:text-[#FCA311]" />
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -88,20 +89,20 @@ const Header = () => {
             transition={{ duration: 0.5, ease: "easeOut" }}
         >
             <section className={Style.section}>
-                <a className={Style.logo} href="/">
+                <Link className={Style.logo} href="/">
                     <Image
                         src={Logo}
                         alt={identify}
                         className="w-10 h-10 bg-[#14213D] rounded-br-3xl rounded-md"
                     />
-                </a>
+                </Link>
                 <nav>
                     <ul className={Style.ul}>
                         {menu.map((n) => (
                             <li key={n.name}>
-                                <a className={Style.link} href={n.link}>
+                                <Link className={Style.link} href={n.link}>
                                     {n.name}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -117,9 +118,9 @@ const Header = () => {
                     <button aria-label="Toggle navigation menu" className={Style.menu} onClick={haddleRes}>
                         {isOpned ? <X size="22px" /> : <LucideMenu size="22px" />}
                     </button>
-                    <a href="/contact" className={Style.btn}>
+                    <Link href="/contact" className={Style.btn}>
                         Let's Talk
-                    </a>                    
+                    </Link>                    
                 </ul>
             </section>
 

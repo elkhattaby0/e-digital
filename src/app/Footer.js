@@ -1,8 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-
-// import { FaFacebookF } from "react-icons/fa";
-// // import { FaXTwitter } from "react-icons/fa6";
+import Link from "next/link";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -17,17 +15,16 @@ const Footer = () => {
         >
             <section className={Style.section}>
                 <div className="text-[#14213D] dark:text-[#E5E5E5] text-[16px] flex items-center gap-1 outline-none cursor-pointer max-md:mb-2">
-                    {/* <a href=""><FaFacebookF /></a> */}
-                    <a href="https://www.linkedin.com/in/lahoucine-el-khattaby-0335341bb/"><FaLinkedin /></a>
-                    <a href="https://www.instagram.com/lahoucine_elkhattaby"><FaInstagram /></a>                    {/* <a href=""><FaXTwitter /></a> */} |
+                    <Link href="https://www.linkedin.com/in/lahoucine-el-khattaby-0335341bb/"><FaLinkedin /></Link>
+                    <Link href="https://www.instagram.com/lahoucine_elkhattaby"><FaInstagram /></Link>                    {/* <a href=""><FaXTwitter /></a> */} |
                     <p className={Style.p}>© 2025 Lahoucine El Khattaby, All rights reserved.</p>
                 </div>
 
                 
 
                 <div className="flex items-center justify-center gap-1 text-[#14213D] dark:text-[#E5E5E5]">        
-                    <a href="/sitemap.xml" className={Style.a}>Sitemap</a> |
-                    <a href="/terms-conditions" className={Style.a}>Terms & Conditions</a>
+                    <Link href="/sitemap.xml" className={Style.a}>Sitemap</Link> |
+                    <Link href="/terms-conditions" className={Style.a}>Terms & Conditions</Link>
                 </div>
             </section>
         </motion.footer>
