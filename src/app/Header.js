@@ -119,7 +119,7 @@ const Header = () => {
                         {isOpned ? <X size="22px" /> : <LucideMenu size="22px" />}
                     </button>
                     <Link href="/contact" className={Style.btn}>
-                        Let's Talk
+                        Let&apos;s Talk
                     </Link>                    
                 </ul>
             </section>
