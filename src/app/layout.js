@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
-        <meta name="google-site-verification" content="aMir4NjOllJRZ3ygzGlLzt7R1k3LRTyMQYzmQueab88" />
+        <meta name="google-site-verification" content="3ALcB2BV7DqmkUQmesBbI5t6Yf_Ks5H2iWKbwh8LsUU" />
       </head>
       <body
         className={`${poppins.variable} antialiased transition-all duration-300 ease-in-out`}
