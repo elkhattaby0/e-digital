@@ -23,7 +23,7 @@ const Header = () => {
 
     React.useEffect(() => {
         const savedMode = localStorage.getItem("darkMode");
-        if (savedMode === "true") {
+        if (savedMode === "true" || savedMode === null) {
             setToggle(true);
             document.body.classList.add("dark");
         }
