@@ -3,9 +3,19 @@ import Image from "../../../public/assets/hero_4.avif";
 import Tools from './Tools';
 
 export const metadata = {
-    title: "edigital | Best Digital Solutions & Resources",
-    description: "Discover the modern technologies and powerful tools we use to build high-performance websites, mobile apps, and digital products.",
-    keywords:[ "eDigital tools", "digital agency tools", "web development tools", "SEO tools", "UI UX resources", "marketing automation", "design tools", "productivity tools", "web agency software" ]
+    title: "Trusted Web Agency | Best Digital Solutions & Tools",
+    description: "Explore the cutting-edge tools and technologies we use to create high-performance websites, mobile apps, and digital products that drive results.",
+    keywords:[ 
+        "Trusted Web Agency tools", 
+        "digital agency tools", 
+        "web development tools", 
+        "SEO tools", 
+        "UI UX resources", 
+        "marketing automation", 
+        "design tools", 
+        "productivity tools", 
+        "web agency software"
+     ]
 }
 
 const Technologieslayout = () => {

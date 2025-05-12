@@ -10,15 +10,8 @@ import avatar from "../../../public/assets/avatar.png";
 
 const data = [
   { name: "Lahoucine", post: "CEO", img: avatar },
-  { name: "Sara", post: "Developer", img: avatar },
-  { name: "Youssef", post: "Project Manager", img: avatar },
-  { name: "Fatima", post: "UI/UX Designer", img: avatar },
-  { name: "Omar", post: "Backend Developer", img: avatar },
-  { name: "Nora", post: "Marketing Specialist", img: avatar },
-  { name: "Rachid", post: "Frontend Developer", img: avatar },
-  { name: "Imane", post: "Content Creator", img: avatar },
-  { name: "Anas", post: "DevOps Engineer", img: avatar },
-  { name: "Salma", post: "Support Lead", img: avatar }
+  { name: "Hassan", post: "CEO", img: avatar },
+  // { name: "Lahoucine", post: "CEO", img: avatar }
 ];
 
 const Team = () => {

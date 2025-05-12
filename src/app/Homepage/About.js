@@ -33,7 +33,7 @@ const About = () => {
                     className="w-1/2 max-md:w-full relative"
                 >
                     <Image src={AboutImage} 
-                        alt="edigital" 
+                        alt="trustedwebagency" 
                         className={Style.right} 
                         priority
                     /> 

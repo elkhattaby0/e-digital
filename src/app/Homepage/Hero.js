@@ -15,14 +15,14 @@ const Hero = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
-                        <span className={Style.word}>Transform</span> Your Business Online with <span className={Style.word}>{ identify }</span>
+                        <span className={Style.word}>Transform</span> Your Business with <span className={Style.word}>{ identify }</span>
                     </motion.h1>
                     <motion.h2 className={Style.h2} 
                         initial={{ opacity: 0, x: -100 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: "easeOut" }}
                     >
-                        Expert Web Design & App Development That Drives Real Results
+                        Expert Web Design & App Development to Drive Real Results
                     </motion.h2>
                     <motion.div
                         initial={{ opacity: 0, x: -100 }}
@@ -30,7 +30,7 @@ const Hero = () => {
                         transition={{ duration: 1.5, ease: "easeOut" }}
                     >
                         <Paragraph>
-                            Your vision deserves exceptional execution. We build beautiful, high-performing websites and applications that convert visitors into loyal customers.
+                        We create beautiful, high-performing websites and apps that help your business grow and turn visitors into loyal customers.
                         </Paragraph> 
                     </motion.div>
                     

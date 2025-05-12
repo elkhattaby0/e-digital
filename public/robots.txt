@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://edigital-seven.vercel.app/sitemap.xml
+Sitemap: https://trustedwebagency.com/sitemap.xml

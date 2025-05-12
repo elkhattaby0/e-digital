@@ -84,7 +84,7 @@ const data = [
     ]
   },
   {
-    title: "Development Tools",
+    title: "Dev Tools",
     tech: [
       { name: "VSCode", img: <VscVscode /> },
       { name: "Postman", img: <SiPostman /> },
@@ -92,7 +92,7 @@ const data = [
     ]
   },
   {
-    title: "DevOps & Infrastructure",
+    title: "DevOps & Infra",
     tech: [
       { name: "Hosting", img: <FaServer /> },
       { name: "Domain", img: <FaGlobe /> },
@@ -109,7 +109,7 @@ const data = [
     ]
   },
   {
-    title: "Project Management & Methodologies",
+    title: "Project Management",
     tech: [
       { name: "Agile", img: <DiScrum  /> },
       { name: "Jira", img: <FaJira /> },
@@ -135,16 +135,16 @@ const Tools = () => (
             <div className="p-6">
               <HeaderTwo className="mb-2">{item.title}</HeaderTwo>
 
-              <ul className="mt-4 py-6 border-t border-[#E5E5E5] flex flex-wrap gap-10">
-                {
-                  item.tech.map(n=> (
-                    <li key={n.name} className="text-[#14213D] dark:text-[#E5E5E5] flex flex-col gap-3 items-center justify-center w-fit">
-                      <span className="text-[40px] font-base">{n.img}</span>
-                      <p>{n.name}</p>
-                    </li>
-                  ))
-                }
-              </ul>
+              <ul className="mt-4 py-6 border-t border-[#E5E5E5] grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+              {
+                item.tech.map(n => (
+                  <li key={n.name} className="text-[#14213D] dark:text-[#E5E5E5] flex flex-col gap-3 items-center justify-center">
+                    <span className="text-[40px]">{n.img}</span>
+                    <p>{n.name}</p>
+                  </li>
+                ))
+              }
+            </ul>
               
             </div>
           </div>

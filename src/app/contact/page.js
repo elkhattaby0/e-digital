@@ -3,9 +3,18 @@ import Contact from "./Contact";
 import Image from "../../../public/assets/hero_6.jpg"
 
 export const metadata = {
-    title: "edigital | Let's Build Something Great",
-    description: "Get in touch with us for professional web development, mobile apps, and digital solutions. We're ready to bring your ideas to life.",
-    keywords:[ "Contact eDigital", "Digital Agency Contact", "Web Development Help", "App Development Inquiry", "Branding Services", "Marketing Consultation", "Get a Quote", "Contact Form" ]
+    title: "Trusted Web Agency - Let's Build Something Great",
+    description: "Contact Trusted Web Agency for expert web development, mobile apps, and end-to-end digital solutions. We're here to bring your ideas to life and drive results.",
+    keywords:[ 
+        "Contact Trusted Web Agency", 
+        "Full-Service Digital Agency Contact", 
+        "Web Development Inquiry", 
+        "App Development Contact", 
+        "Branding Solutions", 
+        "Digital Marketing Consultation", 
+        "Get a Free Quote", 
+        "Contact Form"
+     ]
 } 
 
 const Contactlayout = () => {

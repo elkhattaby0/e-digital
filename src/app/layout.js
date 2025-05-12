@@ -12,7 +12,7 @@ import GoogleAnalytics from "@/component/GoogleAnalytics";
 import Header from "./Header";
 import Newsletter from "./Newsletter";
 import Footer from "./Footer";
-export const identify = "E-Digital"
+export const identify = "Trusted Web Agency"
 
 
 

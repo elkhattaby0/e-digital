@@ -3,9 +3,17 @@ import Image from "../../../public/assets/hero_3.jpg"
 import Projects from "./Projects";
 
 export const metadata = {
-    title: "edigital | Our Latest Web & App Development Projects",
-    description: "Explore eDigital’s portfolio of successful projects in web design, mobile app development, branding, and digital marketing across diverse industries.",
-    keywords:[ "eDigital Projects", "Web Design Portfolio", "App Development Work", "Branding Projects", "Digital Marketing Case Studies", "UI UX Design", "Creative Solutions" ]
+    title: "Trusted Web Agency - Our Latest Web & App Development Projects",
+    description: "Explore Trusted Web Agency's portfolio of successful web design, app development, branding, and digital marketing projects across various industries.",
+    keywords:[ 
+        "Trusted Web Agency Projects", 
+        "Web Design Portfolio", 
+        "App Development Work", 
+        "Branding Projects", 
+        "Digital Marketing Case Studies", 
+        "UI UX Design", 
+        "Creative Solutions"
+     ]
 } 
 
 const Projectslayout = () => {

@@ -3,9 +3,19 @@ import Services from "./Services";
 import Image from "../../../public/assets/hero_2.jpg"
 
 export const metadata = {
-    title: "edigital | Our Services : Web, App, Marketing & Branding",
-    description: "Discover eDigital's full range of services in web design, app development, digital marketing, SEO, branding, and tailored tech solutions for your business.",
-    keywords:[ "Digital Services", "Web Development", "Mobile App Development", "SEO Services", "Branding", "Digital Marketing", "UI UX Design", "eDigital Agency", "Business Solutions" ]
+    title: "Trusted Web Agency - Our Services: Web, App, Marketing & Branding",
+    description: "Explore Trusted Web Agency's wide range of services, including web design, app development, SEO, branding, digital marketing, and custom tech solutions tailored for your business.",
+    keywords:[
+        "Digital Services",
+        "Web Development",
+        "Mobile App Development",
+        "SEO Services",
+        "Branding",
+        "Digital Marketing",
+        "UI UX Design",
+        "Trusted Web Agency",
+        "Business Solutions"
+     ]
 } 
 
 const Serviceslayout = () => {
@@ -14,7 +24,7 @@ const Serviceslayout = () => {
             <HeroSection 
                 img={Image} 
                 text="Our Services" 
-                para="We help businesses grow with smart websites, apps, and marketing."    
+                para="At Trusted Web Agency, we craft smart websites, apps, and marketing strategies that drive business growth."    
             />
             <Services />
         </main>
