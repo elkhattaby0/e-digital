@@ -20,8 +20,8 @@ const Contact = () => {
     const [error, setError] = useState('');
 
     const contactinfo = [
-        { "name": "Phone", "value": "+212 650 999 953", "href": "tel:+212650999953", "icon": <LucidePhone size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> },
-        { "name": "Whatsapp", "value": "+212 650 999 953", "href": "https://wa.me/212650999953", "icon": <BsWhatsapp size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> },
+        { "name": "Phone", "value": "+212 709 872 603", "href": "tel:+212709872603", "icon": <LucidePhone size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> },
+        { "name": "Whatsapp", "value": "+212 709 872 603", "href": "https://wa.me/212709872603", "icon": <BsWhatsapp size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> },
         { "name": "Email", "value": "trustedwebagencyofficial@gmail.com", "href": "mailto:trustedwebagencyofficial@gmail.com", "icon": <LucideMail size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> },
         { "name": "Address", "value": "86000 Agadir, Morocco", "href": "Agadir, Morocco", "icon": <LucideMapPin size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> }
     ];

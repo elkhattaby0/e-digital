@@ -15,9 +15,9 @@ const Footer = () => {
         >
             <section className={Style.section}>
                 <div className="text-[#14213D] dark:text-[#E5E5E5] text-[16px] flex items-center gap-1 outline-none cursor-pointer max-md:mb-2">
-                    <Link href="https://www.linkedin.com/in/lahoucine-el-khattaby-0335341bb/"><FaLinkedin /></Link>
-                    <Link href="https://www.instagram.com/lahoucine_elkhattaby"><FaInstagram /></Link>                    {/* <a href=""><FaXTwitter /></a> */} |
-                    <p className={Style.p}>© 2025 Lahoucine El Khattaby, All rights reserved.</p>
+                    <Link href="https://www.linkedin.com/"><FaLinkedin /></Link>
+                    <Link href="https://www.instagram.com/"><FaInstagram /></Link> |
+                    <p className={Style.p}>© 2025 Trusted Web Agency, All rights reserved.</p>
                 </div>
 
                 
