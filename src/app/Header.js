@@ -18,15 +18,12 @@ const menu = [
 ];
 
 const Header = () => {
-    const [toggle, setToggle] = React.useState(true);
+    const [toggle, setToggle] = React.useState(false);
     const [isOpned, setIsOpened] = React.useState(false);
 
     React.useEffect(() => {
         const savedMode = localStorage.getItem("darkMode");
         if (savedMode === "true" ) {
-            setToggle(false);
-            document.body.classList.add("dark");
-        } else {
             setToggle(true);
             document.body.classList.add("dark");
         }

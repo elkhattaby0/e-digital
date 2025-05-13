@@ -10,6 +10,9 @@ const Hero = () => {
         <section className={Style.container} >
             <div className={Style.section} >
                 <div className={Style.left}>
+                    {/* <div className="bg-[#FCA311] rounded-full px-3 py-1.5 w-fit uppercase text-sm text-[#14213D]">
+                        Based In Morocco
+                    </div> */}
                     <motion.h1 className={Style.h1}
                         initial={{ opacity: 0, x: -100 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -57,7 +60,7 @@ const Hero = () => {
 
 const Style = {
     "container": "w-full flex items-center justify-center max-md:pt-6 bg-foreground dark:bg-background",
-    "section": "w-11/12 flex max-md:flex-col items-center justify-center h-[calc(100lvh-80px)] ",
+    "section": "w-11/12 flex max-md:flex-col items-center justify-center h-[calc(100lvh-80px)] max-md:h-[85lvh]",
     "left": "w-2/3 max-md:w-full" ,
     "right": "w-1/3 max-md:w-full bo rder",
     "h1": "text-6xl max-md:text-5xl font-bold text-[#14213D] mb-4 dark:text-[#E5E5E5]",

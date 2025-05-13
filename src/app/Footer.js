@@ -1,9 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-
+import { FaWhatsappSquare } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -15,8 +14,8 @@ const Footer = () => {
         >
             <section className={Style.section}>
                 <div className="text-[#14213D] dark:text-[#E5E5E5] text-[16px] flex items-center gap-1 outline-none cursor-pointer max-md:mb-2">
-                    <Link href="https://www.linkedin.com/"><FaLinkedin /></Link>
-                    <Link href="https://www.instagram.com/"><FaInstagram /></Link> |
+                    <Link href="https://www.facebook.com/profile.php?id=61576069447823"><FaFacebookSquare /></Link>
+                    <Link href="https://wa.me/212709872603"><FaWhatsappSquare /></Link> |
                     <p className={Style.p}>© 2025 Trusted Web Agency, All rights reserved.</p>
                 </div>
 
