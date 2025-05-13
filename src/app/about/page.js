@@ -30,7 +30,7 @@ const Aboutlayout = () => {
                 para="We are a full service digital agency committed to helping businesses thrive online through expert web design, app development, and strategic marketing solutions." 
             />
             <Whoweare />
-            <Team />
+            {/* <Team /> */}
         </main>
     )
 }
