@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content="3ALcB2BV7DqmkUQmesBbI5t6Yf_Ks5H2iWKbwh8LsUU" />
       </head>
       <body
-        className={`bg-[#FFFFFF] dark:bg-[#14213D] ${poppins.variable} antialiased transition-all duration-300 ease-in-out `}
+        className={`${poppins.variable} antialiased bg-[#FFFFFF] dark:bg-[#14213D] transition-all duration-300 ease-in-out`}
       >
         <GoogleAnalytics />
         <Header />

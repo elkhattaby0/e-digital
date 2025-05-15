@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeaderThree = ({ children }) => {
     return (
         <h3

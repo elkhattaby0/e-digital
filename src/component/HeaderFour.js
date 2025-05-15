@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeaderFour = ({ children }) => {
     return (
         <h4

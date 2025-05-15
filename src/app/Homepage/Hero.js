@@ -7,8 +7,8 @@ import Paragraph from "@/component/Paragraph";
 import HeaderOne from "@/component/HeaderOne";
 import HighlightColor from "@/component/HighlightColor";
 import Space from "@/component/Space";
-// import Lottie from "lottie-react";
-// import animationData from "../../../public/assets/animation/trusted_web_agency_hero.json"
+import Image from "next/image";
+import ImageHero from "../../../public/assets/trusted_web_agency_hero.png"
 
 const Hero = () => {
     return (
@@ -54,11 +54,11 @@ const Hero = () => {
                     </motion.a>
                 </div>
                 <div className={Style.right}>
-                {/* <Lottie
-                    animationData={animationData}
-                    loop={true}
-                    autoplay={true}
-                /> */}
+                    <Image 
+                        src={ImageHero} alt={identify + "responsive"}
+                        fill
+                        className="object-cover"
+                    />
                 </div>
             </div>
         </section>
@@ -67,11 +67,11 @@ const Hero = () => {
 
 const Style = {
     "container": "w-full flex items-center justify-center max-md:pt-6 bg-foreground dark:bg-background",
-    "section": "w-11/12 flex max-md:flex-col items-center justify-center h-[calc(100lvh-80px)] max-md:h-full [85lvh]",
+    "section": "w-11/12 flex max-md:flex-col-reverse items-center justify-center h-[calc(100lvh-80px)] max-md:h-full [85lvh]",
    
     "left": "w-2/3 max-md:w-full" ,
-    "right": "w-1/3 max-md:w-full",
-   
+    "right": "w-1/3 max-md:w-full bor der max-md:mb-5 h-max-md:h-50 relative",
+    
     "a": "text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl font-medium flex items-center bg-[#14213D] text-[#FFFFFF] rounded-full px-4 py-2 dark:bg-[#E5E5E5] dark:text-[#14213D] outline-none cursor-pointer transition-all duration-300 ease-in-out hover:text-[#14213D] hover:bg-[#FFFFFF] dark:hover:bg-[#14213D] dark:hover:text-[#E5E5E5] border-[1px] dark:hover:border-[#E5E5E5] w-fit",
 }
 

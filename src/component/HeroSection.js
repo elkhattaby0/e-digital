@@ -1,4 +1,3 @@
-import React from 'react';
 import Space from './Space';
 
 const HeroSection = ({ img, text, para="" }) => (

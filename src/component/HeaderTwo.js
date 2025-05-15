@@ -1,5 +1,3 @@
-import React from 'react';
-
 const HeaderTwo = ({ children }) => {
     return (
         <h2 
