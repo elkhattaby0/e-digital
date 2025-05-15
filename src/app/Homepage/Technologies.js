@@ -4,9 +4,10 @@ import { FaLaravel, FaReact, FaWordpress, FaYoast } from "react-icons/fa";
 import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { FaElementor } from "react-icons/fa6";
 import { SiTypescript } from "react-icons/si";
-import HeaderTwo from "../../component/HeaderTwo";
-import ButtonArrow from "../../component/ButtonArrow";
-import Paragraph from "../../component/Paragraph";
+import HeaderTwo from "@/component/HeaderTwo";
+import ButtonArrow from "@/component/ButtonArrow";
+import Paragraph from "@/component/Paragraph";
+import Space from "@/component/Space";
 
 const Technologies  = () => {
     const data = [
@@ -30,6 +31,7 @@ const Technologies  = () => {
                 >
                     <HeaderTwo>Our Tools</HeaderTwo>
                 </motion.div>
+                
                 <motion.div
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -40,6 +42,7 @@ const Technologies  = () => {
                         We use the best and latest technologies :
                     </Paragraph>
                 </motion.div>
+                <Space />
                 <div className="flex flex-wrap gap-8 justify-center">
                 {
                     data.map(n=> (
@@ -54,7 +57,7 @@ const Technologies  = () => {
                     ))
                 }
                 </div>
-                <br />
+                <Space />
                 <motion.div
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}

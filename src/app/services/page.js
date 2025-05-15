@@ -24,7 +24,7 @@ const Serviceslayout = () => {
             <HeroSection 
                 img={Image} 
                 text="Our Services" 
-                para="At Trusted Web Agency, we craft smart websites, apps, and marketing strategies that drive business growth."    
+                para="At Trusted Web Agency, we create websites, apps, and marketing strategies that drive real results for your business."    
             />
             <Services />
         </main>

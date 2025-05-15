@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { identify } from "./layout";
+import Paragraph from "@/component/Paragraph";
+
 
 const Footer = () => {
     return (
@@ -14,9 +18,10 @@ const Footer = () => {
         >
             <section className={Style.section}>
                 <div className="text-[#14213D] dark:text-[#E5E5E5] text-[16px] flex items-center gap-1 outline-none cursor-pointer max-md:mb-2">
-                    <Link href="https://www.facebook.com/profile.php?id=61576069447823"><FaFacebookSquare /></Link>
-                    <Link href="https://wa.me/212709872603"><FaWhatsappSquare /></Link> |
-                    <p className={Style.p}>© 2025 Trusted Web Agency, All rights reserved.</p>
+                    <Link className="hover:text-[#FCA311]" href="https://www.facebook.com/profile.php?id=61576069447823"><FaFacebookSquare /></Link>
+                    <Link className="hover:text-[#FCA311]" href="https://www.instagram.com/trustedwebagency/"><FaInstagramSquare /></Link>
+                    <Link className="hover:text-[#FCA311]" href="https://wa.me/212709872603"><FaWhatsappSquare /></Link> |
+                    <Paragraph>© 2025 { identify }, All rights reserved.</Paragraph>
                 </div>
 
                 
@@ -34,7 +39,6 @@ const Style = {
     "containre": "w-full flex items-center justify-center border-t-[0.1px] border-[#E5E5E5] dark:border-[#666] bg-[#FFFFFF] dark:bg-[#14213D]",
     "section": "w-11/12 py-5 flex flex-wrap items-center justify-between",
 
-    "p": "text-[#14213D] dark:text-[#E5E5E5]",
-    "a": "text-[#14213D] dark:text-[#E5E5E5] under line font-base text-sm"
+    "a": "text-[#14213D] dark:text-[#E5E5E5] hover:text-[#FCA311] font-medium "
 }
 export default Footer;

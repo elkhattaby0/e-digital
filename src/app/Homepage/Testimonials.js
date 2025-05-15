@@ -2,7 +2,9 @@
 import { motion } from "framer-motion";
 
 import { Quote, Star } from "lucide-react";
-import HeaderTwo from "../../component/HeaderTwo";
+import HeaderTwo from "@/component/HeaderTwo";
+import Space from "@/component/Space";
+
 const data = [
     {
         id: 1,
@@ -51,10 +53,10 @@ const Testimonials = () => {
                         >   
                             <div className="text-[#14213D] dark:text-[#E5E5E5]">
                                 <Quote size="40px"/>
-                                <blockquote className="font-base text-xl">{n.msg}</blockquote>
+                                <blockquote className="text-sm sm:text-base md:text-base lg:text-lg xl:text-lg 2xl:text-lg font-normal leading-relaxed">{n.msg}</blockquote>
                             </div>
-
-                            <div className="flex items-center mt-4">
+                            <Space />
+                            <div className="flex items-center ">
                                 {
                                     Array.from({ length: n.star }).map((_, i) => (
                                         <Star key={i} size="18px" className="fill-[#FCA311]" />
@@ -67,9 +69,9 @@ const Testimonials = () => {
                                 }
                             </div>
                             
-                            <div className="flex items-center text-[#14213D] dark:text-[#E5E5E5]">
-                                <cite className="font-bold mr-1">{n.name}</cite> - 
-                                <p className="font-base text-sm ml-1">{n.post}</p>
+                            <div className="text-sm sm:text-base md:text-base lg:text-lg xl:text-lg 2xl:text-lg font-normal leading-relaxed flex items-center text-[#14213D] dark:text-[#E5E5E5]">
+                                <cite className="mr-1">{n.name}</cite> - 
+                                <p className="ml-1">{n.post}</p>
                             </div>
                         </motion.div>
                     ))

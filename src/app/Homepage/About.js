@@ -2,9 +2,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import AboutImage from "../../../public/assets/about_section_homepage.jpg"
-import HeaderTwo from "../../component/HeaderTwo";
-import ButtonArrow from "../../component/ButtonArrow";
-import Paragraph from "../../component/Paragraph";
+import HeaderTwo from "@/component/HeaderTwo";
+import ButtonArrow from "@/component/ButtonArrow";
+import Paragraph from "@/component/Paragraph";
+import Space from "@/component/Space";
 
 const About = () => {
     return (
@@ -17,10 +18,11 @@ const About = () => {
                     viewport={{ once: true }}
                 >
                     <HeaderTwo>Who We Are</HeaderTwo>
+                    <Space />
                     <Paragraph>
-                        We are a team of creative developers and designers. We love to build websites and apps that look good and work fast. Our goal is to help your business shine online.
+                        We’re a creative team of developers and designers who love building websites and mobile apps that are not only beautiful but easy to use. We focus on making things work well, look great, and truly help your business grow online.
                     </Paragraph>
-                    
+                    <Space />
                     <ButtonArrow link="about">
                         Learn more about us
                     </ButtonArrow>

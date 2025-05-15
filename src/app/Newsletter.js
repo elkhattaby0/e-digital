@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import HeaderTwo from "@/component/HeaderTwo";
 import Paragraph from "@/component/Paragraph";
+import Space from "@/component/Space";
 
 
 const Newsletter  = () => {
@@ -19,6 +20,7 @@ const Newsletter  = () => {
                     <Paragraph>
                         Enter your email to get updates and tips from us.
                     </Paragraph>
+                    <Space />
                     <form>
                         <input type="email" placeholder="Enter your email" required
                             className="text-[#14213D] border border-[#14213D] outline-none px-3 py-2 rounded-md w-2/3 max-md:w-full dark:bg-[#14213D] dark:border-[#E5E5E5] mb-4 dark:text-[#E5E5E5]" />
@@ -42,7 +44,7 @@ const Style = {
     "left": "w-2/3 max-md:w-full",
     "right": "w-1/3 max-md:w-full rounded",
 
-    "a": "flex items-center bg-[#FFFFFF] border-[#14213D] text-[#14213D] rounded-full px-4 py-2 dark:bg-[#14213D] dark:text-[#E5E5E5] dark:border-[#E5E5E5] outline-none cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#14213D] hover:text-[#FFFFFF] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] border-[1px] dark:hover:border-[#E5E5E5] w-fit group"
+    "a": "text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl font-medium flex items-center bg-[#FFFFFF] border-[#14213D] text-[#14213D] rounded-full px-4 py-2 dark:bg-[#14213D] dark:text-[#E5E5E5] dark:border-[#E5E5E5] outline-none cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#14213D] hover:text-[#FFFFFF] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] border-[1px] dark:hover:border-[#E5E5E5] w-fit group"
 }
 
 export default Newsletter ;

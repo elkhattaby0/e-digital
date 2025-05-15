@@ -1,6 +1,6 @@
 import Image from "next/image";
-import HeaderThree from "../../component/HeaderThree";
-import Paragraph from "../../component/Paragraph";
+import HeaderFive from "@/component/HeaderFive";
+import Paragraph from "@/component/Paragraph";
 
 import img1 from "../../../public//assets/service_1.jpg";
 import img2 from "../../../public//assets/service_2.avif";
@@ -10,48 +10,49 @@ import img5 from "../../../public/assets/service_6.jpg";
 import img6 from "../../../public/assets/service_5.jpg";
 import img7 from "../../../public/assets/service_7.jpg";
 import img8 from "../../../public/assets/service_8.jpg";
+import Space from "@/component/Space";
 
 
 
 const data = [
   {
     "title": "Website Development",
-    "description": "We build fast, dynamic, and secure websites using modern technologies like the MERN Stack, Laravel, and WordPress with Elementor. From responsive design to dynamic effects and an intuitive admin panel, your site will be powerful, beautiful, and easy to manage.",
+    "description": "We build fast, secure, and user-friendly websites using the latest technologies like MERN Stack, Laravel, and WordPress with Elementor. Whether it’s a simple website or a complex platform, we ensure it's easy to use and meets your business goals.",
     "img": img1
   },
   {
     "title": "Mobile App Development",
-    "description": "We develop high-performance, cross-platform mobile applications using React Native, delivering sleek designs and smooth user experiences on both Android and iOS.",
+    "description": "Our team develops high-quality mobile apps for both Android and iOS. Using React Native, we deliver a smooth user experience, so your app works effortlessly across devices while offering intuitive interfaces and functionality.",
     "img": img2
   },
   {
     "title": "Graphic & Web Design",
-    "description": "From logos and business cards to brand guides and UI/UX design, we create visually striking and professional graphics that define your brand and enhance user engagement.",
+    "description": "We specialize in designing visual identities, logos, and UI/UX elements that leave a lasting impression. Our designs are crafted to connect with your audience, enhance your brand's personality, and ensure your website or app is visually appealing and functional.",
     "img": img3
   },
   {
-    "title": "SEO & Referencing",
-    "description": "We optimize your website’s speed, structure, and content to improve visibility and search engine rankings through technical SEO and natural referencing strategies.",
+    "title": "SEO & Optimization",
+    "description": "We focus on optimizing your website’s content and structure to improve visibility in search engines. From speeding up your site to fine-tuning for better ranking, we make sure your business is seen by the right audience.",
     "img": img4
   },
   {
     "title": "Web Project Management",
-    "description": "Whether it’s a showcase website, an e-commerce store, or a blog, we manage your web project from start to finish to ensure it aligns with your goals and delivers results.",
+    "description": "We handle every aspect of your web project, from idea to launch. Our approach ensures your goals are met, the project stays on track, and the final product exceeds expectations",
     "img": img5
   },
   {
     "title": "Maintenance & Support",
-    "description": "We provide ongoing support with regular updates, bug fixes, backups, and security enhancements to keep your website running smoothly and securely.",
+    "description": "After your website or app goes live, we continue to support you with regular updates, backups, and security measures. Your digital assets will always stay fresh and secure.",
     "img": img6
   },
   {
     "title": "Hosting & Domain Services",
-    "description": "We handle domain name registration, hosting setup, and SSL certificate installation to ensure your website is fast, secure, and always accessible.",
+    "description": "We manage all the technical details for you, from domain name registration to hosting setup and SSL certification, ensuring your website runs securely and is always available to your audience.",
     "img": img7
   },
   {
     "title": "IT Consulting",
-    "description": "We guide you in choosing the right technologies and digital strategies tailored to your business goals, helping you make informed decisions for long-term success.",
+    "description": "We help you choose the right technologies for your business needs. Whether it's selecting the perfect platform or devising a digital strategy, we guide you to make informed, strategic decisions for long-term growth.",
     "img": img8
   }
 ];
@@ -62,6 +63,7 @@ const Services = () => (
       <Paragraph isCenter={ true }>
         Here is what we can do for you :
       </Paragraph>
+      <Space />
       <div className="flex flex-wrap justify-center gap-8">
         {data.map(item => (
           <div
@@ -75,13 +77,13 @@ const Services = () => (
                 className="w-full h-full object-cover transition-transform transform hover:scale-105 group-hover:scale-105"
               />
             </div>
-            <div className="p-4">
-              <HeaderThree className="mb-2">{item.title}</HeaderThree>
-              <div className="mt-2">
-                <Paragraph>
-                    {item.description}
-                </Paragraph>
-              </div>
+            
+            <div className="m-4">
+              <HeaderFive>{item.title}</HeaderFive>  
+              <Space />
+              <Paragraph>
+                  {item.description}
+              </Paragraph>
             </div>
           </div>
         ))}

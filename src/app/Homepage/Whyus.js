@@ -1,12 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
 import AnimatedNumbers from "react-animated-numbers";
-import HeaderTwo from "../../component/HeaderTwo";
-import ListCheck from "../../component/ListCheck";
+
+import HeaderTwo from "@/component/HeaderTwo";
+import ListCheck from "@/component/ListCheck";
+import Space from "@/component/Space";
 
 import img1 from "../../../public/assets/why_1.jpg"
-import img2 from "../../../public/assets/why_2.avif" //avif
-import img3 from "../../../public/assets/why_3.avif" //avif
+import img2 from "../../../public/assets/why_2.avif" 
+import img3 from "../../../public/assets/why_3.avif" 
 import img4 from "../../../public/assets/why_4.jpg"
 
 
@@ -35,6 +37,7 @@ const Whyus = () => {
                     viewport={{ once: true }}
                 >
                     <HeaderTwo>Why Work With Us</HeaderTwo>
+                    <Space />
                     <ul>
                     {data.map((item) => (
                         <ListCheck key={item} >

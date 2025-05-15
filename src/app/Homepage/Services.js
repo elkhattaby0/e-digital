@@ -1,8 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
-import HeaderTwo from "../../component/HeaderTwo";
-import ButtonArrow from "../../component/ButtonArrow";
-import HeaderThree from "../../component/HeaderThree";
+import HeaderTwo from "@/component/HeaderTwo";
+import ButtonArrow from "@/component/ButtonArrow";
+import HeaderFive from "@/component/HeaderFive";
+import Paragraph from "@/component/Paragraph";
 import { Globe2, Palette, SearchCheckIcon, SmartphoneIcon, Wrench } from "lucide-react";
 
 
@@ -29,7 +30,7 @@ const Services = () => {
         {
             "id": 4,
             "img": <SearchCheckIcon className={Style.img} />,
-            "title": "SEO & Referencing",
+            "title": "SEO & Optimization",
             "text": "Optimized content and performance"
         },
         {
@@ -60,8 +61,8 @@ const Services = () => {
                             viewport={{ once: true }}
                         >
                             {n.img}
-                            <HeaderThree>{n.title}</HeaderThree>
-                            <p className={Style.para}>{n.text}</p>
+                            <HeaderFive>{n.title}</HeaderFive>
+                            <Paragraph>{n.text}</Paragraph>
                         </motion.div>
                     ))
                 }
@@ -87,7 +88,6 @@ const Style = {
 
     "card": "cursor-pointer border border-[#E5E5E5] dark:border-[#666666] size-100 rounded-xl p-6 hover:shadow-md dark:border-[#E5E5E5] transform transition-transform duration-300 group h-fit w-fit max-md:w-full",
     "img": "mb-2 size-[45px] text-[#14213D] dark:text-[#E5E5E5]",
-    "para": "font-base text-[#000000] leading-relaxed dark:text-[#E5E5E5]"
 }
 
 export default Services;

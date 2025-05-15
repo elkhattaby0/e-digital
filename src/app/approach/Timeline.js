@@ -2,6 +2,7 @@
 import HeaderThree from "../../component/HeaderThree";
 import Paragraph from "../../component/Paragraph";
 import ButtonArrow from "../../component/ButtonArrow";
+import Space from "@/component/Space";
 
 const data = [
   {
@@ -65,7 +66,13 @@ const Timeline = () => {
                 <div className="h-full w-full">
                   <HeaderThree>{n.title}</HeaderThree>
                   <Paragraph>{n.description}</Paragraph>
-                  {n.step === 1 && <ButtonArrow link="contact">Get a Quote</ButtonArrow>}
+                  {
+                  n.step === 1 && (
+                    <>
+                      <Space />
+                      <ButtonArrow link="contact">Get a Quote</ButtonArrow>
+                    </>
+                )}
                 </div>
               </div>
               {n.step !== 7 && n.step % 2 !== 0 && (

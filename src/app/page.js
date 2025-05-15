@@ -8,11 +8,25 @@ import Testimonials from "./Homepage/Testimonials";
 
 export const metadata = {
   title: "Trusted Web Agency - Full Service Digital Agency",
-  description: "Trusted Web Agency provides end-to-end digital solutions, specializing in web design, app development, branding, digital marketing, and custom software to help businesses succeed online.",
+  description: "Trusted Web Agency helps businesses grow online through smart design, powerful apps, strong branding, and digital strategies that actually work.",
   keywords:[ 
-    "Digital Agency", "Full-Service Agency", "Web Development", "App Development", "SEO Services", "UI/UX Design", "Social Media Marketing", "Branding", "E-commerce Solutions", 
-    "Content Creation", "Digital Strategy", "Online Advertising", "Software Development", "Graphic Design", "Cloud Solutions", "End-to-End Digital Services", 
-    "WordPress", "Elementor", "React", "Laravel", "Python", "AI", "ChatGPT", "Digital Transformation", "Trusted Web Agency"
+    "Digital Agency",
+    "Full-Service Agency", 
+    "Web Development", 
+    "App Development", 
+    "SEO Services", 
+    "UI/UX Design", 
+    "Social Media Marketing", 
+    "Branding, E-commerce Solutions", 
+    "Content Creation", 
+    "Digital Strategy", 
+    "Online Advertising", 
+    "Software Development", 
+    "Graphic Design", 
+    "Cloud Solutions", 
+    "End-to-End Digital Services", 
+    "WordPress", "Elementor", "React", "Laravel", "Python", "AI", "ChatGPT", 
+    "Digital Transformation", "Trusted Web Agency"
   ]
 } 
 

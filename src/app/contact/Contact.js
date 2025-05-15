@@ -3,11 +3,13 @@ import React, { useState } from "react";
 import { ArrowRight, LucideMail, LucideMapPin } from "lucide-react";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
-import HeaderTwo from "../../component/HeaderTwo";
-import Paragraph from "../../component/Paragraph";
-import HeaderThree from "../../component/HeaderThree";
+import HeaderTwo from "@/component/HeaderTwo";
+import Paragraph from "@/component/Paragraph";
+import HeaderFour from "@/component/HeaderFour";
 import ReCAPTCHA from "react-google-recaptcha";
+import Space from "@/component/Space";
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -23,6 +25,7 @@ const Contact = () => {
 
     const contactinfo = [
         { "name": "Facebook", "value": "Trusted Web Agency", "href": "https://www.facebook.com/profile.php?id=61576069447823", "icon": <FaFacebookF size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> },
+        { "name": "Instagram", "value": "Trusted Web Agency", "href": "https://www.instagram.com/trustedwebagency/", "icon": <FaInstagram size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> },
         { "name": "Whatsapp", "value": "+212 709 872 603", "href": "https://wa.me/212709872603", "icon": <BsWhatsapp size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> },
         { "name": "Email", "value": "trustedwebagencyofficial@gmail.com", "href": "mailto:trustedwebagencyofficial@gmail.com", "icon": <LucideMail size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> },
         { "name": "Address", "value": "86000 Agadir, Morocco", "href": "Agadir, Morocco", "icon": <LucideMapPin size="35px" className="text-[#14213D] dark:text-[#E5E5E5]" /> }
@@ -73,6 +76,7 @@ const Contact = () => {
                 <div className="w-1/2 max-md:w-full max-md:mb-4">
                     <HeaderTwo>Let’s Work Together</HeaderTwo>
                     <Paragraph>Ready to start your next project ? Contact us today for a free consultation.</Paragraph>
+                    <Space />
                     <div className="flex flex-col gap-4">
                         {
                             contactinfo.map(n => (
@@ -93,7 +97,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="w-1/2 max-md:w-full mt-3">
-                    <HeaderThree>Or Send Us a Message</HeaderThree>
+                    <HeaderFour>Or Send Us a Message</HeaderFour>
                     {isSubmitted ? (
                         <p>Your message has been sent. Thank you!</p>
                     ) : (

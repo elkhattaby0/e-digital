@@ -2,19 +2,23 @@
 import { motion } from "framer-motion";
 
 import Image from "next/image";
-import HeaderTwo from "../../component/HeaderTwo";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ButtonArrow from "../../component/ButtonArrow";
-import Paragraph from "../../component/Paragraph";
-import HeaderThree from "../../component/HeaderThree";
+
+import HeaderTwo from "@/component/HeaderTwo";
+import HeaderFive from "@/component/HeaderFive";
+import HeaderSix from "@/component/HeaderSix";
+import Paragraph from "@/component/Paragraph";
+import ButtonArrow from "@/component/ButtonArrow";
+import Space from "@/component/Space";
 
 import img1 from "../../../public/assets/project_1.avif";
 import img2 from "../../../public/assets/project_2.avif";
 import img3 from "../../../public/assets/project_3.avif";
 import img4 from "../../../public/assets/project_4.jpg";
 import img5 from "../../../public/assets/project_5.jpg";
+
 
 const data = [
     {
@@ -28,7 +32,7 @@ const data = [
     {
         id: 2,
         title: "FoodieApp – Mobile App",
-        type: "Food Delivery App (Android & iOS)",
+        type: "Food Delivery App",
         description: "This app lets people order food online. It has a simple design and is easy to use.",
         img: img2,
         link: "/"
@@ -107,6 +111,7 @@ const Projects = () => {
                 >
                     <HeaderTwo>Our Work</HeaderTwo>
                 </motion.div>
+
                 <motion.div
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -117,6 +122,8 @@ const Projects = () => {
                         We have worked with many happy clients. Take a look at some of our recent projects.
                     </Paragraph>
                 </motion.div>
+
+                <Space />
                 <Slider {...settings} className="w-full">
                     {data.map((n) => (
                         <div key={n.id} className="px-2">
@@ -126,9 +133,10 @@ const Projects = () => {
                                     alt={`edigital - ${n.title}`}
                                     className="h-[140px] w-full rounded-xl mb-4 object-cover bg-center"
                                 />
-                                <HeaderThree>{n.title}</HeaderThree>
-                                <h4 className={Style.h6}>{n.type}</h4>
-                                <p className={Style.p}>{n.description}</p>
+                                <HeaderFive>{n.title}</HeaderFive>
+                                <HeaderSix>{n.type}</HeaderSix>
+                                <Space />
+                                <Paragraph>{n.description}</Paragraph>
                             </div>
                         </div>
                     ))}
@@ -152,9 +160,7 @@ const Projects = () => {
 const Style = {
     container: "w-full flex items-center justify-center py-20 bg-[#FFFFFF] dark:bg-[#14213D]",
     section: "w-11/12 flex flex-col items-center justify-center",
-    card: "flex flex-col justify-between h-[380px] w-full overflow-hidden cursor-pointer border border-[#E5E5E5] rounded-xl p-4 hover:shadow-md dark:border-[#666666] transition-all duration-300 ease-in-out group",
-    h6: "font-base text-md mt-2 leading-[18px] text-[#14213D] dark:text-[#E5E5E5]",
-    p: "font-base text-sm my-2 text-[#000000] leading-[20px] dark:text-[#E5E5E5]",
+    card: "flex flex-col justify-between h-[450px] max-md:h-fit w-full overflow-hidden cursor-pointer border border-[#E5E5E5] rounded-xl p-4 hover:shadow-md dark:border-[#666666] transition-all duration-300 ease-in-out group"
 };
 
 export default Projects;
