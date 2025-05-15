@@ -1,4 +1,5 @@
 'use client';
+
 import { motion } from "framer-motion";
 import { TrendingUp } from "lucide-react";
 import { identify } from "../layout";
@@ -6,8 +7,8 @@ import Paragraph from "@/component/Paragraph";
 import HeaderOne from "@/component/HeaderOne";
 import HighlightColor from "@/component/HighlightColor";
 import Space from "@/component/Space";
-import Lottie from "lottie-react";
-import animationData from "../../../public/assets/animation/trusted_web_agency_hero.json"
+// import Lottie from "lottie-react";
+// import animationData from "../../../public/assets/animation/trusted_web_agency_hero.json"
 
 const Hero = () => {
     return (
@@ -22,11 +23,11 @@ const Hero = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     > 
-                    <HeaderOne>
-                        <HighlightColor>Boost </HighlightColor>
-                        Your Business with 
-                        <HighlightColor> { identify }</HighlightColor>
-                    </HeaderOne>
+                        <HeaderOne>
+                            <HighlightColor>Boost </HighlightColor>
+                            Your Business with 
+                            <HighlightColor> { identify }</HighlightColor>
+                        </HeaderOne>
                     </motion.div>
                     
                     <Space />
@@ -53,11 +54,11 @@ const Hero = () => {
                     </motion.a>
                 </div>
                 <div className={Style.right}>
-                <Lottie
+                {/* <Lottie
                     animationData={animationData}
                     loop={true}
                     autoplay={true}
-                    />
+                /> */}
                 </div>
             </div>
         </section>
