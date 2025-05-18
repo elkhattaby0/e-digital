@@ -86,7 +86,7 @@ const Style = {
     "container": "w-full flex items-center justify-center py-20 bg-[#FFFFFF] dark:bg-[#14213D]",
     "section": "w-11/12 flex flex-col items-center justify-center h- [89lvh] gap-10",
     
-    "card": "cursor-pointer border border-[#14213D] size-100 rounded-xl p-6 transition-all duration-300 ease-in-out group border-[#E5E5E5] h-fit max-md:w-full dark:border-[#666666] hover:shadow-md",
+    "card": "cursor-pointer border border-[#14213D] size-100 rounded-xl p-6 transition-all duration-300 ease-in-out group border-[#E5E5E5] h-fit max-md:w-full dark:border-[#666666] hover:shadow-md dark:bg-[#1F2A40]",
 }
 
 export default Testimonials;

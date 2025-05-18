@@ -38,7 +38,7 @@ const Whyus = () => {
                 >
                     <HeaderTwo>Why Work With Us</HeaderTwo>
                     <Space />
-                    <ul>
+                    <ul className="max-md:flex flex-col items-center">
                     {data.map((item) => (
                         <ListCheck key={item} >
                             { item }
@@ -51,7 +51,7 @@ const Whyus = () => {
                     {facts.map((fact) => (
                         <motion.div
                             key={fact.name}
-                            className="relative flex flex-col items-center justify-center border w-[250px] h-[250px] max-md:w-[160px] max-md:h-[160px] p-4 rounded-xl overflow-hidden bg-cover bg-center text-[#E5E5E5] border-[#E5E5E5] dark:border-[#666666]"
+                            className="relative flex flex-col items-center justify-center border h-[250px] max-md:h-[160px] p-4 rounded-xl overflow-hidden bg-cover bg-center text-[#E5E5E5] border-[#E5E5E5] dark:border-[#666666]"
                             style={{ backgroundImage: `url(${fact.img.src})` }}
                             initial={{ opacity: 0, y: 100 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -90,8 +90,8 @@ const Whyus = () => {
 const Style = {
     container: "w-full flex items-center justify-center py-20 bg-[#FFFFFF] dark:bg-[#14213D]",
     section: "w-11/12 flex max-md:flex-col items-left justify-center h-auto gap-10",
-    left: "w-1/2 max-md:w-full",
-    right: "w-1/2 max-md:w-full flex flex-wrap justify-center gap-6 max-md:gap-3",
+    left: "w-1/2 max-md:w-full max-md:flex flex-col items-center",
+    right: "w-1/2 max-md:w-full grid grid-cols-2 justify-center gap-6 max-md:gap-3",
 };
 
 export default Whyus;

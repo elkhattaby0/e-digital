@@ -131,7 +131,7 @@ const Projects = () => {
                                 <Image
                                     src={n.img}
                                     alt={`edigital - ${n.title}`}
-                                    className="h-[140px] w-full rounded-xl mb-4 object-cover bg-center"
+                                    className="h-[150px] w-full rounded-xl mb-4 object-cover bg-center"
                                 />
                                 <HeaderFive>{n.title}</HeaderFive>
                                 <HeaderSix>{n.type}</HeaderSix>
@@ -160,7 +160,7 @@ const Projects = () => {
 const Style = {
     container: "w-full flex items-center justify-center py-20 bg-[#FFFFFF] dark:bg-[#14213D]",
     section: "w-11/12 flex flex-col items-center justify-center",
-    card: "flex flex-col justify-between h-[450px] max-md:h-fit w-full overflow-hidden cursor-pointer border border-[#E5E5E5] rounded-xl p-4 hover:shadow-md dark:border-[#666666] transition-all duration-300 ease-in-out group"
+    card: "flex flex-col justify-between h-[450px] max-md:h-fit w-full overflow-hidden cursor-pointer border border-[#E5E5E5] rounded-xl p-4 hover:shadow-md dark:border-[#666666] dark:bg-[#1F2A40] transition-all duration-300 ease-in-out group"
 };
 
 export default Projects;

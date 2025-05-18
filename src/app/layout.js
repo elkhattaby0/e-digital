@@ -18,7 +18,7 @@ export const identify = "Trusted Web Agency"
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
         <meta name="google-site-verification" content="3ALcB2BV7DqmkUQmesBbI5t6Yf_Ks5H2iWKbwh8LsUU" />

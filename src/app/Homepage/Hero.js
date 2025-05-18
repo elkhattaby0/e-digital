@@ -43,6 +43,7 @@ const Hero = () => {
                     </motion.div>
                     
                     <Space />
+                    <Space />
                     
                     <motion.a href="/contact" className={Style.a} 
                         initial={{ opacity: 0, x: -100 }}
@@ -50,7 +51,7 @@ const Hero = () => {
                         transition={{ duration: 1.8, ease: "easeOut" }}
                     >
                         Get a Free Quote
-                        <TrendingUp size="20px" className="ml-1" />
+                        {/* <TrendingUp size="20px" className="ml-1" /> */}
                     </motion.a>
                 </div>
                 <div className={Style.right}>
@@ -66,13 +67,13 @@ const Hero = () => {
 }
 
 const Style = {
-    "container": "w-full flex items-center justify-center max-md:pt-6 bg-foreground dark:bg-background",
-    "section": "w-11/12 flex max-md:flex-col-reverse items-center justify-center h-[calc(100lvh-80px)] max-md:h-full [85lvh]",
+    "container": "w-full flex items-center justify-center max-md:pt-6 bg-[#FFFFFF] dark:bg-[#14213D]",
+    "section": "w-11/12 flex max-md:flex-col-reverse items-center justify-center h-[calc(100lvh-80px)] max-md:h-full",
    
-    "left": "w-2/3 max-md:w-full" ,
-    "right": "w-1/3 h-[400px] max-md:w-full max-md:h-52 max-md:mb-5 bo rder relative",
+    "left": "w-full 2/3 text-center" ,
+    "right": "hidden max-md:flex w-1/3 h-[400px] max-md:w-full max-md:h-52 max-md:mb-5  relative",
     
-    "a": "text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl font-medium flex items-center bg-[#14213D] text-[#FFFFFF] rounded-full px-4 py-2 dark:bg-[#E5E5E5] dark:text-[#14213D] outline-none cursor-pointer transition-all duration-300 ease-in-out hover:text-[#14213D] hover:bg-[#FFFFFF] dark:hover:bg-[#14213D] dark:hover:text-[#E5E5E5] border-[1px] dark:hover:border-[#E5E5E5] w-fit",
+    "a": "text-sm sm:text-base md:text-base lg:text-lg xl:text-lg 2xl:text-lg font-semibold leading-normal tracking-wide mt-6 px-8 py-3 rounded-full bg-[#14213D] text-[#FFFFFF] dark:bg-[#E5E5E5] dark:text-[#14213D]",
 }
 
 export default Hero;

@@ -86,7 +86,7 @@ const Style = {
     "container": "w-full flex items-center justify-center py-20 bg-[#FFFFFF] dark:bg-[#14213D]",
     "section": "w-11/12 flex flex-col items-center justify-center gap-10 max-md:gap-5",
 
-    "card": "cursor-pointer border border-[#E5E5E5] dark:border-[#666666] size-100 rounded-xl p-6 hover:shadow-md dark:border-[#E5E5E5] transform transition-transform duration-300 group h-fit w-fit max-md:w-full",
+    "card": "cursor-pointer border border-[#E5E5E5] dark:border-[#666666] rounded-xl p-6 hover:shadow-md transform transition-transform duration-300 group h-fit w-fit max-md:w-full dark:bg-[#1F2A40]",
     "img": "mb-2 size-[45px] text-[#14213D] dark:text-[#E5E5E5]",
 }
 

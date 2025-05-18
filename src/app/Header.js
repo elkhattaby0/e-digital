@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ArrowRight, LucideMenu, MoonIcon, SunIcon, X } from "lucide-react";
 import { identify } from "./layout";
 import Logo from "../../public/assets/logo.svg";
+import useScrollProgress from "@/component/useScrollProgress";
 
 const menu = [
     { name: "Home", link: "/" },
@@ -18,29 +19,30 @@ const menu = [
 ];
 
 const Header = () => {
-    const [toggle, setToggle] = React.useState(false);
+    // const [toggle, setToggle] = React.useState(false);
     const [isOpned, setIsOpened] = React.useState(false);
+    const scrollProgress = useScrollProgress()
 
-    React.useEffect(() => {
-        const savedMode = localStorage.getItem("darkMode");
-        if (savedMode === "true" ) {
-            setToggle(true);
-            document.body.classList.add("dark");
-        }
-    }, []);
+    // React.useEffect(() => {
+    //     const savedMode = localStorage.getItem("darkMode");
+    //     if (savedMode === "true" ) {
+    //         setToggle(true);
+    //         document.body.classList.add("dark");
+    //     }
+    // }, []);
 
-    const handleToggle = () => {
-        setToggle((prevToggle) => {
-            const newToggle = !prevToggle;
-            if (newToggle) {
-                document.body.classList.add("dark");
-            } else {
-                document.body.classList.remove("dark");
-            }
-            localStorage.setItem("darkMode", newToggle);
-            return newToggle;
-        });
-    };
+    // const handleToggle = () => {
+    //     setToggle((prevToggle) => {
+    //         const newToggle = !prevToggle;
+    //         if (newToggle) {
+    //             document.body.classList.add("dark");
+    //         } else {
+    //             document.body.classList.remove("dark");
+    //         }
+    //         localStorage.setItem("darkMode", newToggle);
+    //         return newToggle;
+    //     });
+    // };
 
     const haddleRes = () => {
         setIsOpened((prev) => !prev);
@@ -108,15 +110,16 @@ const Header = () => {
                     </ul>
                 </nav>
                 <ul className={Style.ul2}>
-                    <button aria-label="Toggle dark mode" className={Style.mode} onClick={handleToggle}>
+                    {/* <button aria-label="Toggle dark mode" className={Style.mode} onClick={handleToggle}>
                         {!toggle ? (
                             <MoonIcon size="22px" color="#14213D" />
                         ) : (
                             <SunIcon size="22px" />
                         )}
-                    </button>
+                    </button> */}
                     <button aria-label="Toggle navigation menu" className={Style.menu} onClick={haddleRes}>
-                        {isOpned ? <X size="22px" /> : <LucideMenu size="22px" />}
+                        {isOpned ? <X size="22px" /> : <LucideMenu size="22px" />} 
+                        <span className="mx-1 text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl font-medium">Menu</span>
                     </button>
                     <Link href="/contact" className={Style.btn}>
                         Let&apos;s Talk
@@ -124,24 +127,29 @@ const Header = () => {
                 </ul>
             </section>
 
-            {/* Updated AnimatePresence with condition */}
             <AnimatePresence>
                 {isOpned && <ResponsiveMenu />}
             </AnimatePresence>
+            <div className="absolute bottom-0 left-0 w-full h-1 bg-transparent z-[100]">
+                <div 
+                    className="bg-[#FCA311] transition-all duration-100 rounded-full h-1"
+                    style={{ width: `${scrollProgress}%` }}
+                />
+            </div>
         </motion.header>
     );
 };
 
 const Style = {
-    containre: "bg-[#FFFFFF] dark:bg-[#14213D] w-full flex flex-col items-center justify-center border-b-[0.1px] border-[#E5E5E5] dark:border-[#666] sticky top-0  transition-all duration-300 ease-in-out z-[99] h-[80px]",
+    containre: "bg-[#FFFFFF] dark:bg-[#14213D] w-full flex flex-col items-center justify-center borde r-b-[0.1px] border-[#E5E5E5] dark:border-[#666] sticky top-0  transition-all duration-300 ease-in-out z-[99] h-[80px]",
     section: "w-11/12 py-5 flex items-center justify-between",
     logo: "outline-none cursor-pointer font-bold text-xl text-[#14213D] dark:text-[#E5E5E5]",
     ul: "flex items-center justify-center",
-    link: "px-3 py-1 rounded-full text-md outline-none cursor-pointer transition-all duration-300 ease-in-out text-[#14213D] hover:bg-[#14213D] hover:text-[#FFFFFF] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] max-md:hidden ",
+    link: "px-3 py-1 rounded-full text-md outline-none cursor-pointer transition-all duration-300 ease-in-out text-[#14213D] hover:bg-[#14213D] hover:text-[#FFFFFF] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] max-lg:hidden ",
     ul2: "flex items-center justify-center gap-2",
     mode: "border border-[#E5E5E5] hover:bg-[#E5E5E5] rounded-full p-1 outline-none cursor-pointer transition-all duration-300 ease-in-out dark:bg-[#14213D] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
     btn: "text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl font-medium px-4 py-1 rounded-full text-md outline-none cursor-pointer transition-all duration-300 ease-in-out bg-[#14213D] text-[#FFFFFF] hover:text-[#14213D] hover:bg-[#FFFFFF] border dark:border-[#E5E5E5] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
-    menu: "hidden max-md:flex border border-[#E5E5E5] hover:bg-[#E5E5E5] rounded-full p-1 outline-none cursor-pointer transition-all duration-300 ease-in-out dark:bg-[#14213D] text-[#14213D] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
+    menu: "hidden max-lg:flex items-center border border-[#E5E5E5] hover:bg-[#E5E5E5] rounded-full p-1 outline-none cursor-pointer transition-all duration-300 ease-in-out dark:bg-[#14213D] text-[#14213D] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
 };
 
 export default Header;
