@@ -109,7 +109,7 @@ const Header = () => {
                         ))}
                     </ul>
                 </nav>
-                <ul className={Style.ul2}>
+                <div className={Style.ul2}>
                     {/* <button aria-label="Toggle dark mode" className={Style.mode} onClick={handleToggle}>
                         {!toggle ? (
                             <MoonIcon size="22px" color="#14213D" />
@@ -124,7 +124,7 @@ const Header = () => {
                     <Link href="/contact" className={Style.btn}>
                         Let&apos;s Talk
                     </Link>                    
-                </ul>
+                </div>
             </section>
 
             <AnimatePresence>
