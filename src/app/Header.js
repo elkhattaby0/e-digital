@@ -118,8 +118,8 @@ const Header = () => {
                         )}
                     </button> */}
                     <button aria-label="Toggle navigation menu" className={Style.menu} onClick={haddleRes}>
-                        {isOpned ? <X size="22px" /> : <LucideMenu size="22px" />} 
-                        <span className="mx-1 text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl font-medium">Menu</span>
+                        {isOpned ? <X size="1.23em" /> : <LucideMenu size="1.23em" />} 
+                        <span className="mx-1 ">Menu</span>
                     </button>
                     <Link href="/contact" className={Style.btn}>
                         Let&apos;s Talk
@@ -149,7 +149,7 @@ const Style = {
     ul2: "flex items-center justify-center gap-2",
     mode: "border border-[#E5E5E5] hover:bg-[#E5E5E5] rounded-full p-1 outline-none cursor-pointer transition-all duration-300 ease-in-out dark:bg-[#14213D] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
     btn: "text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl font-medium px-4 py-1 rounded-full text-md outline-none cursor-pointer transition-all duration-300 ease-in-out bg-[#14213D] text-[#FFFFFF] hover:text-[#14213D] hover:bg-[#FFFFFF] border dark:border-[#E5E5E5] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
-    menu: "hidden max-lg:flex items-center border border-[#E5E5E5] hover:bg-[#E5E5E5] rounded-full p-1 outline-none cursor-pointer transition-all duration-300 ease-in-out dark:bg-[#14213D] text-[#14213D] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
+    menu: "hidden max-lg:flex items-center border border-[#E5E5E5] hover:bg-[#E5E5E5] rounded-full px-2 p-1 text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl font-medium outline-none cursor-pointer transition-all duration-300 ease-in-out dark:bg-[#14213D] text-[#14213D] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
 };
 
 export default Header;
