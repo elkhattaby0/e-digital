@@ -116,7 +116,7 @@ const Header = () => {
                         ) : (
                             <SunIcon size="22px" />
                         )}
-                    </button> */}
+                    </button> */}<div class="gtranslate_wrapper"></div>
                     <button aria-label="Toggle navigation menu" className={Style.menu} onClick={haddleRes}>
                         {isOpned ? <X size="1.23em" /> : <LucideMenu size="1.23em" />} 
                         <span className="mx-1 ">Menu</span>

@@ -7,7 +7,7 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-
+import Script from 'next/script';
 import GoogleAnalytics from "@/component/GoogleAnalytics";
 import Header from "./Header";
 import Newsletter from "./Newsletter";
@@ -31,6 +31,21 @@ export default function RootLayout({ children }) {
         {children}
         <Newsletter />
         <Footer />
+        
+        
+        <Script
+          id="gtranslate-config"
+          dangerouslySetInnerHTML={{
+            __html: `window.gtranslateSettings = {
+              default_language: "en",
+              languages: ["en", "fr", "ar"],
+              wrapper_selector: ".gtranslate_wrapper",
+              switcher_horizontal_position: "right",
+              float_switcher_open_direction: "bottom"
+            };`,
+          }}
+        />
+        <Script src="https://cdn.gtranslate.net/widgets/latest/float.js" strategy="afterInteractive" />
       </body>
     </html>
   );
