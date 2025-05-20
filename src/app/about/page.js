@@ -1,11 +1,12 @@
 import HeroSection from "../../component/HeroSection"
 import Whoweare from './Whoweare';
-import Team from './Team';
+// import Team from './Team';
 import Image from "../../../public/assets/hero_1.jpg"
+import img from "../../../public/assets/trusted_web_agency.png"
 
 export const metadata = {
   title: "Trusted Web Agency - About Our Full-Service Digital Solutions",
-  description: "Discover Trusted Web Agency — your go-to partner for innovative web design, app development, and marketing solutions that drive results and grow your business.",
+  description: "Trusted Web Agency helps you build a stronger online presence with smart web design, powerful apps, and strategies that actually get results and move your business forward.",
   keywords:[ 
     "About Trusted Web Agency",
     "Full-Service Digital Agency",
@@ -17,8 +18,22 @@ export const metadata = {
     "Branding",
     "Software Solutions",
     "Digital Solutions Morocco"
- ]
-
+ ],
+ openGraph: {
+     title: "Trusted Web Agency - About Our Full-Service Digital Solutions",
+     description: "Trusted Web Agency helps you build a stronger online presence with smart web design, powerful apps, and strategies that actually get results and move your business forward.",
+     url: "https://trustedwebagency.com/about",
+     siteName: "Trusted Web Agency",
+     images: [
+       {
+         url: img.src,
+         width: 1200,
+         height: 630,
+         alt: "Trusted Web Agency",
+       }
+     ],
+     type: "profile",
+   }
 } 
 
 const Aboutlayout = () => {

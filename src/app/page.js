@@ -42,7 +42,7 @@ export const metadata = {
         alt: "Trusted Web Agency",
       }
     ],
-    type: "article",
+    type: "website",
   }
 } 
 
