@@ -31,7 +31,7 @@ export const metadata = {
             alt: "Trusted Web Agency",
             }
         ],
-        type: "product",
+        type: "website",
         }
 }
 
