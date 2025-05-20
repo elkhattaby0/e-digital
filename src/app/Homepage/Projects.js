@@ -127,20 +127,23 @@ const Projects = () => {
                 <Slider {...settings} className="w-full">
                     {data.map((n) => (
                         <div key={n.id} className="px-2">
-                            <div className={Style.card}>
-                                <Image
-                                    src={n.img}
-                                    alt={`edigital - ${n.title}`}
-                                    className="h-[150px] w-full rounded-xl mb-4 object-cover bg-center"
-                                />
-                                <HeaderFive>{n.title}</HeaderFive>
-                                <HeaderSix>{n.type}</HeaderSix>
-                                <Space />
-                                <Paragraph>{n.description}</Paragraph>
+                        <div className="flex flex-col justify-between h-[400px] p-3 rounded-xl border dark:border-[#666666] dark:bg-[#1F2A40] bg-white transition-all duration-300 ease-in-out group">
+                            <Image
+                            src={n.img}
+                            alt={`edigital - ${n.title}`}
+                            width={400}
+                            height={200}
+                            className="rounded-xl object-cover w-full h-[200px]"
+                            />
+                            <div className="pt-4 px-2 text-[#1F2937] dark:text-[#E5E5E5] flex-1 flex flex-col">
+                            <h3 className="text-lg font-semibold mb-1">{n.title}</h3>
+                            <h4 className="text-sm font-medium text-[#9CA3AF] mb-2">{n.type}</h4>
+                            <p className="text-sm line-clamp-3 flex-1">{n.description}</p>
                             </div>
                         </div>
+                        </div>
                     ))}
-                </Slider>
+                    </Slider>
 
                 <motion.div className="mt-8"
                     initial={{ opacity: 0, y: 100 }}
