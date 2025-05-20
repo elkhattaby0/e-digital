@@ -14,6 +14,7 @@ const menu = [
     { name: "How We Work", link: "/approach" },
     { name: "Services", link: "/services" },
     { name: "Portfolio", link: "/projects" },
+    { name: "Blog", link: "/blogs" },
     { name: "Contact", link: "/contact" },
     
 ];
@@ -116,7 +117,7 @@ const Header = () => {
                         ) : (
                             <SunIcon size="22px" />
                         )}
-                    </button> */}<div class="gtranslate_wrapper"></div>
+                    </button> */}<div className="gtranslate_wrapper"></div>
                     <button aria-label="Toggle navigation menu" className={Style.menu} onClick={haddleRes}>
                         {isOpned ? <X size="1.23em" /> : <LucideMenu size="1.23em" />} 
                         <span className="mx-1 ">Menu</span>
@@ -144,8 +145,8 @@ const Style = {
     containre: "bg-[#FFFFFF] dark:bg-[#14213D] w-full flex flex-col items-center justify-center borde r-b-[0.1px] border-[#E5E5E5] dark:border-[#666] sticky top-0  transition-all duration-300 ease-in-out z-[99] h-[80px]",
     section: "w-11/12 py-5 flex items-center justify-between",
     logo: "outline-none cursor-pointer font-bold text-xl text-[#14213D] dark:text-[#E5E5E5]",
-    ul: "flex items-center justify-center",
-    link: "px-3 py-1 rounded-full text-md outline-none cursor-pointer transition-all duration-300 ease-in-out text-[#14213D] hover:bg-[#14213D] hover:text-[#FFFFFF] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] max-lg:hidden ",
+    ul: "flex items-center justify-center uppercase",
+    link: "px-3 py-1 rounded-full text-sm outline-none cursor-pointer transition-all duration-300 ease-in-out text-[#14213D] hover:bg-[#14213D] hover:text-[#FFFFFF] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D] max-lg:hidden ",
     ul2: "flex items-center justify-center gap-2",
     mode: "border border-[#E5E5E5] hover:bg-[#E5E5E5] rounded-full p-1 outline-none cursor-pointer transition-all duration-300 ease-in-out dark:bg-[#14213D] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
     btn: "text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl font-medium px-4 py-1 rounded-full text-md outline-none cursor-pointer transition-all duration-300 ease-in-out bg-[#14213D] text-[#FFFFFF] hover:text-[#14213D] hover:bg-[#FFFFFF] border dark:border-[#E5E5E5] dark:text-[#E5E5E5] dark:hover:bg-[#E5E5E5] dark:hover:text-[#14213D]",
