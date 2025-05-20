@@ -5,6 +5,7 @@ import Projects from "./Homepage/Projects";
 import Whyus from "./Homepage/Whyus";
 import Technologies from "./Homepage/Technologies";
 import Testimonials from "./Homepage/Testimonials";
+import openGraphImage from "../../public/assets/TrustedWebAgency.png"
 
 export const metadata = {
   title: "Trusted Web Agency - Full Service Digital Agency",
@@ -27,7 +28,22 @@ export const metadata = {
     "End-to-End Digital Services", 
     "WordPress", "Elementor", "React", "Laravel", "Python", "AI", "ChatGPT", 
     "Digital Transformation", "Trusted Web Agency"
-  ]
+  ],
+  openGraph: {
+    title: "Trusted Web Agency - Full Service Digital Agency",
+    description: "Trusted Web Agency helps businesses grow online through smart design, powerful apps, strong branding, and digital strategies that actually work.",
+    url: "https://trustedwebagency.com/",
+    siteName: "Trusted Web Agency",
+    images: [
+      {
+        url: openGraphImage,
+        width: 1200,
+        height: 630,
+        alt: "Trusted Web Agency",
+      }
+    ],
+    type: "article",
+  }
 } 
 
 export default function Home() {
