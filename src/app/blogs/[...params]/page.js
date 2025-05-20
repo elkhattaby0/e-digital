@@ -20,6 +20,22 @@ export function generateMetadata({ params }) {
         title: `TWA - ${article.article.title}`,
         description: article.seo?.description || "",
         keywords: article.seo?.keywords || "",
+        openGraph: {
+            title: article.article.title,
+            description: article.seo?.description,
+            siteName: identify,
+            url: `https://your-site.com/articles/${id}/${encodeURIComponent(title)}`,
+            images: [
+                {
+                    url: article.general?.image,
+                    width: 1200,
+                    height: 630,
+                    alt: article.article.title,
+                },
+            ],
+            type: "article"
+        },
+        
     };
 }
 
