@@ -5,7 +5,7 @@ import Projects from "./Homepage/Projects";
 import Whyus from "./Homepage/Whyus";
 import Technologies from "./Homepage/Technologies";
 import Testimonials from "./Homepage/Testimonials";
-import openGraphImage from "../../public/assets/TrustedWebAgency.png"
+import img from "../../public/assets/trusted_web_agency.png"
 
 export const metadata = {
   title: "Trusted Web Agency - Full Service Digital Agency",
@@ -36,7 +36,7 @@ export const metadata = {
     siteName: "Trusted Web Agency",
     images: [
       {
-        url: openGraphImage,
+        url: img.src,
         width: 1200,
         height: 630,
         alt: "Trusted Web Agency",
