@@ -9,7 +9,7 @@ import Logo from "../../public/assets/logo.svg";
 import useScrollProgress from "@/component/useScrollProgress";
 
 const menu = [
-    { name: "Home", link: "/" },
+    { name: "Homepage", link: "/" },
     { name: "About Us", link: "/about" },
     { name: "How We Work", link: "/approach" },
     { name: "Services", link: "/services" },
@@ -120,7 +120,7 @@ const Header = () => {
                     </button> */}<div className="gtranslate_wrapper"></div>
                     <button aria-label="Toggle navigation menu" className={Style.menu} onClick={haddleRes}>
                         {isOpned ? <X size="1.23em" /> : <LucideMenu size="1.23em" />} 
-                        <span className="mx-1 ">Menu</span>
+                        {/* <span className="mx-1 ">The Menu</span> */}
                     </button>
                     <Link href="/contact" className={Style.btn}>
                         Let&apos;s Talk
