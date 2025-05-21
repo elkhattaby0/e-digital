@@ -18,6 +18,15 @@ const Footer = () => {
         >
             <section className={Style.section}>
                 <div className="text-[#14213D] dark:text-[#E5E5E5] text-[16px] flex items-center gap-1 outline-none cursor-pointer max-md:mb-2">
+                     
+                    <Paragraph>© 2025 { identify }, All rights reserved.</Paragraph>
+                </div>
+
+                
+
+                <div className="flex items-center justify-center gap-1 text-[#14213D] dark:text-[#E5E5E5]">        
+                    <Link href="/sitemap.xml" className={Style.a}>Sitemap</Link> |
+                    {/* <Link href="/terms-conditions" className={Style.a}>Terms & Conditions</Link> */}
                     <Link 
                         className="hover:text-[#FCA311]" aria-label="Facebook"
                         href="https://www.facebook.com/profile.php?id=61576069447823"><FaFacebookSquare /></Link>
@@ -26,15 +35,7 @@ const Footer = () => {
                         href="https://www.instagram.com/trustedwebagency/"><FaInstagramSquare /></Link>
                     <Link 
                         className="hover:text-[#FCA311]" aria-label="Whatsapp" 
-                        href="https://wa.me/212709872603"><FaWhatsappSquare /></Link> |
-                    <Paragraph>© 2025 { identify }, All rights reserved.</Paragraph>
-                </div>
-
-                
-
-                <div className="flex items-center justify-center gap-1 text-[#14213D] dark:text-[#E5E5E5]">        
-                    <Link href="/sitemap.xml" className={Style.a}>Sitemap</Link> |
-                    <Link href="/terms-conditions" className={Style.a}>Terms & Conditions</Link>
+                        href="https://wa.me/212709872603"><FaWhatsappSquare /></Link>
                 </div>
             </section>
         </motion.footer>
