@@ -106,7 +106,45 @@ export default function BlogPost({ params }) {
                                             ))}
                                         </ul>
                                     );
-
+                                case "table":
+                                    return (
+                                        <div key={index} className="overflow-x-auto">
+                                            <table className="w-full border border-gray-300 dark:border-[#666666] text-left text-sm">
+                                            <thead className="bg-gray-100 dark:bg-[#1F2A40]">
+                                                <tr>
+                                                {block.headers.map((header, i) => (
+                                                    <th key={i} className="border px-4 py-2 dark:text-[#e5e5e5]">{header}</th>
+                                                ))}
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {block.rows.map((row, rowIndex) => (
+                                                <tr key={rowIndex} className="border-t dark:border-gray-700">
+                                                    {row.map((cell, cellIndex) => (
+                                                    <td key={cellIndex} className="border px-4 py-2 dark:text-gray-300">{cell}</td>
+                                                    ))}
+                                                </tr>
+                                                ))}
+                                            </tbody>
+                                            </table>
+                                        </div>
+                                        );
+                                case "faq":
+                                    return (
+                                        <div key={index} className="mt-10">
+                                        <h3 className="text-2xl font-semibold text-center text-gray-900 dark:text-[#e5e5e5] mb-4">FAQs</h3>
+                                        <div className="space-y-4">
+                                            {block.items.map((faq, i) => (
+                                            <details key={i} className="group border border-gray-300 dark:border-[#666666] rounded-lg outline-none p-4 bg-[#1F2A40]">
+                                                <summary className="font-medium cursor-pointer text-gray-800 dark:text-[#e5e5e5] outline-none">
+                                                {faq.question}
+                                                </summary>
+                                                <p className="mt-2 text-gray-700 dark:text-gray-400">{faq.answer}</p>
+                                            </details>
+                                            ))}
+                                        </div>
+                                        </div>
+                                    );
                                 default:
                                     return null;
                             }
