@@ -313,7 +313,7 @@ const Newsletter = () => {
                 <span className="font-semibold text-[#14213D] dark:text-[#E5E5E5]">5.0</span>
               </div>
               <p className="text-sm text-[#14213D]/70 dark:text-[#E5E5E5]/70 mb-3">
-                "The best newsletter for web development insights. Highly recommended!"
+                &quot;The best newsletter for web development insights. Highly recommended!&quot;
               </p>
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-[#FCA311] rounded-full flex items-center justify-center text-[#FFFFFF] text-sm font-bold">

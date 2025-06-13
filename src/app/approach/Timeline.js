@@ -181,7 +181,7 @@ const Timeline = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            From initial consultation to final launch, we follow a proven process that ensures your project's success
+            From initial consultation to final launch, we follow a proven process that ensures your project&apos;s success
             every step of the way.
           </motion.p>
         </motion.div>

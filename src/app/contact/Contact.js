@@ -113,10 +113,10 @@ const Contact = () => {
         <div className="text-center mb-16">
           <p className="text-[#FCA311] font-medium text-lg mb-4">Based In Agadir</p>
           <h1 className="text-4xl lg:text-6xl font-bold text-[#E5E5E5] mb-6">
-            Let's Work <span className="text-[#FCA311]">Together</span>
+            Let&apos;s Work <span className="text-[#FCA311]">Together</span>
           </h1>
           <p className="text-[#E5E5E5] text-lg lg:text-xl max-w-2xl mx-auto opacity-90">
-            Ready to start your next project? Contact us today for a free consultation and let's bring your digital
+            Ready to start your next project? Contact us today for a free consultation and let&apos;s bring your digital
             vision to life.
           </p>
         </div>
@@ -179,7 +179,7 @@ const Contact = () => {
               Send Us a <span className="text-[#FCA311]">Message</span>
             </h2>
             <p className="text-[#E5E5E5] opacity-70 mb-8">
-              Fill out the form below and we'll get back to you within 24 hours.
+              Fill out the form below and we&apos;ll get back to you within 24 hours.
             </p>
 
             {isSubmitted ? (
@@ -188,7 +188,7 @@ const Contact = () => {
                   <ArrowRight size={24} className="text-[#14213D]" />
                 </div>
                 <h3 className="text-xl font-semibold text-[#E5E5E5] mb-2">Message Sent Successfully!</h3>
-                <p className="text-[#E5E5E5] opacity-70">Thank you for reaching out. We'll get back to you soon.</p>
+                <p className="text-[#E5E5E5] opacity-70">Thank you for reaching out. We&apos;ll get back to you soon.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">

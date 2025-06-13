@@ -94,8 +94,8 @@ const Testimonials = () => {
         </svg>
 
         {/* Quote Symbols */}
-        <div className="absolute bottom-20 left-1/4 text-6xl text-[#FCA311]/10 font-serif select-none">"</div>
-        <div className="absolute top-1/4 right-1/3 text-4xl text-[#FCA311]/10 font-serif select-none">"</div>
+        <div className="absolute bottom-20 left-1/4 text-6xl text-[#FCA311]/10 font-serif select-none">&quot;</div>
+        <div className="absolute top-1/4 right-1/3 text-4xl text-[#FCA311]/10 font-serif select-none">&quot;</div>
       </div>
 
       <div className={Style.section}>
@@ -154,7 +154,7 @@ const Testimonials = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Don't just take our word for it. Here's what our satisfied clients have to say about working with us.
+            Don&apos;t just take our word for it. Here&apos;s what our satisfied clients have to say about working with us.
           </motion.p>
         </motion.div>
 
@@ -213,7 +213,7 @@ const Testimonials = () => {
 
               {/* Testimonial Content */}
               <blockquote className="text-base md:text-lg font-normal leading-relaxed text-[#14213D] dark:text-[#E5E5E5] mb-6">
-                "{testimonial.msg}"
+                &quot;{testimonial.msg}&quot;
               </blockquote>
 
               {/* Star Rating */}
