@@ -472,7 +472,7 @@ export default function BlogPost({ params }) {
                               className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-blue-800 dark:from-white dark:to-blue-200 mt-16 mb-8 scroll-mt-8 relative"
                             >
                               <span className="absolute -left-4 top-0 text-blue-500 opacity-30 text-5xl font-black">
-                                "
+                                &quot;
                               </span>
                               {block.text}
                             </h2>
@@ -531,7 +531,7 @@ export default function BlogPost({ params }) {
                         case "blockquote":
                           return (
                             <div key={index} className="my-12 relative">
-                              <div className="absolute -left-4 -top-4 text-6xl text-blue-500/20 font-serif">"</div>
+                              <div className="absolute -left-4 -top-4 text-6xl text-blue-500/20 font-serif">&quot;</div>
                               <blockquote className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 border-l-4 border-gradient-to-b from-blue-500 to-purple-600 pl-8 pr-6 py-8 rounded-r-2xl shadow-lg">
                                 <p className="text-xl italic text-gray-700 dark:text-gray-300 mb-4 leading-relaxed font-light">
                                   {block.text}
