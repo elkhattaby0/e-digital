@@ -59,7 +59,7 @@ content:
 
   - type: paragraph
     text: |
-      Think about your own habits. When you hear about a company, what’s the first thing you do? You Google it.
+      Think about your own habits. When you hear about a company, what’s the first thing you do? <i>You Google it</i>.
 
       Having a clear, updated website instantly gives your business credibility. It’s where you answer questions, show what you do, and guide people to take action.
 
@@ -126,10 +126,10 @@ content:
 
   - type: paragraph
     text: |
-      At Trusted Web Agency, we help businesses of all sizes build websites that speak clearly, look great, and actually help them get results.
+      At <a href="/">Trusted Web Agency</a>, we help businesses of all sizes build websites that speak clearly, look great, and actually help them get results.
 
       We take care of everything from layout and design to SEO and mobile responsiveness. Starting fresh or improving what you already have, we have the experience and tools to bring your website to life.
 
-      Want to talk about your idea? Get in touch here. We’d love to hear about your business and help you take the next step.
+      Want to talk about your idea? <a href="/contact">Get in touch here</a>. We’d love to hear about your business and help you take the next step.
 
       Your future clients are searching. Let’s help them find you.

@@ -60,4 +60,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://trustedwebagency.com/blogs/3/Hotels%20in%20Agadir%20Morocco%20–%20Why%20Your%20Website%20Matters%20More%20Than%20You%20Think</loc>
+        <lastmod>2025-06-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>

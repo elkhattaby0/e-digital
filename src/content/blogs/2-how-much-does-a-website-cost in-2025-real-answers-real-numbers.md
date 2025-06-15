@@ -50,7 +50,7 @@ content:
       
       In 2025, website prices still vary a lot depending on what you need, who builds it, and how big your site is. This guide answers the most asked questions about pricing from simple one page sites to bigger ones with dozens of pages. 
       
-      You'll also see how platforms like Squarespace, WordPress, and GoDaddy compare when it comes to price.
+      You'll also see how platforms like <a href="https://www.squarespace.com/">Squarespace</a>, <a href="https://wordpress.org/download/">WordPress</a>, and <a href="https://www.godaddy.com/">GoDaddy</a> compare when it comes to price.
 
 
   - type: heading
@@ -94,9 +94,9 @@ content:
 
   - type: paragraph
     text: |
-      Technically, yes. 
+      Technically, <i>yes</i>. 
       
-      There are platforms that let you create a basic site at no cost (like Wix or WordPress.com), but you’ll be limited in features, storage, speed, and branding. You'll often still need to pay for a domain, remove ads, or access better templates.
+      There are platforms that let you create a basic site at no cost (like <a href="https://www.wix.com/">Wix</a> or <a href="https://wordpress.org/">WordPress</a>), but you’ll be limited in features, storage, speed, and branding. You'll often still need to pay for a domain, remove ads, or access better templates.
 
       If your business depends on trust and performance, a free option might not be the best fit.
 
@@ -160,11 +160,11 @@ content:
 
   - type: paragraph
     text: |
-      At Trusted Web Agency, we help businesses of all sizes build websites that speak clearly, look great, and actually help them get results.
+      At <a href="/">Trusted Web Agency</a>, we help businesses of all sizes build websites that speak clearly, look great, and actually help them get results.
 
       We take care of everything from layout and design to SEO and mobile responsiveness. Starting fresh or improving what you already have, we have the experience and tools to bring your website to life.
 
-      Want to talk about your idea? Get in touch here. We’d love to hear about your business and help you take the next step.
+      Want to talk about your idea? <a href="/contact">Get in touch here</a>. We’d love to hear about your business and help you take the next step.
 
       Your future clients are searching. Let’s help them find you.  
 
