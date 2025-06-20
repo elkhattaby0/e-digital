@@ -417,10 +417,10 @@ export default function BlogPost({ params }) {
                 <aside className="lg:col-span-1 order-2 lg:order-1">
                   <div className="sticky top-8">
                     <nav className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
-                      <h3 className="font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                      <h2 className="font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                         <span className="text-lg">📋</span>
                         Table of Contents
-                      </h3>
+                      </h2>
                       <ul className="space-y-3 text-sm">
                         {tableOfContents.map((item, index) => (
                           <li key={index} className={item.level === 3 ? "ml-4" : ""}>
@@ -480,14 +480,14 @@ export default function BlogPost({ params }) {
 
                         case "heading3":
                           return (
-                            <h2
+                            <h3
                               key={index}
                               id={headingId}
                               className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-6 scroll-mt-8 flex items-center gap-3"
                             >
                               <span className="w-2 h-8 bg-[#FCA311] rounded-full"></span>
                               {block.text}
-                            </h2>
+                            </h3>
                           )
 
                         case "list":
