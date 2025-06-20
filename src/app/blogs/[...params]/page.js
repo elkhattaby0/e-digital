@@ -312,7 +312,7 @@ export default function BlogPost({ params }) {
               )}
 
               {/* Blog Title */}
-              <h1 className="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 mb-8 leading-tight tracking-tight">
+              <h1 className="text-5xl md:text-7xl font-black text-[#E5E5E5] transparent bg-clip-text bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 mb-8 leading-tight tracking-tight">
                 {article.article.title}
               </h1>
 
@@ -480,14 +480,14 @@ export default function BlogPost({ params }) {
 
                         case "heading3":
                           return (
-                            <h3
+                            <h2
                               key={index}
                               id={headingId}
                               className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-6 scroll-mt-8 flex items-center gap-3"
                             >
                               <span className="w-2 h-8 bg-[#FCA311] rounded-full"></span>
                               {block.text}
-                            </h3>
+                            </h2>
                           )
 
                         case "list":

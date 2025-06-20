@@ -1,4 +1,3 @@
-import Space from "@/component/Space";
 import Blog from "./Blogs"
 import { getBlogs } from "../lib/getBlogs";
 import img from "../../../public/assets/trusted_web_agency.png"

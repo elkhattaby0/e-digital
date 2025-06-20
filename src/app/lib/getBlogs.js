@@ -5,7 +5,7 @@ export function getBlogs() {
   const blogDir = path.join(process.cwd(), "src/content/blogs");
   const blogFiles = fs.readdirSync(blogDir);
 
-  return blogFiles.map((filename) => {
+  const blogs = blogFiles.map((filename) => {
     const fileContent = fs.readFileSync(path.join(blogDir, filename), "utf-8");
     const sections = fileContent.split("---").map((s) => s.trim());
 
@@ -27,11 +27,16 @@ export function getBlogs() {
     return {
       id: generalData.id || id,
       title: generalData.title || "Untitled",
-      date: generalData.date || "",
+      date: generalData.date || "", // expected format: "2024-06-18"
       image: generalData.image || "/default.jpg",
       category: generalData.category || "General",
       description: generalData.minidescription || "",
       slug,
     };
   });
+
+  // ✅ Sort by date descending (newest first)
+  blogs.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  return blogs;
 }
