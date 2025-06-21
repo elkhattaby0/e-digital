@@ -132,8 +132,8 @@ const Footer = () => {
         </div>
 
         {/* Floating Elements */}
-        <div className="absolute top-20 right-20 w-3 h-3 bg-[#FCA311]/20 rounded-full animate-pulse" />
-        <div className="absolute bottom-32 left-20 w-2 h-2 bg-[#FCA311]/30 rounded-full animate-ping" />
+        <div className="absolute top-20 right-20 w-3 h-3 bg-[#D98600]/20 rounded-full animate-pulse" />
+        <div className="absolute bottom-32 left-20 w-2 h-2 bg-[#D98600]/30 rounded-full animate-ping" />
       </div>
 
       {/* Main Footer Content */}
@@ -164,7 +164,7 @@ const Footer = () => {
             </motion.div>
 
             <motion.p
-              className="text-[#14213D]/70 dark:text-[#E5E5E5]/70 mb-6 max-w-md"
+              className="text-[#14213D]/70 dark:text-[#CCCCCC] mb-6 max-w-md"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -187,10 +187,10 @@ const Footer = () => {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-[#14213D]/70 dark:text-[#E5E5E5]/70 hover:text-[#FCA311] transition-colors duration-300"
+                  className="flex items-center gap-3 text-[#14213D]/70 dark:text-[#CCCCCC] hover:text-[#D98600] transition-colors duration-300"
                 >
-                  <div className="w-8 h-8 bg-[#FCA311]/10 rounded-full flex items-center justify-center">
-                    <item.icon className="w-4 h-4 text-[#FCA311]" />
+                  <div className="w-8 h-8 bg-[#D98600]/10 rounded-full flex items-center justify-center">
+                    <item.icon className="w-4 h-4 text-[#D98600]" />
                   </div>
                   <span>{item.text}</span>
                 </a>
@@ -208,16 +208,16 @@ const Footer = () => {
           >
             <h3 className="text-lg font-semibold text-[#14213D] dark:text-[#E5E5E5] relative">
               Company
-              <span className="absolute -bottom-2 left-0 w-12 h-1 bg-[#FCA311] rounded-full"></span>
+              <span className="absolute -bottom-2 left-0 w-12 h-1 bg-[#D98600] rounded-full"></span>
             </h3>
             <ul className="space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-[#14213D]/70 dark:text-[#E5E5E5]/70 hover:text-[#FCA311] transition-colors duration-300 flex items-center"
+                    className="text-[#14213D]/70 dark:text-[#CCCCCC] hover:text-[#D98600] transition-colors duration-300 flex items-center"
                   >
-                    <span className="w-1.5 h-1.5 bg-[#FCA311] rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    <span className="w-1.5 h-1.5 bg-[#D98600] rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                     {link.name}
                   </Link>
                 </li>
@@ -234,16 +234,16 @@ const Footer = () => {
           >
             <h3 className="text-lg font-semibold text-[#14213D] dark:text-[#E5E5E5] relative">
               Services
-              <span className="absolute -bottom-2 left-0 w-12 h-1 bg-[#FCA311] rounded-full"></span>
+              <span className="absolute -bottom-2 left-0 w-12 h-1 bg-[#D98600] rounded-full"></span>
             </h3>
             <ul className="space-y-3">
               {serviceLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-[#14213D]/70 dark:text-[#E5E5E5]/70 hover:text-[#FCA311] transition-colors duration-300 flex items-center"
+                    className="text-[#14213D]/70 dark:text-[#CCCCCC] hover:text-[#D98600] transition-colors duration-300 flex items-center"
                   >
-                    <span className="w-1.5 h-1.5 bg-[#FCA311] rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    <span className="w-1.5 h-1.5 bg-[#D98600] rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                     {link.name}
                   </Link>
                 </li>
@@ -260,16 +260,16 @@ const Footer = () => {
           >
             <h3 className="text-lg font-semibold text-[#14213D] dark:text-[#E5E5E5] relative">
               Resources
-              <span className="absolute -bottom-2 left-0 w-12 h-1 bg-[#FCA311] rounded-full"></span>
+              <span className="absolute -bottom-2 left-0 w-12 h-1 bg-[#D98600] rounded-full"></span>
             </h3>
             <ul className="space-y-3">
               {resourceLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-[#14213D]/70 dark:text-[#E5E5E5]/70 hover:text-[#FCA311] transition-colors duration-300 flex items-center"
+                    className="text-[#14213D]/70 dark:text-[#CCCCCC] hover:text-[#D98600] transition-colors duration-300 flex items-center"
                   >
-                    <span className="w-1.5 h-1.5 bg-[#FCA311] rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    <span className="w-1.5 h-1.5 bg-[#D98600] rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                     {link.name}
                   </Link>
                 </li>
@@ -280,7 +280,7 @@ const Footer = () => {
 
         {/* Newsletter Subscription */}
         <motion.div
-          className="bg-gradient-to-r from-[#FCA311]/10 to-[#14213D]/10 rounded-2xl p-8 mb-16 border border-[#FCA311]/20"
+          className="bg-gradient-to-r from-[#D98600]/10 to-[#14213D]/10 rounded-2xl p-8 mb-16 border border-[#D98600]/20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -289,7 +289,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="md:w-1/2">
               <h3 className="text-xl font-bold text-[#14213D] dark:text-[#E5E5E5] mb-2">Stay Connected</h3>
-              <p className="text-[#14213D]/70 dark:text-[#E5E5E5]/70">
+              <p className="text-[#14213D]/70 dark:text-[#CCCCCC]">
                 Subscribe to our newsletter for the latest updates and insights.
               </p>
             </div>
@@ -298,11 +298,11 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg border border-[#E5E5E5]/30 dark:border-[#E5E5E5]/20 bg-[#FFFFFF] dark:bg-[#1a2332] text-[#14213D] dark:text-[#E5E5E5] focus:outline-none focus:border-[#FCA311]"
+                  className="flex-1 px-4 py-3 rounded-lg border border-[#E5E5E5]/30 dark:border-[#E5E5E5]/20 bg-[#FFFFFF] dark:bg-[#1a2332] text-[#14213D] dark:text-[#E5E5E5] focus:outline-none focus:border-[#D98600]"
                 />
                 <button
                   type="submit"
-                  className="px-6 py-3 bg-[#FCA311] text-[#FFFFFF] rounded-lg font-medium hover:bg-[#FCA311]/90 transition-colors duration-300"
+                  className="px-6 py-3 bg-[#D98600] text-[#FFFFFF] rounded-lg font-medium hover:bg-[#D98600]/90 transition-colors duration-300"
                 >
                   Subscribe
                 </button>
@@ -343,7 +343,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <motion.div
-              className="text-[#14213D]/70 dark:text-[#E5E5E5]/70 text-sm"
+              className="text-[#14213D]/70 dark:text-[#CCCCCC] text-sm"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -367,11 +367,11 @@ const Footer = () => {
                 <React.Fragment key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-[#14213D]/70 dark:text-[#E5E5E5]/70 hover:text-[#FCA311] transition-colors duration-300"
+                    className="text-[#14213D]/70 dark:text-[#CCCCCC] hover:text-[#D98600] transition-colors duration-300"
                   >
                     {link.name}
                   </Link>
-                  {index < legalLinks.length - 1 && <span className="text-[#14213D]/30 dark:text-[#E5E5E5]/30">|</span>}
+                  {index < legalLinks.length - 1 && <span className="text-[#14213D]/30 dark:text-[#CCCCCC]">|</span>}
                 </React.Fragment>
               ))}
             </motion.div>
@@ -381,7 +381,7 @@ const Footer = () => {
         {/* Back to Top Button */}
         {/* <motion.button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 w-12 h-12 bg-[#FCA311] text-[#FFFFFF] rounded-full flex items-center justify-center shadow-lg hover:bg-[#FCA311]/90 transition-all duration-300 z-50"
+          className="fixed bottom-8 right-8 w-12 h-12 bg-[#D98600] text-[#FFFFFF] rounded-full flex items-center justify-center shadow-lg hover:bg-[#D98600]/90 transition-all duration-300 z-50"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3 }}

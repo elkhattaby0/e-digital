@@ -49,7 +49,7 @@ function renderHTMLContent(text) {
             <Link
               key={i}
               href={href}
-              className="text-[#FCA311] hover:text-[#FCA311]/80 underline transition-colors font-medium"
+              className="text-[#D98600] underline transition-colors font-medium"
             >
               {linkContent}
             </Link>
@@ -84,7 +84,7 @@ function renderHTMLContent(text) {
 
         case "mark":
           result.push(
-            <mark key={i} className="bg-[#FCA311]/30 text-[#E5E5E5] px-1 rounded">
+            <mark key={i} className="bg-[#D98600]/30 text-[#E5E5E5] px-1 rounded">
               {getContentUntilClosing(lowerTag)}
             </mark>
           );
@@ -92,7 +92,7 @@ function renderHTMLContent(text) {
 
         case "code":
           result.push(
-            <code key={i} className="bg-[#14213D]/80 text-[#FCA311] px-2 py-1 rounded font-mono text-sm">
+            <code key={i} className="bg-[#14213D]/80 text-[#D98600] px-2 py-1 rounded font-mono text-sm">
               {getContentUntilClosing(lowerTag)}
             </code>
           );
@@ -271,7 +271,7 @@ export default function BlogPost({ params }) {
                 <li>
                   <Link
                     href="/"
-                    className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+                    className="text-gray-600 dark:text-[#CCCCCC] hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
                   >
                     🏠 Home
                   </Link>
@@ -280,7 +280,7 @@ export default function BlogPost({ params }) {
                   <span className="mx-3 text-gray-400">→</span>
                   <Link
                     href="/blog"
-                    className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+                    className="text-gray-600 dark:text-[#CCCCCC] hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
                   >
                     📝 Blog
                   </Link>
@@ -326,12 +326,12 @@ export default function BlogPost({ params }) {
               {/* Author & Meta Info */}
               <div className="flex flex-wrap items-center justify-center gap-6 text-sm mb-8">
                 <div className="flex items-center gap-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-sm border border-gray-200/50 dark:border-gray-700/50">
-                  <div className="w-10 h-10 bg-[#FCA311]  rounded-full flex items-center justify-center text-white font-bold text-lg">
+                  <div className="w-10 h-10 bg-[#D98600]  rounded-full flex items-center justify-center text-white font-bold text-lg">
                     {article.article.author.charAt(0)}
                   </div>
                   <div className="text-left">
                     <div className="flex items-center gap-2">
-                      <span className="text-gray-600 dark:text-gray-400">By</span>
+                      <span className="text-gray-600 dark:text-[#CCCCCC]">By</span>
                       <Link
                         href={`/author/${article.article.authorSlug || ""}`}
                         className="font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -343,12 +343,12 @@ export default function BlogPost({ params }) {
                 </div>
 
                 <div className="flex items-center gap-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-sm border border-gray-200/50 dark:border-gray-700/50">
-                  <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                  <div className="flex items-center gap-2 text-gray-600 dark:text-[#CCCCCC]">
                     <span>📅</span>
                     <time dateTime={article.article.publishedDate}>{article.article.date}</time>
                   </div>
                   <span className="text-gray-300 dark:text-gray-600">•</span>
-                  <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                  <div className="flex items-center gap-2 text-gray-600 dark:text-[#CCCCCC]">
                     <span>⏱️</span>
                     <span>{readingTime} min read</span>
                   </div>
@@ -426,7 +426,7 @@ export default function BlogPost({ params }) {
                           <li key={index} className={item.level === 3 ? "ml-4" : ""}>
                             <a
                               href={`#${item.id}`}
-                              className="block text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 px-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 font-medium"
+                              className="block text-gray-600 dark:text-[#CCCCCC] hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 px-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 font-medium"
                             >
                               {item.text}
                             </a>
@@ -485,7 +485,7 @@ export default function BlogPost({ params }) {
                               id={headingId}
                               className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-6 scroll-mt-8 flex items-center gap-3"
                             >
-                              <span className="w-2 h-8 bg-[#FCA311] rounded-full"></span>
+                              <span className="w-2 h-8 bg-[#D98600] rounded-full"></span>
                               {block.text}
                             </h3>
                           )
@@ -499,7 +499,7 @@ export default function BlogPost({ params }) {
                                     key={i}
                                     className="flex items-start gap-4 text-gray-800 dark:text-gray-200 text-lg"
                                   >
-                                    <span className="flex-shrink-0 w-6 h-6 bg-[#FCA311] rounded-full flex items-center justify-center text-white text-sm font-bold mt-1">
+                                    <span className="flex-shrink-0 w-6 h-6 bg-[#D98600] rounded-full flex items-center justify-center text-white text-sm font-bold mt-1">
                                       ✓
                                     </span>
                                     <span className="leading-relaxed">{renderHTMLContent(item)}</span>
@@ -518,7 +518,7 @@ export default function BlogPost({ params }) {
                                     key={i}
                                     className="flex items-start gap-4 text-gray-800 dark:text-gray-200 text-lg"
                                   >
-                                    <span className="flex-shrink-0 w-8 h-8 bg-[#FCA311] rounded-full flex items-center justify-center text-white text-sm font-bold mt-1">
+                                    <span className="flex-shrink-0 w-8 h-8 bg-[#D98600] rounded-full flex items-center justify-center text-white text-sm font-bold mt-1">
                                       {i + 1}
                                     </span>
                                     <span className="leading-relaxed">{item}</span>
@@ -592,7 +592,7 @@ export default function BlogPost({ params }) {
                               <div className="overflow-hidden rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700">
                                 <table className="w-full text-sm">
                                   <thead>
-                                    <tr className="bg-[#FCA311] text-white">
+                                    <tr className="bg-[#D98600] text-white">
                                       {block.headers.map((header, i) => (
                                         <th key={i} className="px-6 py-4 font-bold text-left">
                                           {header}
@@ -627,7 +627,7 @@ export default function BlogPost({ params }) {
                           return (
                             <section key={index} className="my-16">
                               <div className="text-center mb-12">
-                                <h3 className="text-4xl font-bold text-transparent bg-clip-text bg-[#FCA311] mb-4">
+                                <h3 className="text-4xl font-bold text-transparent bg-clip-text bg-[#D98600] mb-4">
                                   Frequently Asked Questions
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-400">Everything you need to know</p>
@@ -638,10 +638,10 @@ export default function BlogPost({ params }) {
                                     key={i}
                                     className="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-xl transition-all duration-300"
                                   >
-                                    <summary className="flex justify-between items-center cursor-pointer p-8 font-semibold text-gray-900 dark:text-white hover:bg-[#FCA311] dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 transition-all duration-300">
+                                    <summary className="flex justify-between items-center cursor-pointer p-8 font-semibold text-gray-900 dark:text-white hover:bg-[#D98600] dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 transition-all duration-300">
                                       <span className="text-lg">{faq.question}</span>
                                       <div className="flex-shrink-0 ml-4">
-                                        <div className="w-8 h-8 bg-[#FCA311] rounded-full flex items-center justify-center text-white group-open:rotate-180 transition-transform duration-300">
+                                        <div className="w-8 h-8 bg-[#D98600] rounded-full flex items-center justify-center text-white group-open:rotate-180 transition-transform duration-300">
                                           <svg
                                             className="w-4 h-4"
                                             fill="none"
