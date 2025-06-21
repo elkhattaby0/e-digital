@@ -41,7 +41,7 @@ const Newsletter = () => {
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Gradient Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#D98600]/5 via-[#FFFFFF]/98 to-[#14213D]/5 dark:from-[#D98600]/10 dark:via-[#14213D]/98 dark:to-[#1a2332]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FCA311]/5 via-[#FFFFFF]/98 to-[#14213D]/5 dark:from-[#FCA311]/10 dark:via-[#14213D]/98 dark:to-[#1a2332]" />
 
         {/* Digital Grid Pattern */}
         <div className="absolute inset-0 opacity-5 dark:opacity-10">
@@ -58,14 +58,14 @@ const Newsletter = () => {
         </div>
 
         {/* Floating Elements */}
-        <div className="absolute top-20 left-20 w-4 h-4 bg-[#D98600]/30 rounded-full animate-pulse" />
-        <div className="absolute bottom-32 right-32 w-3 h-3 bg-[#D98600]/40 rounded-full animate-ping" />
-        <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-[#D98600]/35 rounded-full animate-pulse" />
+        <div className="absolute top-20 left-20 w-4 h-4 bg-[#FCA311]/30 rounded-full animate-pulse" />
+        <div className="absolute bottom-32 right-32 w-3 h-3 bg-[#FCA311]/40 rounded-full animate-ping" />
+        <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-[#FCA311]/35 rounded-full animate-pulse" />
 
         {/* Newsletter Icons */}
         <svg className="absolute top-20 right-1/3 w-16 h-16 opacity-10" viewBox="0 0 100 100">
-          <rect x="20" y="30" width="60" height="40" rx="5" fill="none" stroke="#D98600" strokeWidth="2" />
-          <path d="M20 35 L50 55 L80 35" fill="none" stroke="#D98600" strokeWidth="2" />
+          <rect x="20" y="30" width="60" height="40" rx="5" fill="none" stroke="#FCA311" strokeWidth="2" />
+          <path d="M20 35 L50 55 L80 35" fill="none" stroke="#FCA311" strokeWidth="2" />
         </svg>
 
         {/* Digital Circuit Lines */}
@@ -74,17 +74,17 @@ const Newsletter = () => {
           viewBox="0 0 600 300"
           fill="none"
         >
-          <g stroke="#D98600" strokeWidth="1">
+          <g stroke="#FCA311" strokeWidth="1">
             <path d="M0 150 L150 150 L150 50 L300 50 L300 200 L450 200 L450 100 L600 100" />
-            <circle cx="150" cy="150" r="3" fill="#D98600" />
-            <circle cx="300" cy="50" r="3" fill="#D98600" />
-            <circle cx="450" cy="200" r="3" fill="#D98600" />
+            <circle cx="150" cy="150" r="3" fill="#FCA311" />
+            <circle cx="300" cy="50" r="3" fill="#FCA311" />
+            <circle cx="450" cy="200" r="3" fill="#FCA311" />
           </g>
         </svg>
 
         {/* Email Symbols */}
-        <div className="absolute bottom-20 right-1/4 text-6xl text-[#D98600]/10 select-none">@</div>
-        <div className="absolute top-1/4 left-1/3 text-4xl text-[#D98600]/10 select-none">✉</div>
+        <div className="absolute bottom-20 right-1/4 text-6xl text-[#FCA311]/10 select-none">@</div>
+        <div className="absolute top-1/4 left-1/3 text-4xl text-[#FCA311]/10 select-none">✉</div>
       </div>
 
       <div className={Style.section}>
@@ -108,7 +108,7 @@ const Newsletter = () => {
               className="text-sm font-medium px-6 py-3 rounded-full border flex items-center gap-2 w-fit"
               style={{
                 backgroundColor: "rgba(252, 163, 17, 0.1)",
-                color: "#D98600",
+                color: "#FCA311",
                 borderColor: "rgba(252, 163, 17, 0.2)",
               }}
             >
@@ -125,11 +125,11 @@ const Newsletter = () => {
           >
             <HeaderTwo>
               Get Our{" "}
-              <span className="relative" style={{ color: "#D98600" }}>
+              <span className="relative" style={{ color: "#FCA311" }}>
                 Latest News
                 <div
                   className="absolute -bottom-1 left-0 w-full h-1 rounded-full"
-                  style={{ background: "linear-gradient(to right, #D98600, #D98600, transparent)" }}
+                  style={{ background: "linear-gradient(to right, #FCA311, #FCA311, transparent)" }}
                 />
               </span>{" "}
               & Tips
@@ -158,14 +158,14 @@ const Newsletter = () => {
             {benefits.map((benefit, index) => (
               <motion.div
                 key={benefit.text}
-                className="flex items-center gap-3 p-3 rounded-lg hover:bg-[#D98600]/5 transition-colors duration-300 group"
+                className="flex items-center gap-3 p-3 rounded-lg hover:bg-[#FCA311]/5 transition-colors duration-300 group"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <div className="w-10 h-10 bg-[#D98600]/10 rounded-full flex items-center justify-center group-hover:bg-[#D98600]/20 transition-colors duration-300">
-                  <benefit.icon className="w-5 h-5 text-[#D98600]" />
+                <div className="w-10 h-10 bg-[#FCA311]/10 rounded-full flex items-center justify-center group-hover:bg-[#FCA311]/20 transition-colors duration-300">
+                  <benefit.icon className="w-5 h-5 text-[#FCA311]" />
                 </div>
                 <span className="text-[#14213D]/80 dark:text-[#CCCCCC] font-medium">{benefit.text}</span>
               </motion.div>
@@ -191,7 +191,7 @@ const Newsletter = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email address"
                     required
-                    className="w-full pl-12 pr-4 py-4 text-[#14213D] dark:text-[#E5E5E5] bg-[#FFFFFF] dark:bg-[#1a2332] border-2 border-[#E5E5E5]/30 dark:border-[#E5E5E5]/20 rounded-xl outline-none focus:border-[#D98600] transition-colors duration-300 text-lg"
+                    className="w-full pl-12 pr-4 py-4 text-[#14213D] dark:text-[#E5E5E5] bg-[#FFFFFF] dark:bg-[#1a2332] border-2 border-[#E5E5E5]/30 dark:border-[#E5E5E5]/20 rounded-xl outline-none focus:border-[#FCA311] transition-colors duration-300 text-lg"
                   />
                 </div>
                 <motion.button
@@ -257,7 +257,7 @@ const Newsletter = () => {
           {/* Newsletter Stats */}
           <div className="space-y-6">
             {/* Main Visual */}
-            <div className="relative p-8 bg-gradient-to-br from-[#D98600] to-[#14213D] rounded-2xl text-[#FFFFFF] overflow-hidden">
+            <div className="relative p-8 bg-gradient-to-br from-[#FCA311] to-[#14213D] rounded-2xl text-[#FFFFFF] overflow-hidden">
               {/* Background Pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div
@@ -307,7 +307,7 @@ const Newsletter = () => {
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-[#D98600] fill-current" />
+                    <Star key={i} className="w-5 h-5 text-[#FCA311] fill-current" />
                   ))}
                 </div>
                 <span className="font-semibold text-[#14213D] dark:text-[#E5E5E5]">5.0</span>
@@ -316,7 +316,7 @@ const Newsletter = () => {
                 &quot;The best newsletter for web development insights. Highly recommended!&quot;
               </p>
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-[#D98600] rounded-full flex items-center justify-center text-[#FFFFFF] text-sm font-bold">
+                <div className="w-8 h-8 bg-[#FCA311] rounded-full flex items-center justify-center text-[#FFFFFF] text-sm font-bold">
                   A
                 </div>
                 <div>
@@ -332,7 +332,7 @@ const Newsletter = () => {
               <div className="space-y-3">
                 {["Next.js 14 Features", "AI in Web Design", "Performance Tips"].map((topic, index) => (
                   <div key={topic} className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-[#D98600] rounded-full" />
+                    <div className="w-2 h-2 bg-[#FCA311] rounded-full" />
                     <span className="text-sm text-[#14213D]/70 dark:text-[#CCCCCC]">{topic}</span>
                   </div>
                 ))}
@@ -351,7 +351,7 @@ const Style = {
   left: "w-2/3 max-lg:w-full",
   right: "w-1/3 max-lg:w-full",
   button:
-    "group w-full flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#FFFFFF] bg-[#D98600] rounded-xl hover:bg-[#D98600]/90 transition-all duration-300 hover:shadow-lg",
+    "group w-full flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#FFFFFF] bg-[#FCA311] rounded-xl hover:bg-[#FCA311]/90 transition-all duration-300 hover:shadow-lg",
 }
 
 export default Newsletter
