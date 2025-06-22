@@ -66,4 +66,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://trustedwebagency.com/blogs/4/Why%20Hotels%20in%20Agadir%2C%20Morocco%20Need%20Modern%20Websites%20to%20Attract%20More%20Tourists%20in%202025</loc>
+        <lastmod>2025-06-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>

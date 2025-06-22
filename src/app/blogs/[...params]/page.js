@@ -474,7 +474,7 @@ export default function BlogPost({ params }) {
                               <span className="absolute -left-4 top-0 text-blue-500 opacity-30 text-5xl font-black">
                                 &quot;
                               </span>
-                              {block.text}
+                              {renderHTMLContent(block.text)}
                             </h2>
                           )
 
@@ -500,7 +500,7 @@ export default function BlogPost({ params }) {
                                     className="flex items-start gap-4 text-gray-800 dark:text-gray-200 text-lg"
                                   >
                                     <span className="flex-shrink-0 w-6 h-6 bg-[#FCA311] rounded-full flex items-center justify-center text-white text-sm font-bold mt-1">
-                                      ✓
+                                      -
                                     </span>
                                     <span className="leading-relaxed">{renderHTMLContent(item)}</span>
                                   </li>
