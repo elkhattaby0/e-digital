@@ -469,7 +469,7 @@ export default function BlogPost({ params }) {
                             <h2
                               key={index}
                               id={headingId}
-                              className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-blue-800 dark:from-white dark:to-blue-200 mt-16 mb-8 scroll-mt-8 relative"
+                              className="text-4xl font-bold text-[#E5E5E5] mt-16 mb-8 scroll-mt-8 relative"
                             >
                               <span className="absolute -left-4 top-0 text-blue-500 opacity-30 text-5xl font-black">
                                 &quot;
@@ -483,7 +483,7 @@ export default function BlogPost({ params }) {
                             <h3
                               key={index}
                               id={headingId}
-                              className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-6 scroll-mt-8 flex items-center gap-3"
+                              className="text-2xl font-bold text-[#E5E5E5] mt-12 mb-6 scroll-mt-8 flex items-center gap-3"
                             >
                               <span className="w-2 h-8 bg-[#FCA311] rounded-full"></span>
                               {block.text}
@@ -497,7 +497,7 @@ export default function BlogPost({ params }) {
                                 {block.items.map((item, i) => (
                                   <li
                                     key={i}
-                                    className="flex items-start gap-4 text-gray-800 dark:text-gray-200 text-lg"
+                                    className="flex items-start gap-4 text-[#E5E5E5] text-lg"
                                   >
                                     <span className="flex-shrink-0 w-6 h-6 bg-[#FCA311] rounded-full flex items-center justify-center text-white text-sm font-bold mt-1">
                                       -
@@ -516,7 +516,7 @@ export default function BlogPost({ params }) {
                                 {block.items.map((item, i) => (
                                   <li
                                     key={i}
-                                    className="flex items-start gap-4 text-gray-800 dark:text-gray-200 text-lg"
+                                    className="flex items-start gap-4 text-[#E5E5E5] text-lg"
                                   >
                                     <span className="flex-shrink-0 w-8 h-8 bg-[#FCA311] rounded-full flex items-center justify-center text-white text-sm font-bold mt-1">
                                       {i + 1}
@@ -611,7 +611,7 @@ export default function BlogPost({ params }) {
                                         } hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors`}
                                       >
                                         {row.map((cell, cellIndex) => (
-                                          <td key={cellIndex} className="px-6 py-4 text-gray-800 dark:text-gray-200">
+                                          <td key={cellIndex} className="px-6 py-4 text-[#E5E5E5]">
                                             {cell}
                                           </td>
                                         ))}
